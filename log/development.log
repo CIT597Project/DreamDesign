@@ -1,0 +1,69 @@
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20141023020936)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141023020936"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-22 22:10:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 25ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-22 22:11:36 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-22 22:11:36 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-10-22 22:11:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=2):
+  app/controllers/users_controller.rb:67:in `set_user'
+
+
+  Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-10-22 22:11:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Warning. Error encountered while saving cache 3a026ff4595b2281ab62c825ab91ef0f17675318/scaffolds.css.scssc: can't dump anonymous class #<Class:0x007ffa3e1a9678>
+
+Warning. Error encountered while saving cache 3a026ff4595b2281ab62c825ab91ef0f17675318/users.css.scssc: can't dump anonymous class #<Class:0x007ffa3e1a9678>
+
+Completed 200 OK in 1330ms (Views: 1329.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/users-64845c436e75ac587deec98177291d4e.css?body=1" for 127.0.0.1 at 2014-10-22 22:11:39 -0400
+
+
+Started GET "/assets/application-e7135fa43f11210dfc75afdad791ca81.css?body=1" for 127.0.0.1 at 2014-10-22 22:11:39 -0400
+
+
+Started GET "/assets/scaffolds-74a8bcdaf0841568e7ba309a5d097e77.css?body=1" for 127.0.0.1 at 2014-10-22 22:11:39 -0400
+
+
+Started GET "/assets/users-32740fa4bc301ff5ef2eca5d8d82335a.js?body=1" for 127.0.0.1 at 2014-10-22 22:11:39 -0400
