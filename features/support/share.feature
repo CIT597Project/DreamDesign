@@ -1,3 +1,4 @@
+
 Feature: Share comments on Facebook
 	
 	As a user
@@ -5,9 +6,10 @@ Feature: Share comments on Facebook
 	I want to share the comments as moments on Facebook
 	
 	Scenario: Share on Facebook
-		Given I'm editing the comments
-		And I've logged in with facebook account
-		When I chcek "share on facebook"
+
+      Given I am editing the comments
+		And I have logged in with facebook account
+		When I check share on facebook
 		And click save
 		Then I can share the comment on Facebook
 		

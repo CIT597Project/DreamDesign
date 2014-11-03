@@ -10,7 +10,7 @@ Feature: Users sign up
 		
 		
 	Scenario: Sign up successfully
-		Given I'm on the email sign up page
+		Given I'm on the sign up page
 		When I fill eligible email and passwords
 		And click "sign up"
 		Then I should sign in my account

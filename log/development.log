@@ -1803,3 +1803,65 @@ Started GET "/assets/microposts-32740fa4bc301ff5ef2eca5d8d82335a.js?body=1" for 
 
 
 Started GET "/assets/application-39c924af3a6aa3d8809e65d11764414b.js?body=1" for ::1 at 2014-10-29 22:48:24 -0400
+
+
+Started GET "/" for ::1 at 2014-11-02 17:03:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (23.0ms)
+Warning. Error encountered while saving cache 545467af66199e208c5e50afe7cba16840968a5f/microposts.css.scssc: can't dump anonymous class #<Class:0x42d13e8>
+
+Warning. Error encountered while saving cache 545467af66199e208c5e50afe7cba16840968a5f/scaffolds.css.scssc: can't dump anonymous class #<Class:0x42d13e8>
+
+Warning. Error encountered while saving cache 545467af66199e208c5e50afe7cba16840968a5f/users.css.scssc: can't dump anonymous class #<Class:0x42d13e8>
+
+Completed 200 OK in 1876ms (Views: 1800.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/microposts-c15e1c77cb5b3534b610348cb9f3c56d.css?body=1" for ::1 at 2014-11-02 17:03:20 -0500
+
+
+Started GET "/assets/scaffolds-137a6c183c65523d14374f520e6d301a.css?body=1" for ::1 at 2014-11-02 17:03:20 -0500
+
+
+Started GET "/assets/users-c15e1c77cb5b3534b610348cb9f3c56d.css?body=1" for ::1 at 2014-11-02 17:03:20 -0500
+
+
+Started GET "/assets/application-bbded652048eafa5513b82cc39b047c5.css?body=1" for ::1 at 2014-11-02 17:03:20 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-02 17:03:20 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-02 17:03:20 -0500
+
+
+Started GET "/assets/application-b8b8c6546855f8a13b2b49066182795e.js?body=1" for ::1 at 2014-11-02 17:03:20 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-02 17:03:20 -0500
+
+
+Started GET "/assets/microposts-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-02 17:03:21 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-02 17:03:21 -0500
+
+
+Started DELETE "/users/2" for ::1 at 2014-11-02 17:03:38 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HKFaHs55fl+hR3HxVKKi9wF73tuHX9I6Zfvh3i8rTI93hFjiuaacLW1qmxj0X0YeK5Vwsj7a3eLQxUrbm+QBbw==", "id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (29.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 105ms (ActiveRecord: 31.0ms)
+
+
+Started GET "/users" for ::1 at 2014-11-02 17:03:38 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 76ms (Views: 76.0ms | ActiveRecord: 0.0ms)
