@@ -9,7 +9,7 @@ Feature: Users log in
 		Then I should see "log in" on the right corner
 		
 	Scenario: Sign in with email
-		Given I'm on the sign in page
+		Given I am on the sign in page
 		When I fill the email and password fields
 		And I click the sign in icon
 		Then I should be able to sign in my own account

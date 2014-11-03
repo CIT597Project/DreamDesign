@@ -12,7 +12,7 @@ Feature: Add comments
 	
 	Scenario: Add comment to a school
 		Given I have added some text to the comment field
-		When I click "save"
+		When I click save
 		Then I am able to update this comment
 		
 	Scenario: See other users' comments
