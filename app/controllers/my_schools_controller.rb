@@ -3,12 +3,13 @@ class MySchoolsController < ApplicationController
 
   def create
     @my_school = current_user.my_schools.build(my_school_params)
-    @my_school.save
-    # if @my_school.save
-#           redirect_to mylist_url
-#     else
-      redirect_to mylist_url
-    # end
+    @my_school.user_id = current_user.id
+    new_school = @my_school
+    if new_school.save
+      redirect_to mylist_path
+    else
+      redirect_to mylist_path
+    end
   end
 
   
