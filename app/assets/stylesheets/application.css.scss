@@ -106,6 +106,7 @@ footer small {
 footer ul {
   float: right;
   list-style: none;
+	margin-right: 15px;
 }
 
 footer ul li {
@@ -117,7 +118,7 @@ footer ul li {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 50%;
+  width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
 }
@@ -125,3 +126,18 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
