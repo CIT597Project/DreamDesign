@@ -1,0 +1,7 @@
+<%= form_for(@my_school) do |f| %>
+  <div class="field">
+    <%= f.text_area :name, placeholder: "find new school..." %>
+		<%= f.text_area :comment, placeholder: "add comments..." %>
+  </div>
+  <%= f.submit "Add", class: "btn btn-primary" %>
+<% end %>

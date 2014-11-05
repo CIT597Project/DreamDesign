@@ -1,0 +1,20 @@
+<% provide(:title, "MyList") %>
+
+<div class="row">
+  <aside class="col-md-4">
+		<section class="user_info">
+		  <%= render 'user_info' %>
+		</section>
+    <section class="mylist_form">
+      <%= render 'mylist_form' %>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <% if @user.my_schools.any? %>
+      <h3>My School List(<%= @user.my_schools.count %>)</h3>
+      <ol class="my_schools">
+        <%= render @my_schools %>
+      </ol>
+    <% end %>
+  </div>
+</div>
