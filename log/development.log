@@ -557,6 +557,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   Rendered /Users/chanli/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta4/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
 
 
+<<<<<<< Updated upstream
 Started GET "/" for ::1 at 2014-11-04 19:26:04 -0500
 Processing by StaticPagesController#home as HTML
   Rendered static_pages/home.html.erb within layouts/application (0.4ms)
@@ -652,6 +653,38 @@ Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" fo
 
 
 Started GET "/assets/bootstrap" for ::1 at 2014-11-04 19:26:04 -0500
+=======
+Started GET "/" for ::1 at 2014-11-04 22:15:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 464ms (Views: 454.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-04 22:16:00 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-04 22:16:00 -0500
+
+
+Started GET "/assets/application-26fa943811a0117cc462c56feaddde2b.css?body=1" for ::1 at 2014-11-04 22:16:00 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-04 22:16:00 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-04 22:16:00 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-04 22:16:00 -0500
+
+
+Started GET "/assets/application-b8b8c6546855f8a13b2b49066182795e.js?body=1" for ::1 at 2014-11-04 22:16:00 -0500
+
+
+Started GET "/assets/bootstrap" for ::1 at 2014-11-04 22:16:00 -0500
+>>>>>>> Stashed changes
 
 Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request bootstrap):
   sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
@@ -679,8 +712,13 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+<<<<<<< Updated upstream
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+=======
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
@@ -705,6 +743,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
   rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< Updated upstream
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -746,6 +785,21 @@ Started GET "/assets/application-596aae9ae8f8f1f53ff8d64c291133cd.js?body=1" for
 
 
 Started GET "/assets/bootstrap-sprockets" for ::1 at 2014-11-04 19:26:08 -0500
+=======
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2014-11-04 22:16:00 -0500
+>>>>>>> Stashed changes
 
 Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request bootstrap-sprockets):
   sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
@@ -773,6 +827,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+<<<<<<< Updated upstream
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:13:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
@@ -841,6 +896,10 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+=======
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
@@ -865,6 +924,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
   rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< Updated upstream
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -910,6 +970,31 @@ Started GET "/assets/bootstrap-sprockets" for ::1 at 2014-11-04 19:26:15 -0500
 Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request bootstrap-sprockets):
   sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+=======
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (23.1ms)
+
+
+Started GET "/signup" for ::1 at 2014-11-04 22:16:01 -0500
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:68:in `controller_reference'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:58:in `controller'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:37:in `serve'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
@@ -933,8 +1018,13 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+<<<<<<< Updated upstream
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+=======
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
@@ -959,6 +1049,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
   rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< Updated upstream
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -976,6 +1067,28 @@ Started GET "/assets/bootstrap" for ::1 at 2014-11-04 19:26:15 -0500
 Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request bootstrap):
   sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+=======
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (27.2ms)
+
+
+Started GET "/signup" for ::1 at 2014-11-04 22:16:01 -0500
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:68:in `controller_reference'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:58:in `controller'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:37:in `serve'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
@@ -999,8 +1112,13 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+<<<<<<< Updated upstream
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
   web-console (2.0.0.beta4) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+=======
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
@@ -1025,6 +1143,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
   rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< Updated upstream
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -1071,6 +1190,28 @@ Started GET "/assets/bootstrap-sprockets" for ::1 at 2014-11-04 19:26:59 -0500
 Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request bootstrap-sprockets):
   sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+=======
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (26.7ms)
+
+
+Started GET "/signup" for ::1 at 2014-11-04 22:16:04 -0500
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:68:in `controller_reference'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:58:in `controller'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:37:in `serve'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
@@ -1120,6 +1261,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
   rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< Updated upstream
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -1137,6 +1279,28 @@ Started GET "/assets/bootstrap" for ::1 at 2014-11-04 19:26:59 -0500
 Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request bootstrap):
   sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+=======
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (27.2ms)
+
+
+Started GET "/signup" for ::1 at 2014-11-04 22:16:04 -0500
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:68:in `controller_reference'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:58:in `controller'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:37:in `serve'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
@@ -1186,6 +1350,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
   rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< Updated upstream
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -1231,6 +1396,28 @@ Started GET "/assets/bootstrap-sprockets" for ::1 at 2014-11-04 19:30:02 -0500
 Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request bootstrap-sprockets):
   sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+=======
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (25.3ms)
+
+
+Started GET "/signup" for ::1 at 2014-11-04 22:16:08 -0500
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:68:in `controller_reference'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:58:in `controller'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:37:in `serve'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
@@ -1280,6 +1467,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
   rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< Updated upstream
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -1297,6 +1485,28 @@ Started GET "/assets/bootstrap" for ::1 at 2014-11-04 19:30:02 -0500
 Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request bootstrap):
   sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
   actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+=======
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (25.2ms)
+
+
+Started GET "/signup" for ::1 at 2014-11-04 22:16:08 -0500
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0.beta2) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:68:in `controller_reference'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:58:in `controller'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:37:in `serve'
+>>>>>>> Stashed changes
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
   actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
@@ -1346,6 +1556,7 @@ Sprockets::Rails::Environment::NoDigestError (Assets should not be requested dir
   rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
   rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< Updated upstream
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/chanli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -15266,3 +15477,254 @@ Processing by StaticPagesController#home as HTML
   Rendered layouts/_header.html.erb (0.7ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+=======
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/qilejun/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (28.3ms)
+>>>>>>> Stashed changes
+
+
+Started GET "/" for ::1 at 2014-11-04 22:27:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+Warning. Error encountered while saving cache fead2c2ed9bce1784311361118ca89288e65c811/application.css.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache b7e3ccf8449d5cee752fb6ab3ead9a516d501526/_bootstrap-sprockets.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache b7e3ccf8449d5cee752fb6ab3ead9a516d501526/bootstrap.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_variables.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_mixins.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_hide-text.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_opacity.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_image.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_labels.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_resize.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_size.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_alerts.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_buttons.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_panels.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_pagination.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_list-group.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_forms.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_table-row.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_background-variant.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_border-radius.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_gradients.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_clearfix.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_center-block.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 2b0039ee1a7a9af28333bdcd6bd7bc994c48e894/_grid.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_normalize.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_print.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_type.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_code.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_grid.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_tables.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_forms.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_buttons.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_component-animations.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_button-groups.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_input-groups.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_navs.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_navbar.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_pagination.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_pager.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_labels.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_badges.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_alerts.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_media.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_list-group.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_panels.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_wells.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_close.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_modals.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_tooltip.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_popovers.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_carousel.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_utilities.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+Warning. Error encountered while saving cache 3d723618b3abb5a2dd66d2d6d04ef8aca3744fdd/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fcd2d7c4f78>
+
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2226ms (Views: 2216.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4cdcdee132e79fb469ed64c17a91be76.css?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/application-b8b8c6546855f8a13b2b49066182795e.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/assets/application-b8b8c6546855f8a13b2b49066182795e.js?body=1" for ::1 at 2014-11-04 22:27:13 -0500
+
+
+Started GET "/" for ::1 at 2014-11-04 22:27:20 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2014-11-04 22:27:21 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2014-11-04 22:27:21 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2014-11-04 22:27:22 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2014-11-04 22:27:23 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (4.8ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (78.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 201ms (Views: 192.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2014-11-04 22:27:29 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2014-11-04 22:27:30 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /Users/qilejun/.rvm/gems/ruby-2.1.2/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.0ms)
