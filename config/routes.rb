@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'static_pages/help'
   get 'mylist' => 'users#mylist'
   
-  devise_for :users
+  devise_for :users, :controllers => {:registrations => "users/registrations"}
  
   resources :my_schools
   

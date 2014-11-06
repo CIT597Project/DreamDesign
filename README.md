@@ -1,6 +1,6 @@
 == README
 
-Temporary home for this app is https://dreamdesign2014.herokuapp.com/
+Temporary home for this app is https://dreamdesign2014.herokuapp.com/development.sqlite3
 
 
 

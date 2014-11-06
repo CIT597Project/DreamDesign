@@ -1,3 +1,20 @@
+<<<<<<< HEAD
 public/uploads
 tmp
 logs
+=======
+
+tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af
+
+tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655
+
+db/development.sqlite3
+
+tmp/cache/assets/development/sprockets/8ab512c9b33ac90e699b73469d71f061
+
+tmp/cache/assets/development/sprockets/bcca522c6302f184f12fe0e8a7d7e71a
+
+tmp/cache/assets/development/sprockets/c13fc73ceafa45876a901b3e775b83ae
+
+tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655
+>>>>>>> 18b20907a93d10e08228b825e88f4a557bb4cf07

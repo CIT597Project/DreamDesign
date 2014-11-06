@@ -55,10 +55,18 @@ h1 {
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
+  
   text-align: center;
   font-weight: normal;
   color: #777;
+}
+
+h3 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
 }
 
 p {
@@ -129,19 +137,6 @@ input {
   height: auto !important;
 }
 
-.checkbox {
-  margin-top: -10px;
-  margin-bottom: 10px;
-  span {
-    margin-left: 20px;
-    font-weight: normal;
-  }
-}
-
-#session_remember_me {
-  width: auto;
-  margin-left: 0;
-}
 
 
 
@@ -229,8 +224,24 @@ aside {
 
 /* devise */
 .field {
-	align: center;
-	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
 }
+
+.actions {
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	
+}
+.cancel {
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	
+}
+
+
 
 
