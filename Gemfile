@@ -17,7 +17,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'rack', '1.6.0.beta'
-
+gem 'omniauth-facebook'
 gem 'devise'
  
 group :development, :test do
