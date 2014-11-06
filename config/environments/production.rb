@@ -80,7 +80,7 @@ Rails.application.configure do
       :port           => 587,
       :user_name      => '<tqvcd2014@gmail.com>',
       :password       => '<WOshi1gougou>',
-      :authentication => :plain
-      :enable_starttls_auto => true}
+      :authentication => :plain,
+      }
   
 end
