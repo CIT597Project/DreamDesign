@@ -32,6 +32,10 @@ group :development, :test do
   gem 'spring',      '1.1.3'
 end
 
+
+
+
 group :production do
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end

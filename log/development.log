@@ -21005,3 +21005,2278 @@ Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for
 
 
 Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 02:34:54 -0500
+
+
+Started GET "/" for ::1 at 2014-11-06 10:03:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 6]]
+  Rendered layouts/_header.html.erb (122.6ms)
+Completed 200 OK in 417ms (Views: 401.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:03:49 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (37.2ms)
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 10:03:49 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2014-11-06 10:03:54 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"M+cespGR04qe5PLVk0RZbm9FCkV7414u3XaLOL4fuS2SYrUCrXcToywdXvm9wl/n03kAglfibKg+IEpXcI770A=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 81ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2014-11-06 10:03:54 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:03:54 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (25.8ms)
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 10:03:54 -0500
+
+
+Started GET "/" for ::1 at 2014-11-06 10:45:05 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 135ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 10:45:05 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:45:05 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (34.9ms)
+
+
+Started GET "/" for ::1 at 2014-11-06 10:45:11 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:45:11 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2014-11-06 10:45:12 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (82.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 215ms (Views: 210.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:45:12 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (31.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2014-11-06 10:45:15 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 161ms (Views: 159.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:45:15 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (21.4ms)
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 10:45:15 -0500
+
+
+Started GET "/" for ::1 at 2014-11-06 10:45:17 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 139ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:45:18 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (23.6ms)
+
+
+Started GET "/" for ::1 at 2014-11-06 10:54:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+Completed 200 OK in 286ms (Views: 274.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 10:54:33 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 10:54:33 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:54:33 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (36.4ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 10:54:33 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:54:33 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:54:33 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:54:34 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 10:54:34 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 10:54:34 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:54:34 -0500
+
+
+Started GET "/" for ::1 at 2014-11-06 10:54:37 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:54:37 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 10:54:37 -0500
+
+
+Started GET "/users/sign_up" for ::1 at 2014-11-06 10:54:46 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (112.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 204ms (Views: 190.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:54:46 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (21.7ms)
+
+
+Started POST "/users" for ::1 at 2014-11-06 10:55:07 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XnLiJGfvKKg2VvuV+JZ626/kB3JdTVkUR38YF/2S0fb6F9PPjfZ1ENcmYgUSjn+EU1IZ7pt0SdrEuyDayuKlcg==", "user"=>{"username"=>"zhu", "email"=>"zhu1@sead.upenn.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: username
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'zhu1@sead.upenn.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 275ms (Views: 143.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:55:07 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (23.1ms)
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:55:07 -0500
+
+
+Started POST "/users" for ::1 at 2014-11-06 10:55:37 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"igohLO51/hw+V7sa1ko/IIbygWcHP8pLdlZR/iGPkRYubxDHBGyjpN8nIoo8Ujp/ekSf+8EG2oX1kmkzFv/lkg==", "user"=>{"username"=>"zhu", "email"=>"tqvcd2014@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: username
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'tqvcd2014@gmail.com' LIMIT 1
+  [1m[36mSQL (8.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-11-06 15:55:37.581448"], ["email", "tqvcd2014@gmail.com"], ["encrypted_password", "$2a$10$DkKrDuTigJKGSnkPo2jCeOFrnIQDyVTFYEKCAbkJG6DKsOvH0ZsCG"], ["updated_at", "2014-11-06 15:55:37.581448"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 7  [["current_sign_in_at", "2014-11-06 15:55:37.594950"], ["current_sign_in_ip", "::1"], ["last_sign_in_at", "2014-11-06 15:55:37.594950"], ["last_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2014-11-06 15:55:37.596926"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 138ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/" for ::1 at 2014-11-06 10:55:37 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 7]]
+  Rendered layouts/_header.html.erb (102.1ms)
+Completed 200 OK in 168ms (Views: 166.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 10:55:37 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 10:55:37 -0500
+
+
+Started GET "/" for ::1 at 2014-11-06 12:58:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 7]]
+  Rendered layouts/_header.html.erb (120.8ms)
+Completed 200 OK in 414ms (Views: 398.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 12:58:05 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (33.6ms)
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 12:58:05 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2014-11-06 13:02:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XY52BLbUBgIx4Z7ls6AHO+801L+E0bpyD7VMgrtrzGf560fvXM1butCRB3VZuAJkE4LKI0LoqryMcXRPjBu44w=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2014-11-06 13:02:01 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+Completed 200 OK in 214ms (Views: 213.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:02:02 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 13:02:02 -0500
+
+
+Started GET "/" for ::1 at 2014-11-06 13:02:04 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 130ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:02:04 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.6ms)
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 13:02:05 -0500
+
+
+Started GET "/" for ::1 at 2014-11-06 13:02:08 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 124ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:02:08 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (69.6ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (93.3ms)
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 13:02:08 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2014-11-06 13:02:09 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 186ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:02:10 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2014-11-06 13:02:18 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 149.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:02:18 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (24.2ms)
+
+
+Started POST "/users" for ::1 at 2014-11-06 13:10:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2wV/wudwUxwgnnnVEE/xWpxj3Q1kQl+qxj1CcCpfb15+KAvhrG2AGpnq2dwm5erOLqXHBbFiB6ShEmkAUYjGnQ==", "user"=>{"username"=>"afa", "email"=>"zhsuper@163.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: username
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'zhsuper@163.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-11-06 18:10:17.007540"], ["email", "zhsuper@163.com"], ["encrypted_password", "$2a$10$qS9s91UEfiTpcjPwiq7ggOVceUZKO/lFtm9bWmbNR/g2eDESBQCfO"], ["updated_at", "2014-11-06 18:10:17.007540"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 8[0m  [["current_sign_in_at", "2014-11-06 18:10:17.081647"], ["current_sign_in_ip", "::1"], ["last_sign_in_at", "2014-11-06 18:10:17.081647"], ["last_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2014-11-06 18:10:17.083853"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 238ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2014-11-06 13:10:17 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?  [["user_id", 8]]
+  Rendered layouts/_header.html.erb (96.3ms)
+Completed 200 OK in 303ms (Views: 301.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:10:17 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (36.5ms)
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:10:17 -0500
+
+
+Started GET "/" for ::1 at 2014-11-06 13:15:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 8]]
+  Rendered layouts/_header.html.erb (116.1ms)
+Completed 200 OK in 385ms (Views: 373.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:15:53 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (34.7ms)
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:15:53 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2014-11-06 13:15:55 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mykUZQfk/oCSgdpYMlp/A7TfF91pVCwoqPbtajEz6Ko+BGBGTPkthiv1elEE8GSXBhkN1bx0dCbP2cYaSuRBaQ=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2014-11-06 13:15:55 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:15:55 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (67.4ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (86.2ms)
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 13:15:55 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2014-11-06 13:15:57 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (44.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 174ms (Views: 170.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:15:57 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (29.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2014-11-06 13:18:25 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 153ms (Views: 150.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:18:25 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (30.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2014-11-06 13:19:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (36.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 291ms (Views: 261.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-bfda3aa5a8f606c6c65b94fb4e87c8c3.css?body=1" for ::1 at 2014-11-06 13:19:55 -0500
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for ::1 at 2014-11-06 13:19:55 -0500
+
+
+Started GET "/assets/my_schools-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:19:55 -0500
+
+
+Started GET "/assets/js/ie10-viewport-bug-workaround.js" for ::1 at 2014-11-06 13:19:55 -0500
+
+Sprockets::Rails::Environment::NoDigestError (Assets should not be requested directly without their digests: Use the helpers in ActionView::Helpers to request js/ie10-viewport-bug-workaround.js):
+  sprockets-rails (3.0.0.beta1) lib/sprockets/rails/environment.rb:22:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:50:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta) lib/rack/etag.rb:23:in `call'
+  rack (1.6.0.beta) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0.beta) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0.beta) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0.beta) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.6.0.beta) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0.beta) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hua/.rvm/rubies/ruby-2.0.0-p594/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/hua/.rvm/gems/ruby-2.0.0-p594/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (88.2ms)
+
+
+Started GET "/assets/turbolinks-6b0d91958b018bbac9d3c6e2044dbe49.js?body=1" for ::1 at 2014-11-06 13:19:55 -0500
+
+
+Started GET "/assets/jquery_ujs-ae280aaa31faeb1eb0139b5cd60e3356.js?body=1" for ::1 at 2014-11-06 13:19:55 -0500
+
+
+Started GET "/assets/schoollists-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:19:55 -0500
+
+
+Started GET "/assets/static_pages-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:19:55 -0500
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for ::1 at 2014-11-06 13:19:55 -0500
+
+
+Started GET "/assets/application-49f68e9ac9e040d872c5bef616d21959.js?body=1" for ::1 at 2014-11-06 13:19:55 -0500

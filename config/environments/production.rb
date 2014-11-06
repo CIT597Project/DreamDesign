@@ -73,5 +73,15 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.server_settings = {
+      :address        => 'smtp.gmail.com',
+      :domain         => 'mail.google.com',
+      :port           => 587,
+      :user_name      => '<tqvcd2014@gmail.com>',
+      :password       => '<WOshi1gougou>',
+      :authentication => :plain
+      :enable_starttls_auto => true
+  }
+  
 end
