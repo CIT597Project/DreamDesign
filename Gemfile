@@ -19,7 +19,7 @@ gem 'fog'
 gem 'rack', '1.6.0.beta'
 
 gem 'devise'
-
+ gem 'ruby ''2.0.0'
 group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
