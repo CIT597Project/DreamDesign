@@ -6,15 +6,18 @@ class MySchoolsController < ApplicationController
     @my_school.user_id = current_user.id
     new_school = @my_school
     if new_school.save
-      redirect_to mylist_path
+      if  new_school.id
+        redirect_to mylist_path
+      end
     else
-      redirect_to mylist_path
+      redirect_to root_path
     end
   end
 
   
   def destroy
-    
+    MySchool.find(params[:id]).destroy
+    redirect_to mylist_path 
   end
   
   def index
@@ -34,6 +37,6 @@ class MySchoolsController < ApplicationController
   
   private
   def my_school_params
-    params.require(:my_school).permit(:name)
+    params.require(:my_school).permit(:name, :comment)
   end
 end
