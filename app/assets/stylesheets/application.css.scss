@@ -19,6 +19,8 @@ html {
 
 body {
   padding-top: 60px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 section {
@@ -139,5 +141,49 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* my_school list */
+
+.my_schools {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .name {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .comment {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+}
+
+
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
 }
 
