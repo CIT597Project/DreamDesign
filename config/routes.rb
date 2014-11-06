@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   get 'static_pages/home'
   get 'static_pages/help'
   get 'help' => 'static_pages#help'
-  get 'signup' => 'users#new'
   get 'mylist' => 'users#mylist'
+  get 'profile' => 'users#profile'
   
   devise_for :users
   resources :schoollists

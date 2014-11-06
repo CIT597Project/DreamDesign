@@ -1,4 +1,15 @@
+<%= image_tag current_user.picture.url if current_user.picture? %>
 
-<h2><%= current_user.email %></h2>
-<span><%= link_to "view my profile", '#' %></span>
-<span><%= pluralize(current_user.my_schools.count, "schools") %></span>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+				<%= image_tag current_user.picture.url if current_user.picture? %>
+        <%= gravatar_for current_user if not current_user.picture? %>
+        <%= current_user.email %></h2>
+      </h1>
+			<span><%= link_to "view my profile", edit_user_registration_path %></span>
+    </section>
+  </aside>
+</div>
+
