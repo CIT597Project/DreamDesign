@@ -73,14 +73,14 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.server_settings = {
-      :address        => 'smtp.gmail.com',
-      :domain         => 'mail.google.com',
-      :port           => 587,
-      :user_name      => '<tqvcd2014@gmail.com>',
-      :password       => '<WOshi1gougou>',
-      :authentication => :plain,
-      }
+ # ActionMailer::Base.delivery_method = :smtp
+  #ActionMailer::Base.server_settings = {
+   #   :address        => 'smtp.gmail.com',
+    #  :domain         => 'mail.google.com',
+    #  :port           => 587,
+     # :user_name      => '<tqvcd2014@gmail.com>',
+      #:password       => '<WOshi1gougou>',
+      #:authentication => :plain,
+      #}
   
 end
