@@ -1,7 +1,13 @@
 == README
 
+<<<<<<< HEAD
 Temporary home for this app is https://dreamdesign2014.herokuapp.com/
 
+||||||| merged common ancestors
+Temporary home for this app is https://dreamdesign2014.herokuapp.com/development.sqlite3
+=======
+Temporary home for this app is https://dreamdesign2014.herokuapp.com/
+>>>>>>> eb1701a71464e883063dc0c757459ec1fa3be55c
 
 
 
