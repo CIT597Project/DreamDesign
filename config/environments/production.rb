@@ -82,5 +82,16 @@ Rails.application.configure do
       #:password       => '<WOshi1gougou>',
       #:authentication => :plain,
       #}
+      config.action_mailer.default_url_options = { :host => 'dreamdesign2014.herokuapp.com/' }
+      config.action_mailer.perform_deliveries = true
+      config.action_mailer.default :charset => "utf-8"
+       ActionMailer::Base.smtp_settings = {
+       :address              => "smtp.gmail.com",
+       :port                 => 587,
+       :user_name            => "pennproject2014@gmail.com",
+       :password             => 'cit5972014',
+       :authentication       => "plain",
+       :enable_starttls_auto => true
+       }
   
 end
