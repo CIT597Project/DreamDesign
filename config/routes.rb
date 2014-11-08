@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   get 'static_pages/help'
   get 'mylist' => 'users#mylist'
   
-  devise_for :users, :controllers => {:registrations => "users/registrations"}
- 
+  devise_for :users, :controllers => {:registrations => "users/registrations", :omniauth_callbacks => "users/omniauth_callbacks"} do
+    get 'sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
   resources :my_schools
   
 end
