@@ -2,7 +2,7 @@
 
 Temporary home for this app is https://dreamdesign2014.herokuapp.com/
 
-Facebook login function added
+Facebook login function improved
 
 Reset password function improvement
 
