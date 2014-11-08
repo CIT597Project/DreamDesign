@@ -6,10 +6,10 @@
 				<ul class="nav navbar-nav pull-right">
 					<li><%= link_to "Home", root_path %></li>
 					<% if user_signed_in? %>
-						<li><%= link_to "My list (" + current_user.my_schools.count.to_s + ")", mylist_path %></li>
+						<!--li><%= link_to "My list (" + current_user.my_schools.count.to_s + ")", mylist_path %></li-->
 						<li><%= link_to "Profile", edit_user_registration_path %></li>
-						<li><%= link_to current_user.username, current_user.name %></li>
-						
+						<li><%= link_to current_user.name+"(school list: "+ current_user.my_schools.count.to_s + ")", mylist_path %></li>
+					   	
 					 
 						<li>
 							<!--%= link_to "Sign out", destroy_user_session_path, method: "delete"%-->
