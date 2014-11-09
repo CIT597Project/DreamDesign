@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          devise :omniauthable, :omniauth_providers => [:facebook]
          
+<<<<<<< Updated upstream
          
          def self.from_omniauth(auth)
            where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
@@ -24,6 +25,9 @@ class User < ActiveRecord::Base
       end
     end
   end
+=======
+  mount_uploader :picture, PictureUploader
+>>>>>>> Stashed changes
 
   # Setup accessible (or protected) attributes for your model
   # def user_params
