@@ -19,7 +19,7 @@ gem 'fog'
 gem 'rack', '1.6.0.beta'
 gem 'omniauth-facebook'
 gem 'devise'
- 
+gem 'roo'
 group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
