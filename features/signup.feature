@@ -1,42 +1,27 @@
-Feature: Users sign up
+Feature: Sign up
+  In order to get access to protected sections of the site
+  As a user
+  I want to be able to sign up
 
-	As a user
-	so that I can have my own school list
-	I want to sign up an account
-	
-	Scenario: Open the home page
-		Given I'm on the home page
-		Then I should see "sign up" on the right corner
-		
-		
-	Scenario: Sign up successfully
-		Given I'm on the email sign up page
-		When I fill eligible email and passwords
-		And click "sign up"
-		Then I should sign in my account
-		And see my school list
-		
-	Scenario: Sign up with empty field
-		Given I'm on the sign up page
-		But there is empty field
-		When I click "sign in"
-		Then I should see hint message 
-		
-	Scenario: Sign up with existing email
-		Given I'm on the sign up page
-		When I input an existing email
-		And I click "sign in"
-		Then I should see hint message
-		
-	Scenario: Sign up with wrong confirm password
-		Given I'm on the sign up page
-		When I input different passwords
-		And I click "sign in"
-		Then I should see error message
-		
-	Scenario: Sign up with Facebook account
-		Given I'm on Facebook sign up page
-		When I fill correct Facebook email and password
-		And click "sign up"
-		Then I should sign in my account
-		And see my school list
+    Background:
+      Given I am not logged in
+
+    Scenario: User signs up with valid data
+      When I sign up with valid user data
+      Then I should see a successful sign up message
+      
+    Scenario: User signs up with invalid email
+      When I sign up with an invalid email
+      Then I should see an invalid email message
+
+    Scenario: User signs up without password
+      When I sign up without a password
+      Then I should see a missing password message
+
+    Scenario: User signs up without password confirmation
+      When I sign up without a password confirmation
+      Then I should see a missing password confirmation message
+
+    Scenario: User signs up with mismatched password and confirmation
+      When I sign up with a mismatched password confirmation
+      Then I should see a mismatched password message
