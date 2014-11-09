@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108071032) do
+ActiveRecord::Schema.define(version: 20141109081106) do
 
   create_table "my_schools", force: true do |t|
     t.string   "name"
@@ -29,6 +29,36 @@ ActiveRecord::Schema.define(version: 20141108071032) do
     t.string   "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "schools", force: true do |t|
+    t.string   "Institution_ID"
+    t.string   "Institution_Name"
+    t.string   "Institution_Address"
+    t.string   "Institution_City"
+    t.string   "Institution_State"
+    t.string   "Institution_Zip"
+    t.string   "Institution_Phone"
+    t.string   "Institution_OPEID"
+    t.string   "Institution_IPEDS_UnitID"
+    t.string   "Institution_Web_Address"
+    t.string   "Campus_ID"
+    t.string   "Campus_Name"
+    t.string   "Campus_Address"
+    t.string   "Campus_City"
+    t.string   "Campus_State"
+    t.string   "Campus_Zip"
+    t.string   "Campus_IPEDS_UnitID"
+    t.string   "Accreditation_Type"
+    t.string   "Agency_Name"
+    t.string   "Agency_Status"
+    t.string   "Program_Name"
+    t.string   "Accreditation_Status"
+    t.string   "Accreditation_Date_Type"
+    t.string   "Periods"
+    t.string   "Last_Action"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

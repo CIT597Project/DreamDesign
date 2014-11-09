@@ -27,6 +27,6 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   # def user_params
-#         params.require(:user).permit(:name, :email, :password)
+#(:user).permit(:name, :email, :password)
 #       end
 end
