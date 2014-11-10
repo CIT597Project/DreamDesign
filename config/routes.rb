@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-<<<<<<< Updated upstream
+
   get 'general/ranking'
-=======
+
   resources :schools
->>>>>>> Stashed changes
+
 
   root 'static_pages#home'
   get 'static_pages/home'

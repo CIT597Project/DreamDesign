@@ -63,7 +63,7 @@ When(/^I sign up with an invalid email$/) do
 end
 
 Then(/^I should see an invalid email message$/) do
-  page.should have_content "Invalid email or password."
+  page.should have_content "Email is invalid"
 end
 
 When(/^I sign up without a password$/) do
@@ -83,7 +83,7 @@ When(/^I sign up without a password confirmation$/) do
 end
 
 Then(/^I should see a missing password confirmation message$/) do
-  page.should have_content "Password doesn't match confirmation"
+  page.should have_content "Password confirmation doesn't match Password"
 end
 
 When(/^I sign up with a mismatched password confirmation$/) do
@@ -93,5 +93,5 @@ When(/^I sign up with a mismatched password confirmation$/) do
 end
 
 Then(/^I should see a mismatched password message$/) do
-  page.should have_content "Password doesn't match confirmation"
+  page.should have_content "Password confirmation doesn't match Password"
 end
