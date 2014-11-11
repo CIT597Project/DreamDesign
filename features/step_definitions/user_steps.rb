@@ -47,6 +47,7 @@ end
 
 Given(/^I am not logged in$/) do
   visit root_path
+  page.should have_content "Sign in"
 end
 
 When(/^I sign up with valid user data$/) do
@@ -145,5 +146,95 @@ When(/^I sign in with a wrong password$/) do
   @visitor = @visitor.merge(:password => "wrongpass")
   sign_in
 end
+
+# profile 
+
+Given(/^I logged in$/) do
+  create_user
+  sign_in
+  visit root_path
+  page.should have_content "Sign out"
+end
+
+When(/^I update profile with valid data$/) do
+  visit'/users/edit'
+  fill_in "Username", :with => @visitor[:name]
+  fill_in "Email", :with => @visitor[:email]
+  fill_in "Password", :with => "newpassword"
+  fill_in "Password confirmation", :with => "newpassword"
+  fill_in "Current password", :with => @visitor[:password]
+  click_button "Update"
+end
+
+Then(/^I should be on the home page and see a successful update message$/) do
+  page.should have_content "updated successfully"
+end
+
+When(/^I update profile with incorrect password$/) do
+  visit'/users/edit'
+  @visitor = @visitor.merge(:password => "wrongpass")
+  fill_in "Username", :with => @visitor[:name]
+  fill_in "Email", :with => @visitor[:email]
+  fill_in "Password", :with => "newpassword"
+  fill_in "Password confirmation", :with => "newpassword"
+  fill_in "Current password", :with => @visitor[:password]
+  click_button "Update"
+end
+
+Then(/^I should be on the home page and see an incorrect password message$/) do
+  page.should have_content "Current password is invalid"
+end
+
+When(/^I update profile without a password confirmation$/) do
+  visit'/users/edit'
+  fill_in "Username", :with => @visitor[:name]
+  fill_in "Email", :with => @visitor[:email]
+  fill_in "Password", :with => "newpassword"
+  fill_in "Password confirmation", :with => ""
+  fill_in "Current password", :with => @visitor[:password]
+  click_button "Update"
+end
+Then(/^I should be on the home page and see a missing password confirmation message$/) do
+  page.should have_content "Password confirmation doesn't match Password"
+end
+
+When(/^I update profile with a mismatched password confirmation$/) do
+  visit'/users/edit'
+  fill_in "Username", :with => @visitor[:name]
+  fill_in "Email", :with => @visitor[:email]
+  fill_in "Password", :with => "newpassword"
+  fill_in "Password confirmation", :with => "wrongpass"
+  fill_in "Current password", :with => @visitor[:password]
+  click_button "Update"
+end
+
+Then(/^I should be on the home page and see a mismatched password message$/) do
+  page.should have_content "Password confirmation doesn't match Password"
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
