@@ -1,32 +1,32 @@
-Feature: Users log in
+Feature: Sign in
+  In order to get access to protected sections of the site
+  A user
+  Should be able to sign in
 
-	As a user
-	so that I can edit my school list
-	I want to log into my own account
-	
-	Scenario: Open the home page
-		Given I'm on the home page
-		Then I should see "log in" on the right corner
-		
-	Scenario: Sign in with email
-		Given I'm on the sign in page
-		When I fill the email and password fields
-		And I click the sign in icon
-		Then I should be able to sign in my own account
-		And see my school list
-		
-	Scenario: Sign in with Facebook account
-		Given I'm on Facebook sign in page
-		When I fill my Facebook email and password
-		Then I should be able to sign in my own account
-		And see my school list
-		
-	Scenario: Sign in with non-existing email
-		Given I'm on the sign in page
-		When I submit non-existing email
-		Then I should see errors on the page
-		
-	Scenario: Sign in with wrong password
-		Given I'm on the sign in page
-		When I submit wrong password
-		Then I should see errors on the page
+    Scenario: User is not signed up
+      Given I do not exist as a user
+      When I sign in with valid credentials
+      Then I see an invalid login message
+        And I should be signed out
+
+    Scenario: User signs in successfully
+      Given I exist as a user
+        And I am not logged in
+      When I sign in with valid credentials
+      Then I see a successful sign in message
+      When I return to the site
+      Then I should be signed in
+
+    Scenario: User enters wrong email
+      Given I exist as a user
+      And I am not logged in
+      When I sign in with a wrong email
+      Then I see an invalid login message
+      And I should be signed out
+      
+    Scenario: User enters wrong password
+      Given I exist as a user
+      And I am not logged in
+      When I sign in with a wrong password
+      Then I see an invalid login message
+      And I should be signed out

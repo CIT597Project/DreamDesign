@@ -12,6 +12,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         u.permit(:username, :picture, :email, :password, :password_confirmation, :current_password)
       end
     end
+
 # before_filter :configure_sign_up_params, only: [:create]
 # before_filter :configure_account_update_params, only: [:update]
 
