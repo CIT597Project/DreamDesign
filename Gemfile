@@ -20,7 +20,8 @@ gem 'rack', '1.6.0.beta'
 gem 'omniauth-facebook'
 gem 'devise'
 gem 'roo'
-gem 'factory_girl'
+gem 'factory_girl_rails'
+gem 'spork-rails'
 group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'

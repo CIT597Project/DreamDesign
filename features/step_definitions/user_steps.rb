@@ -132,9 +132,8 @@ When(/^I return to the site$/) do
 end
 
 Then(/^I should be signed in$/) do
-  page.should have_content "Logout"
-  page.should_not have_content "Sign up"
-  page.should_not have_content "Login"
+  page.should have_content "Sign out"
+  page.should_not have_content "Sign in"
 end
 
 When(/^I sign in with a wrong email$/) do
