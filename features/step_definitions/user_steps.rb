@@ -200,13 +200,218 @@ Then(/^I should be on the home page and see a mismatched password message$/) do
 end
 
 
+Given(/^I sign in my facebook account$/) do
+  visit root_path
+end
+
+When(/^I  press (.*?)$/) do |arg1|
+  visit root_path
+  %{click button Log in with Facebook} 
+end
+Then(/^I need to provide credential$/) do
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.mock_auth[:facebook] = {
+  "provider"  => "facebook",
+  "uid"       => '12345',
+  "user_info" => {
+  "email" => "email@email.com",
+  "first_name" => "John",
+  "last_name"  => "Doe",
+  "name"       => "John Doe"
+  }
+ }
+end
+
+Then(/^I should see Log in successful$/) do
+  visit root_path
+  puts "Successfully authenticated from Facebook account"
+end
+
+
+Then(/^I need to provide credential for log in$/) do
+  OmniAuth.config.test_mode = true
+  [:default, :facebook, :twitter].each do |service|
+  OmniAuth.config.mock_auth[service] = :invalid_credentials
+  end
+  end
+  Then(/^I should see Log in unsuccessful$/) do
+  %{Stay in the Facebook log in page} 
+  end
+  
+Given(/^I'm trying to comments on my facebook$/) do
+  visit root_path
+end
+
+Then(/^on the homepage I should see the share button$/) do
+  page.has_content?('share')
+end
+
+Then(/^I press the share$/) do
+  %{I press (share)}  
+end
+
+Then(/^I type in my comments and post it on my facebook$/) do   
+  %{I write my comments in the pop up window}  
+  visit root_path
+end
+
+
+#search.feature
+
+Given(/^I'm inputing keywords in the search\-box$/) do
+  pending 
+end
+
+Then(/^I should see the matching items in the dropdown list$/) do
+  pending 
+end
+
+Given(/^I've filled the search\-box$/) do
+  pending 
+end
+
+When(/^I click the searching icon or I input enter via the keyboard$/) do
+  pending 
+end
+
+Then(/^I should see the searching results$/) do
+  pending 
+end
+
+Given(/^I've clicked the searching icon$/) do
+  pending 
+end
+
+When(/^there is no matching items$/) do
+  pending 
+end
+
+Then(/^I should see "(.*?)"$/) do |arg1|
+  pending
+end
+
+#schoollist.feature
+Given(/^I've logged in$/) do
+  pending 
+end
+
+When(/^I click "(.*?)" icon besides a school name$/) do |arg1|
+  pending 
+end
+
+Then(/^this school will exist in my school list$/) do
+  pending 
+end
+
+Then(/^I should see success message$/) do
+  pending
+end
+
+Given(/^I'm in the page of school list$/) do
+  pending 
+end
+
+When(/^I click "(.*?)" icon besides a school$/) do |arg1|
+  pending 
+end
+
+Then(/^this school will be out of my school list$/) do
+  pending 
+end
+
+#review.feature
+Given(/^I have seen the comment$/) do
+  pending 
+end
+
+When(/^I click the edit icon$/) do
+  pending 
+end
+
+Then(/^I am able to edit comment$/) do
+  pending 
+end
+
+Given(/^I have added some text to the comment field$/) do
+  pending 
+end
+
+When(/^I click "(.*?)"$/) do |arg1|
+  pending 
+end
+
+Then(/^I am able to update this comment$/) do
+  pending 
+end
+
+Given(/^I'm on a specific school page$/) do
+  pending 
+end
+
+Then(/^I should see other users' comments$/) do
+  pending 
+end
+
+Given(/^I have seen the reviews about a specific university$/) do
+  pending 
+end
+
+Then(/^I should be able to add my feedback$/) do
+  pending 
+end
 
 
 
+#popularity.feature
+Given(/^I'm looking through the information about a school$/) do
+  pending 
+end
+
+Then(/^I should see the amount of users who have added this school to their school list$/) do
+  pending 
+end
+
+When(/^I click "(.*?)" in the left side bar of the page$/) do |arg1|
+  pending 
+end
+
+Then(/^the school list should be sorted by popularity$/) do
+  pending
+end
 
 
+#feedback.feature
+Given(/^I've seen others' review$/) do
+  pending 
+end
 
+When(/^I click "(.*?)" besides the review$/) do |arg1|
+  pending 
+end
 
+Then(/^I can add my own feedback$/) do
+  pending 
+end
+
+Then(/^everyone can see my feedback follow the review$/) do
+  pending 
+end
+
+Given(/^I've seen my own feedback$/) do
+  pending 
+end
+
+When(/^I click "(.*?)" besides my feedback$/) do |arg1|
+  pending 
+end
+
+Then(/^my feedback will be deleted$/) do
+  pending 
+end
+
+Then(/^I should see hint message$/) do
+  pending 
+end
 
 
 
