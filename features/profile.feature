@@ -4,24 +4,23 @@ Feature: Update profile
 	so that I can update my username and password anytime
 	I want to edit my profile
 	
-	Scenario: Upload a photo
-		Given I'm on the profile setting page
-		When I click "upload a photo"
-		Then I'm able to upload a .jpg file
-		Then I should seeit as my avatar
+	Background: 
+		Given I am on the edit profile page
+
+	Scenario: User update profile with valid data
+		When I update profile with valid data
+		Then I should see a successful update message
+
+	Scenario: User update profile with incorrect password
+		When I update profile with incorrect password
+		Then I should see an incorrect password message
 		
-	Scenario: Update username
-		Given I'm on the profile setting page
-		When I input text in the username field
-		And I click "update"
-		Then my username is updated
-		And I should see hint message
+	Scenario: User update profile with without password confirmation
+		When I update profile without a password confirmation
+		Then I should see a missing password confirmation message
 		
-	Scenario: Update password
-		Given I'm on the profile setting page
-		When I input the same password in the password field and the confirm password field
-		And I click "update"
-		Then my password is updated
-		And I should see hint message
+	Scenario: User update profile with mismatched password and confirmation
+		When I update profile with a mismatched password confirmation
+      	Then I should see a mismatched password message
 		
 	

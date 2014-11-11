@@ -3429,3 +3429,1222 @@ Processing by Users::RegistrationsController#create as HTML
 Completed 200 OK in 30ms (Views: 14.9ms | ActiveRecord: 0.3ms)
   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:11:40 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (3.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:11:40 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (44.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:11:40 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:11:40 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:11:41 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (1.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:11:41 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:11:41 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.3ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:11:41 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:11:41 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (16.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:11:41 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:08 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (3.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:08 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (42.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-11 03:12:09.082641"], ["email", "example@example.com"], ["encrypted_password", "$2a$04$yh2qvHn9tfNrrzClILd2yOzo9ZVnbqMCZdKikqW10D./2O10BKABi"], ["updated_at", "2014-11-11 03:12:09.082641"], ["username", "lejun"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-11 03:12:09.086211"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-11 03:12:09.086211"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-11 03:12:09.087218"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 2.0ms)
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools"
+  Rendered schools/index.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered layouts/_header.html.erb (42.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (4.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"notanemail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'notanemail' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.3ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:09 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (3.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 45.1ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (42.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-11 03:12:50.253545"], ["email", "example@example.com"], ["encrypted_password", "$2a$04$HLz0aoeCedYsxtF8yKusLOfRhxtJu1K5RUv7Yi7iKFTvQvYZAP92S"], ["updated_at", "2014-11-11 03:12:50.253545"], ["username", "lejun"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-11 03:12:50.257751"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-11 03:12:50.257751"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-11 03:12:50.258709"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 39ms (ActiveRecord: 1.9ms)
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools"
+  Rendered schools/index.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered layouts/_header.html.erb (45.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.5ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"notanemail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'notanemail' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (1.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:12:50 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:13:50 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (3.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:13:50 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (42.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:13:50 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-11 03:13:51.002739"], ["email", "example@example.com"], ["encrypted_password", "$2a$04$G4YW47C4cIlEb3N.63Ld/ONGQwhxkR5HtgJH8gGbybDGFMjdyHa/S"], ["updated_at", "2014-11-11 03:13:51.002739"], ["username", "lejun"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-11 03:13:51.006325"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-11 03:13:51.006325"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-11 03:13:51.007242"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 38ms (ActiveRecord: 2.0ms)
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[35mSchool Load (0.3ms)[0m  SELECT "schools".* FROM "schools"
+  Rendered schools/index.html.erb (2.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered layouts/_header.html.erb (42.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (3.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"notanemail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'notanemail' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.3ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (1.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:13:51 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.4ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (4.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 46.2ms | ActiveRecord: 0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (40.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 65ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.3ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (1.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (4.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:14:46 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (3.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 45.4ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (43.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 68ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-11 03:15:07.718940"], ["email", "example@example.com"], ["encrypted_password", "$2a$04$MhV4L7bYqC1BkjMfiqy20OXfXRoywc9Aro5wu5E1gq3fUK9.814iS"], ["updated_at", "2014-11-11 03:15:07.718940"], ["username", "lejun"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-11 03:15:07.722619"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-11 03:15:07.722619"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-11 03:15:07.723509"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 39ms (ActiveRecord: 2.0ms)
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools"
+  Rendered schools/index.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered layouts/_header.html.erb (39.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"notanemail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'notanemail' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.3ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:07 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:08 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (7.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:08 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:08 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:08 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (3.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (15.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (50.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-11 03:15:30.536782"], ["email", "example@example.com"], ["encrypted_password", "$2a$04$uqz65z6Qu/axZGpSn54ji.VzN0RdHVRdd20JF1QA4RxfLzPChh18u"], ["updated_at", "2014-11-11 03:15:30.536782"], ["username", "lejun"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-11-11 03:15:30.540533"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-11 03:15:30.540533"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-11 03:15:30.541494"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 39ms (ActiveRecord: 2.0ms)
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[35mSchool Load (0.1ms)[0m  SELECT "schools".* FROM "schools"
+  Rendered schools/index.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered layouts/_header.html.erb (44.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (3.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"notanemail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'notanemail' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "notanemail"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (6.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.2ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (2.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2014-11-10 22:15:30 -0500
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"lejun", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "example@example.com"]]
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (19.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 120ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"example@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Completed 401 Unauthorized in 6ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"example@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (9.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "example@example.com"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-11-11 03:20:01.492462"], ["email", "example@example.com"], ["encrypted_password", "$2a$04$Je5uBCb//xekfa1NLd4dVu8hdPjupO.qAOq87yNbv1Yji4UVLLQiu"], ["name", "lejun"], ["updated_at", "2014-11-11 03:20:01.492462"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[35mSchool Load (0.3ms)[0m  SELECT "schools".* FROM "schools"
+  Rendered schools/index.html.erb (4.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"example@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "example@example.com"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-11-11 03:20:01.557532"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-11-11 03:20:01.557532"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-11-11 03:20:01.558802"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 23ms (ActiveRecord: 1.3ms)
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (15.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (15.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?  [["user_id", 1]]
+  Rendered layouts/_header.html.erb (32.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (1.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "my_schools" WHERE "my_schools"."user_id" = ?  [["user_id", 1]]
+  Rendered layouts/_header.html.erb (13.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "example@example.com"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-11-11 03:20:01.675191"], ["email", "example@example.com"], ["encrypted_password", "$2a$04$7HMO74ZP/VEYVNXKxLlLw.uZNEKmmCnpv0q1CQN36RRyxZRTZQKhm"], ["name", "lejun"], ["updated_at", "2014-11-11 03:20:01.675191"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[35mSchool Load (0.2ms)[0m  SELECT "schools".* FROM "schools"
+  Rendered schools/index.html.erb (2.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"wrong@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "wrong@example.com"]]
+Completed 401 Unauthorized in 5ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"wrong@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (11.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'example@example.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-11 03:20:01.765133"], ["email", "example@example.com"], ["encrypted_password", "$2a$04$4Xzv8U.TlWlyYSrb0oMRu.AZWl4CxykRmZDB0BIDRmgnwPnxVvV2i"], ["name", "lejun"], ["updated_at", "2014-11-11 03:20:01.765133"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by StaticPagesController#home as HTML
+  [1m[36mSchool Load (0.1ms)[0m  [1mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-10 22:20:01 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"example@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Completed 401 Unauthorized in 5ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"example@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (10.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
