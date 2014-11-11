@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'static_pages/help'
   get 'mylist' => 'users#mylist'
   get 'allschools' => 'schools#index'
+  post 'addSchool' => 'my_schools#addSchool'
+  
   
 
   devise_for :users, :controllers => {:registrations => "users/registrations", :omniauth_callbacks => "users/omniauth_callbacks"} do

@@ -1,6 +1,7 @@
 <%= form_for(@my_school) do |f| %>
   <div class="search_school">
-    <%= f.text_area :name, placeholder: "find new school..." %>
+		<%= f.label "New School"%>
+    <%= f.collection_select :school_id, School.all, :id, :Institution_Name, prompt: true %>
 	</div>
 	<div class="add_comment">
 		<%= f.text_area :comment, placeholder: "add comments..." %>

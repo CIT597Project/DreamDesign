@@ -34,13 +34,13 @@ class SchoolsController < ApplicationController
     @schools=School.all
     render :index
   end
+  
 
   private
     def set_school
       @school = School.find(params[:id])
     end
 
-    def school_params
-      
+    def school_params    
     end
 end

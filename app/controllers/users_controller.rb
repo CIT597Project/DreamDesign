@@ -7,4 +7,5 @@ class UsersController < ApplicationController
   end
   def ranking
   end
+
 end
