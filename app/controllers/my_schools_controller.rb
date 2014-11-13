@@ -18,6 +18,15 @@ class MySchoolsController < ApplicationController
     @my_school.user_id = current_user.id
     @my_school.name = params[:name]
     @my_school.school_id = params[:school_id]
+    school = School.find_by id:params[:school_id]
+    num = school.follow
+    if num
+      num += 1
+    else
+      num = 1
+    end
+    school.update(follow: num)
+    
     if @my_school.save
       flash[:notice] = "Add to list successfully."
       redirect_to (:back)
@@ -29,6 +38,11 @@ class MySchoolsController < ApplicationController
 
   
   def destroy
+    school = School.find_by id:MySchool.find(params[:id]).school_id
+    num = school.follow
+    num -= 1
+    school.update follow: num
+    
     MySchool.find(params[:id]).destroy
     redirect_to mylist_path 
   end
@@ -50,7 +64,7 @@ class MySchoolsController < ApplicationController
   
   
   def my_school_params
-    params.require(:my_school).permit(:name, :comment, :school_id, :user_id)
+    params.require(:my_school).permit(:name, :comment, :school_id, :user_id, :follow)
   end
   
 
