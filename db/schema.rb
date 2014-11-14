@@ -16,60 +16,35 @@ ActiveRecord::Schema.define(version: 20141111015820) do
   create_table "my_schools", force: true do |t|
     t.string   "name"
     t.text     "comment"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "school_id"
+    t.integer  "user_id",    limit: nil
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "school_id",  limit: nil
   end
 
   add_index "my_schools", ["school_id"], name: "index_my_schools_on_school_id"
-  add_index "my_schools", ["user_id", "created_at"], name: "index_my_schools_on_user_id_and_created_at"
+  add_index "my_schools", ["user_id", "created_at"], name: "i_my_sch_use_id_cre_at"
   add_index "my_schools", ["user_id"], name: "index_my_schools_on_user_id"
 
-  create_table "schoollists", force: true do |t|
-    t.string   "name"
-    t.string   "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "schools", force: true do |t|
-    t.string   "Institution_ID"
-    t.string   "Institution_Name"
-    t.string   "Institution_Address"
-    t.string   "Institution_City"
-    t.string   "Institution_State"
-    t.string   "Institution_Zip"
-    t.string   "Institution_Phone"
-    t.string   "Institution_OPEID"
-    t.string   "Institution_IPEDS_UnitID"
-    t.string   "Institution_Web_Address"
-    t.string   "Campus_ID"
-    t.string   "Campus_Name"
-    t.string   "Campus_Address"
-    t.string   "Campus_City"
-    t.string   "Campus_State"
-    t.string   "Campus_Zip"
-    t.string   "Campus_IPEDS_UnitID"
-    t.string   "Accreditation_Type"
-    t.string   "Agency_Name"
-    t.string   "Agency_Status"
-    t.string   "Program_Name"
-    t.string   "Accreditation_Status"
-    t.string   "Accreditation_Date_Type"
-    t.string   "Periods"
-    t.string   "Last_Action"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "schools", id: false, force: true do |t|
+    t.integer "Institution_ID",          limit: nil
+    t.string  "Institution_Name"
+    t.string  "Institution_Address"
+    t.string  "Institution_City"
+    t.string  "Institution_State"
+    t.string  "Institution_Zip"
+    t.string  "Institution_Phone"
+    t.string  "Institution_Web_Address"
+    t.string  "Accreditation_Status"
   end
 
   create_table "users", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                                             default: "", null: false
+    t.string   "encrypted_password",                                default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          limit: nil, precision: 38, default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
@@ -84,6 +59,6 @@ ActiveRecord::Schema.define(version: 20141111015820) do
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["reset_password_token"], name: "i_users_reset_password_token", unique: true
 
 end

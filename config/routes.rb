@@ -30,7 +30,7 @@ Rails.application.routes.draw do
   end
   # root'general#ranking'
   
-  
+  get 'index'=>'general#index'
   
   
   
