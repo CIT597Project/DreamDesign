@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141111015820) do
+ActiveRecord::Schema.define(version: 20141113232401) do
 
   create_table "my_schools", force: true do |t|
     t.string   "name"
@@ -26,9 +26,19 @@ ActiveRecord::Schema.define(version: 20141111015820) do
   add_index "my_schools", ["user_id", "created_at"], name: "i_my_sch_use_id_cre_at"
   add_index "my_schools", ["user_id"], name: "index_my_schools_on_user_id"
 
-  create_table "schools", id: false, force: true do |t|
+  create_table "reviews", force: true do |t|
+    t.text     "body"
+    t.integer  "user_id",    limit: nil
+    t.integer  "school_id",  limit: nil
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "reviews", ["school_id"], name: "index_reviews_on_school_id"
+  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
+
+  create_table "schools", primary_key: "Institution_Name", force: true do |t|
     t.integer "Institution_ID",          limit: nil
-    t.string  "Institution_Name"
     t.string  "Institution_Address"
     t.string  "Institution_City"
     t.string  "Institution_State"
@@ -36,6 +46,7 @@ ActiveRecord::Schema.define(version: 20141111015820) do
     t.string  "Institution_Phone"
     t.string  "Institution_Web_Address"
     t.string  "Accreditation_Status"
+    t.integer "follow",                  limit: nil, precision: 38
   end
 
   create_table "users", force: true do |t|

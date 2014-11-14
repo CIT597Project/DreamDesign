@@ -7,7 +7,7 @@ class SchoolsController < ApplicationController
   end
 
   def show
-    # respond_with(@school)
+    # @school = School.find(params[:id])
   end
 
   def new

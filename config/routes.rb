@@ -3,6 +3,15 @@ Rails.application.routes.draw do
   get 'general/ranking'
 
   resources :schools
+  resources :users
+  
+  resources :users do
+    resources :my_schools
+  end
+  
+  resources :schools do
+    resources :reviews
+  end
 
 
   root 'static_pages#home'
@@ -18,8 +27,6 @@ Rails.application.routes.draw do
     get 'sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
   end
 
-
-  resources :my_schools
   get '/general/ranking'=>'general#ranking'
   
   
