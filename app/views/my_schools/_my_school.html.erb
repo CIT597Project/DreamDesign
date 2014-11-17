@@ -1,6 +1,6 @@
 <li id="my_school-<%= my_school.id %>">
  
-  
+  <span class="name"><%= link_to my_school.name, '#' %></span>
   <span class="comment"><%= my_school.comment %></span>
 	<span class="delete"><%= link_to "delete", my_school, method: :delete,
 	                                       data: { confirm: "You sure?" },
