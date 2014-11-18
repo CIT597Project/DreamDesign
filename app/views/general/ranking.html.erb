@@ -6,11 +6,12 @@
    </p>
  <% end %>
 
+<%= will_paginate @schools%>	
 
 <table border="1">
   <tr>
-    <th>Id</th>
     <th>Name</th>
+		<th>Review></th>
     <th>Address</th>
 	<th>City</th>
 	<th>Institution_State</th>
@@ -21,11 +22,11 @@
 	<th>  </th>
 	
   </tr>
+	
  <% @schools.each do |school| %>     
    <tr>
-
-     <td><%= school.Institution_ID %></td> 
-     <td><%= school.Institution_Name %></td> 
+     <td><%= school.Institution_Name %></td>
+		 <td><%= school.reviews.count %> 
 	 <td><%= school.Institution_Address %></td> 
 	 <td><%= school.Institution_City %></td> 
 	 <td><%= school.Institution_State %></td>
@@ -44,5 +45,6 @@
 	 
    </tr>
  <% end %>
- 
 </table>
+
+<%= will_paginate @schools%>	

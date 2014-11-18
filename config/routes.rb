@@ -3,11 +3,8 @@ Rails.application.routes.draw do
   get 'general/ranking'
 
   resources :schools
-  resources :users
   
-  resources :users do
-    resources :my_schools
-  end
+  resources :my_schools
   
   resources :schools do
     resources :reviews
