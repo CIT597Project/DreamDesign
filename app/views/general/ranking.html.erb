@@ -11,7 +11,7 @@
 <table border="1">
   <tr>
     <th>Name</th>
-		<th>Review></th>
+		<th>Followed</th>
     <th>Address</th>
 	<th>City</th>
 	<th>Institution_State</th>
@@ -26,7 +26,7 @@
  <% @schools.each do |school| %>     
    <tr>
      <td><%= school.Institution_Name %></td>
-		 <td><%= school.reviews.count %> 
+	 <td><%= school.follow %></td>
 	 <td><%= school.Institution_Address %></td> 
 	 <td><%= school.Institution_City %></td> 
 	 <td><%= school.Institution_State %></td>

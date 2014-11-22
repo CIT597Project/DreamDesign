@@ -4,9 +4,13 @@ class MySchoolsController < ApplicationController
   def create
     @my_school = MySchool.new(my_school_params)
     @my_school.user_id = current_user.id
-    @my_school.name = School.find_by(id:@my_school.school_id).Institution_Name
+    @school = School.find_by id:@my_school.school_id
+    @my_school.name = @school.Institution_Name
     @my_school.save
-    if @my_school
+    if @my_school.save
+      num = @school.follow
+      num += 1
+      @school.update(follow:num)
         redirect_to mylist_path
     else
       redirect_to root_path
@@ -18,16 +22,12 @@ class MySchoolsController < ApplicationController
     @my_school.user_id = current_user.id
     @my_school.name = params[:name]
     @my_school.school_id = params[:school_id]
-    school = School.find_by id:params[:school_id]
-    num = school.follow
-    if num
+    @school = School.find_by id:params[:school_id]
+
+    if @my_school.save 
+      num = @school.follow
       num += 1
-    else
-      num = 1
-    end
-    school.update(follow: num)
-    
-    if @my_school.save
+      @school.update(follow:num)
       flash[:notice] = "Add to list successfully."
       redirect_to (:back)
     else

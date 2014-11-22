@@ -8,14 +8,14 @@ require 'csv'
     # CSV.foreach("Accreditation_2014_10 copy.csv", :headers => true) do |row|
 #       School.create!(row.to_hash)
 #     end
-     @schools=School.all.select(:Institution_ID, :Institution_Name, :Institution_Address, :Institution_City, :Institution_State, :Institution_Zip,
-   :Institution_Phone, :Institution_Web_Address, :Accreditation_Status).uniq.paginate(page: params[:page])
+     @schools=School.all.select(:Institution_ID, :follow, :Institution_Name, :Institution_Address, :Institution_City, :Institution_State, :Institution_Zip,
+   :Institution_Phone, :Institution_Web_Address, :Accreditation_Status).uniq.order(:Institution_Name).paginate(page: params[:page])
   
   end
   def index
     # @schools = School.search(params[:search])
-    @schools = School.search(params[:search]).select(:Institution_ID, :Institution_Name, :Institution_Address, :Institution_City, :Institution_State, :Institution_Zip,
-  :Institution_Phone, :Institution_Web_Address, :Accreditation_Status).uniq.paginate(:page=>params[:page])
+    @schools = School.search(params[:search]).select(:Institution_ID, :follow, :Institution_Name, :Institution_Address, :Institution_City, :Institution_State, :Institution_Zip,
+  :Institution_Phone, :Institution_Web_Address, :Accreditation_Status).uniq.order(:Institution_Name).paginate(:page=>params[:page])
     # @searchresult=School.find_by(Institution_ID:100016).select(:Institution_ID, :Institution_Name, :Institution_Address, :Institution_City, :Institution_State, :Institution_Zip,
 #   :Institution_Phone, :Institution_OPEID, :Institution_IPEDS_UnitID, :Institution_Web_Address, :Accreditation_Status).uniq
   end

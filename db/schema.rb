@@ -13,6 +13,17 @@
 
 ActiveRecord::Schema.define(version: 20141113232401) do
 
+  create_table "hotuniversites", id: false, force: true do |t|
+    t.string "institution_name",        limit: 200
+    t.string "institution_address",     limit: 200
+    t.string "institution_city",        limit: 20
+    t.string "institution_state",       limit: 20
+    t.string "institution_zip",         limit: 20
+    t.string "institution_phone",       limit: 20
+    t.string "institution_web_address", limit: 20
+    t.string "accreditation_status",    limit: 20
+  end
+
   create_table "my_schools", force: true do |t|
     t.string   "name"
     t.text     "comment"
@@ -49,7 +60,11 @@ ActiveRecord::Schema.define(version: 20141113232401) do
     t.string   "Accreditation_Status"
     t.datetime "created_at"
     t.datetime "updated_at"
+<<<<<<< Updated upstream
     t.integer  "follow",                  limit: nil, precision: 38
+=======
+    t.string   "follow",                  limit: 20,  default: "0", null: false
+>>>>>>> Stashed changes
   end
 
   create_table "users", force: true do |t|
