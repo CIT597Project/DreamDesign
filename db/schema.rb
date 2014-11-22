@@ -60,11 +60,7 @@ ActiveRecord::Schema.define(version: 20141113232401) do
     t.string   "Accreditation_Status"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< Updated upstream
-    t.integer  "follow",                  limit: nil, precision: 38
-=======
-    t.string   "follow",                  limit: 20,  default: "0", null: false
->>>>>>> Stashed changes
+    t.integer  "follow",                  limit: nil, precision: 38, default: 0, null: false
   end
 
   create_table "users", force: true do |t|

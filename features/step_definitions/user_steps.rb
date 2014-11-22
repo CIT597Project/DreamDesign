@@ -1,6 +1,6 @@
 def create_visitor
   @visitor ||= { :name => "Test User", :email => "example@example.com",
-    :password => "changeme", :password_confirmation => "changeme", }
+    :password => "changeme", :password_confirmation => "changeme", :keywords=>"Harvrd"}
 end
 
 def find_user
@@ -256,38 +256,31 @@ Then(/^I type in my comments and post it on my facebook$/) do
 end
 
 
-#search.feature
-
-Given(/^I'm inputing keywords in the search\-box$/) do
-  pending 
-end
-
-Then(/^I should see the matching items in the dropdown list$/) do
-  pending 
-end
+#search feature
 
 Given(/^I've filled the search\-box$/) do
-  pending 
+visit '/general/ranking'
+fill_in "search", :with => @visitor[:keywords] # express the regexp above with the code you wish you had
 end
 
-When(/^I click the searching icon or I input enter via the keyboard$/) do
-  pending 
+When(/^I click the searching icon$/) do
+  pending # express the regexp above with the code you wish you had
 end
 
 Then(/^I should see the searching results$/) do
-  pending 
+  pending # express the regexp above with the code you wish you had
 end
 
 Given(/^I've clicked the searching icon$/) do
-  pending 
+  pending # express the regexp above with the code you wish you had
 end
 
 When(/^there is no matching items$/) do
-  pending 
+  pending # express the regexp above with the code you wish you had
 end
 
 Then(/^I should see "(.*?)"$/) do |arg1|
-  pending
+  pending # express the regexp above with the code you wish you had
 end
 
 #schoollist.feature

@@ -4822,3 +4822,317 @@ Completed 200 OK in 32ms (Views: 20.0ms | ActiveRecord: 0.2ms)
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "example@example.com"]]
   [1m[35m (0.1ms)[0m  rollback transaction
 >>>>>>> Stashed changes
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "example@example.com"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMySchool Load (0.5ms)[0m  [1mSELECT "my_schools".* FROM "my_schools" WHERE "my_schools"."user_id" = ?  ORDER BY created_at DESC[0m  [["user_id", 2]]
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-22 22:46:58 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (23.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (156.2ms)
+Warning. Error encountered while saving cache 2846dba503cd46b425d8005fe8e4267810595aa9/application.css.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache 29dd09247f84815bb3e68a3413a74731f4a2b257/_bootstrap-sprockets.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache 29dd09247f84815bb3e68a3413a74731f4a2b257/bootstrap.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_variables.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_mixins.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_hide-text.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_opacity.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_image.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_labels.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_resize.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_size.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_alerts.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_buttons.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_panels.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_pagination.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_list-group.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_forms.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_table-row.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_background-variant.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_border-radius.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_gradients.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_clearfix.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_center-block.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache fb0f1e01738440ab19622f567040dcd0fd791bb7/_grid.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_normalize.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_print.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_type.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_code.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_grid.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_tables.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_forms.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_buttons.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_component-animations.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_button-groups.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_input-groups.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_navs.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_navbar.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_pagination.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_pager.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_labels.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_badges.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_alerts.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_media.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_list-group.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_panels.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_wells.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_close.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_modals.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_tooltip.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_popovers.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_carousel.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_utilities.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+Warning. Error encountered while saving cache d7bb967c41ae53b6f169299cabe41b33db31bc40/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fd6cff5a9a8>
+
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 8967ms (Views: 8944.0ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-22 22:47:07 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"example@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "example@example.com"]]
+Completed 401 Unauthorized in 8ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"example@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (11.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-22 22:59:59 +0000
+Processing by GeneralController#ranking as HTML
+  Rendered general/ranking.html.erb within layouts/application (80.0ms)
+Completed 500 Internal Server Error in 115ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-22 23:05:41 +0000
+Processing by GeneralController#ranking as HTML
+  Rendered general/ranking.html.erb within layouts/application (76.4ms)
+Completed 500 Internal Server Error in 110ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-22 23:07:59 +0000
+Processing by GeneralController#ranking as HTML
+  Rendered general/ranking.html.erb within layouts/application (77.2ms)
+Completed 500 Internal Server Error in 108ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-22 23:10:04 +0000
+Processing by GeneralController#ranking as HTML
+  Rendered general/ranking.html.erb within layouts/application (78.0ms)
+Completed 500 Internal Server Error in 110ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-22 23:11:54 +0000
+Processing by GeneralController#ranking as HTML
+  Rendered general/ranking.html.erb within layouts/application (76.1ms)
+Completed 500 Internal Server Error in 105ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (12.0ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (30.5ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-22 23:26:38 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (121.4ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (29.7ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (8.1ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (11.3ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (20.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (51.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (395.2ms)
+  Rendered layouts/_header.html.erb (67.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 556ms (Views: 286.9ms | ActiveRecord: 243.0ms)
