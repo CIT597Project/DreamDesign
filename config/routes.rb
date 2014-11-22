@@ -18,7 +18,6 @@ Rails.application.routes.draw do
   get 'allschools' => 'schools#index'
   post 'addSchool' => 'my_schools#addSchool'
   
-  
 
   devise_for :users, :controllers => {:registrations => "users/registrations", :omniauth_callbacks => "users/omniauth_callbacks"} do
     get 'sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session

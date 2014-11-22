@@ -32,7 +32,7 @@
 	 <td><%= school.Institution_State %></td>
 	 <td><%= school.Institution_Zip%></td>
 	 <td><%= school.Institution_Phone %></td>
-	 <td><%= school.Institution_Web_Address %></td>
+	 <td><%=link_to school.Institution_Web_Address, url_options="http://#{school.Institution_Web_Address}"%></td>
 	 <td><%=school.Accreditation_Status%>
 	 <td>
 		 <% if current_user %>

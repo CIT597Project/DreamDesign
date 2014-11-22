@@ -37,16 +37,19 @@ ActiveRecord::Schema.define(version: 20141113232401) do
   add_index "reviews", ["school_id"], name: "index_reviews_on_school_id"
   add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
 
-  create_table "schools", primary_key: "Institution_Name", force: true do |t|
-    t.integer "Institution_ID",          limit: nil
-    t.string  "Institution_Address"
-    t.string  "Institution_City"
-    t.string  "Institution_State"
-    t.string  "Institution_Zip"
-    t.string  "Institution_Phone"
-    t.string  "Institution_Web_Address"
-    t.string  "Accreditation_Status"
-    t.integer "follow",                  limit: nil, precision: 38
+  create_table "schools", force: true do |t|
+    t.integer  "Institution_ID",          limit: nil
+    t.string   "Institution_Name"
+    t.string   "Institution_Address"
+    t.string   "Institution_City"
+    t.string   "Institution_State"
+    t.string   "Institution_Zip"
+    t.string   "Institution_Phone"
+    t.string   "Institution_Web_Address"
+    t.string   "Accreditation_Status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "follow",                  limit: nil, precision: 38
   end
 
   create_table "users", force: true do |t|
