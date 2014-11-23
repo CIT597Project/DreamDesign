@@ -5136,3 +5136,1387 @@ Processing by GeneralController#ranking as HTML
   Rendered layouts/_header.html.erb (67.7ms)
   Rendered layouts/_footer.html.erb (0.7ms)
 Completed 200 OK in 556ms (Views: 286.9ms | ActiveRecord: 243.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (10.5ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (33.6ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-22 23:29:54 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (340.4ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (29.9ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (7.7ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (10.2ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (21.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (57.6ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (629.4ms)
+  Rendered layouts/_header.html.erb (69.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 783ms (Views: 297.2ms | ActiveRecord: 467.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (36.2ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (49.9ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-22 23:59:55 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (355.5ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (36.8ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (16.7ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (22.9ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (28.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (50.2ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (702.5ms)
+  Rendered layouts/_header.html.erb (71.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 875ms (Views: 332.3ms | ActiveRecord: 510.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (65.8ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (50.0ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:02:50 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (450.7ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (40.9ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (15.3ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (16.1ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (27.1ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (50.7ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (785.1ms)
+  Rendered layouts/_header.html.erb (71.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 938ms (Views: 321.3ms | ActiveRecord: 600.9ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:02:51 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (69.1ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (75.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 11.9ms | ActiveRecord: 69.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (20.7ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (72.9ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:04:10 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (363.6ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (38.1ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (15.9ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (16.8ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (29.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (55.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (701.8ms)
+  Rendered layouts/_header.html.erb (71.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 861ms (Views: 318.3ms | ActiveRecord: 519.8ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:04:11 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (35.9ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (39.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 8.9ms | ActiveRecord: 35.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (34.5ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (51.5ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:05:10 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (352.2ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (35.5ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (15.8ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (15.6ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (37.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (48.1ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (686.6ms)
+  Rendered layouts/_header.html.erb (70.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 838ms (Views: 317.8ms | ActiveRecord: 504.5ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:05:11 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (38.5ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (44.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 12.3ms | ActiveRecord: 38.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (22.9ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (58.2ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:06:14 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (374.8ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (37.9ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (16.7ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (15.6ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (36.9ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (48.5ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (710.2ms)
+  Rendered layouts/_header.html.erb (74.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 873ms (Views: 321.5ms | ActiveRecord: 530.4ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:06:15 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (38.1ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (42.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 10.0ms | ActiveRecord: 38.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (18.6ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (78.4ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:19:00 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (418.6ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (41.8ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (37.1ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (22.3ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (39.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (55.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (791.1ms)
+  Rendered layouts/_header.html.erb (68.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 945ms (Views: 312.9ms | ActiveRecord: 615.0ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:19:01 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (156.1ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (162.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 170ms (Views: 12.4ms | ActiveRecord: 156.1ms)
+Started GET "/general/index" for 127.0.0.1 at 2014-11-23 00:19:01 +0000
+Processing by GeneralController#index as HTML
+Completed 500 Internal Server Error in 2ms
+  [1m[36mActiveRecord::SchemaMigration Load (24.4ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (90.9ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:20:10 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (289.4ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (38.4ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (19.7ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (17.8ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (30.8ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (56.3ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (629.2ms)
+  Rendered layouts/_header.html.erb (74.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 790ms (Views: 319.8ms | ActiveRecord: 452.3ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:20:10 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (40.3ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (44.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 9.4ms | ActiveRecord: 40.3ms)
+Started GET "/general/index" for 127.0.0.1 at 2014-11-23 00:20:11 +0000
+Processing by GeneralController#index as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[36mActiveRecord::SchemaMigration Load (20.1ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (99.7ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:22:45 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (416.7ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (43.7ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (14.9ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (18.0ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (43.7ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (50.4ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (779.5ms)
+  Rendered layouts/_header.html.erb (73.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 939ms (Views: 334.4ms | ActiveRecord: 587.4ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:22:46 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (55.2ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (59.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 7.6ms | ActiveRecord: 55.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (43.0ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (82.6ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:23:35 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (399.7ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (45.2ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (29.9ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (20.6ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (50.1ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (66.7ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (794.2ms)
+  Rendered layouts/_header.html.erb (71.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 964ms (Views: 333.7ms | ActiveRecord: 612.2ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:23:36 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (57.4ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (62.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 10.5ms | ActiveRecord: 57.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (26.0ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (74.9ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:24:14 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (347.0ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (39.4ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (29.0ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (32.5ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (37.7ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (71.0ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (751.8ms)
+  Rendered layouts/_header.html.erb (68.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 951ms (Views: 376.7ms | ActiveRecord: 556.5ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:24:15 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (40.1ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (44.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 9.3ms | ActiveRecord: 40.1ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:24:15 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (35.3ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (41.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 9.3ms | ActiveRecord: 35.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (28.0ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (53.7ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:25:17 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (332.0ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (45.7ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (14.9ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (20.1ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (30.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (49.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (672.1ms)
+  Rendered layouts/_header.html.erb (70.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 810ms (Views: 303.3ms | ActiveRecord: 493.0ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvrd" for 127.0.0.1 at 2014-11-23 00:25:18 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvrd"}
+  [1m[36mSchool Load (36.7ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvrd%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (40.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 8.8ms | ActiveRecord: 36.7ms)
+Started GET "/index?utf8=%E2%9C%93&search=%40visitor%5B%3Akeywords%5D" for 127.0.0.1 at 2014-11-23 00:25:18 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"@visitor[:keywords]"}
+  [1m[35mSchool Load (34.7ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%@visitor[:keywords]%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (39.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 9.7ms | ActiveRecord: 34.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (24.7ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (54.8ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:26:08 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (293.3ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (45.1ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (43.4ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (16.8ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (31.0ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (57.4ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (685.9ms)
+  Rendered layouts/_header.html.erb (73.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 841ms (Views: 340.0ms | ActiveRecord: 487.0ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:26:09 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (37.3ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (43.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 11.3ms | ActiveRecord: 37.3ms)
+Started GET "/index?utf8=%E2%9C%93&search=%40visitor%5B%3Akeywords%5D" for 127.0.0.1 at 2014-11-23 00:26:09 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"@visitor[:keywords]"}
+  [1m[35mSchool Load (34.6ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%@visitor[:keywords]%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (39.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 8.9ms | ActiveRecord: 34.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (29.3ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (48.5ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+  [1m[36mActiveRecord::SchemaMigration Load (22.8ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (59.2ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:31:44 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (359.9ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (151.8ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (14.6ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (15.5ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (32.0ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (57.0ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (818.3ms)
+  Rendered layouts/_header.html.erb (69.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 977ms (Views: 330.6ms | ActiveRecord: 630.8ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:31:45 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (34.1ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (39.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 11.3ms | ActiveRecord: 34.1ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:31:45 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (44.3ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (50.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 9.7ms | ActiveRecord: 44.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (48.0ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (65.4ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:37:43 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (422.6ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (40.4ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (15.1ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (21.2ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (28.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (56.8ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (778.9ms)
+  Rendered layouts/_header.html.erb (71.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 960ms (Views: 358.4ms | ActiveRecord: 584.8ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:37:44 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (36.1ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (40.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 8.9ms | ActiveRecord: 36.1ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:37:44 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (33.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (38.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 7.6ms | ActiveRecord: 33.9ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:37:45 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (26.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (40.8ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (87.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 22.9ms | ActiveRecord: 67.1ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:37:45 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (33.7ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (37.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 8.1ms | ActiveRecord: 33.7ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:37:45 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[35mSchool Load (33.3ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (37.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 8.3ms | ActiveRecord: 33.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (45.2ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (49.6ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:39:06 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (489.7ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (37.4ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (17.4ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (17.2ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (29.8ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (48.4ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (954.9ms)
+  Rendered layouts/_header.html.erb (69.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1115ms (Views: 455.6ms | ActiveRecord: 640.0ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:39:07 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (36.9ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (41.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 10.3ms | ActiveRecord: 36.9ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:39:07 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (36.7ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (43.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 9.0ms | ActiveRecord: 36.7ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:39:07 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (26.9ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (41.0ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (91.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 26.3ms | ActiveRecord: 67.9ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:39:07 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (45.8ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (49.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 6.8ms | ActiveRecord: 45.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (22.7ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (58.0ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:39:39 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (432.5ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (37.1ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (16.4ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (16.6ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (31.0ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (60.6ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (775.1ms)
+  Rendered layouts/_header.html.erb (72.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 927ms (Views: 318.2ms | ActiveRecord: 594.3ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:39:40 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (43.2ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (48.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 55ms (Views: 11.0ms | ActiveRecord: 43.2ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:39:40 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (36.1ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (41.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 9.1ms | ActiveRecord: 36.1ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:39:40 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (29.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (56.5ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (107.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 24.4ms | ActiveRecord: 86.0ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:39:40 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (39.5ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (42.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 8.1ms | ActiveRecord: 39.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (67.0ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (60.1ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:42:52 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (447.2ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (36.2ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (17.3ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (16.7ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (29.1ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (51.3ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (827.1ms)
+  Rendered layouts/_header.html.erb (70.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 979ms (Views: 367.3ms | ActiveRecord: 597.9ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:42:53 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (37.7ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (42.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 11.3ms | ActiveRecord: 37.7ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:42:53 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (34.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (45.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 14.4ms | ActiveRecord: 34.9ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:42:53 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (26.0ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (50.1ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (99.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 104ms (Views: 26.4ms | ActiveRecord: 76.0ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:42:53 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (37.5ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (41.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 8.2ms | ActiveRecord: 37.5ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:42:53 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[35mSchool Load (53.6ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (58.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 9.8ms | ActiveRecord: 53.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (20.7ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (54.5ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:55:55 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (438.8ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (41.0ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (14.8ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (16.9ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (37.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (47.5ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (776.3ms)
+  Rendered layouts/_header.html.erb (72.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 941ms (Views: 322.7ms | ActiveRecord: 596.3ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:55:56 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (37.0ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (42.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 11.4ms | ActiveRecord: 37.0ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:55:56 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (40.4ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (45.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 9.2ms | ActiveRecord: 40.4ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:55:56 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (32.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (40.1ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (95.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 99ms (Views: 25.4ms | ActiveRecord: 72.4ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:55:56 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (36.8ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (40.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 7.8ms | ActiveRecord: 36.8ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:55:56 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[35mSchool Load (33.5ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (37.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 8.7ms | ActiveRecord: 33.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (25.5ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (79.6ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:58:19 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (299.1ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (45.6ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (15.8ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (17.3ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (29.0ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (56.6ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (648.1ms)
+  Rendered layouts/_header.html.erb (70.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 811ms (Views: 328.3ms | ActiveRecord: 463.3ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:58:20 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (39.5ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (44.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 12.2ms | ActiveRecord: 39.5ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 00:58:20 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (38.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (44.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 9.2ms | ActiveRecord: 38.9ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 00:58:20 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (27.8ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (50.6ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (97.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 21.5ms | ActiveRecord: 78.4ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:58:20 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (42.5ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (46.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 7.3ms | ActiveRecord: 42.5ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 00:58:20 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[35mSchool Load (36.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (40.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 8.1ms | ActiveRecord: 36.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (22.5ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (81.8ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 01:00:09 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (394.2ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (38.7ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (22.2ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (16.4ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (33.7ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (47.4ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (733.2ms)
+  Rendered layouts/_header.html.erb (72.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 888ms (Views: 318.9ms | ActiveRecord: 552.7ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 01:00:10 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (35.2ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (40.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 11.3ms | ActiveRecord: 35.2ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 01:00:10 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (35.3ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (41.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 10.6ms | ActiveRecord: 35.3ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 01:00:10 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (26.1ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (45.6ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (91.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 23.7ms | ActiveRecord: 71.6ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 01:00:11 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (37.5ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (40.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 6.7ms | ActiveRecord: 37.5ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 01:00:11 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[35mSchool Load (37.6ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (41.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 6.3ms | ActiveRecord: 37.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (32.8ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (65.6ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 01:00:38 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (425.1ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (45.4ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (26.4ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (17.0ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (31.0ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (51.3ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (778.0ms)
+  Rendered layouts/_header.html.erb (69.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 894ms (Views: 284.8ms | ActiveRecord: 596.1ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 01:00:38 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (37.6ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (42.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 10.1ms | ActiveRecord: 37.5ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 01:00:39 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (44.4ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (49.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 54ms (Views: 8.6ms | ActiveRecord: 44.4ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 01:00:39 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (33.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (43.4ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (98.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 102ms (Views: 24.5ms | ActiveRecord: 76.8ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 01:00:39 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (37.1ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (41.3ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 13.4ms | ActiveRecord: 37.1ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 01:00:39 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[35mSchool Load (36.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (41.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 9.2ms | ActiveRecord: 36.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (32.7ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (50.4ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 01:02:31 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (411.9ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (36.4ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (15.2ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (16.8ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (29.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (47.2ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (742.1ms)
+  Rendered layouts/_header.html.erb (71.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 897ms (Views: 325.8ms | ActiveRecord: 556.9ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 01:02:32 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (36.1ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (42.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 10.7ms | ActiveRecord: 36.1ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 01:02:32 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (34.1ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (44.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 15.1ms | ActiveRecord: 34.1ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 01:02:32 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (26.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (40.7ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (87.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 23.4ms | ActiveRecord: 66.9ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 01:02:32 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (33.5ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (37.5ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 10.2ms | ActiveRecord: 33.5ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 01:02:32 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[35mSchool Load (33.9ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (40.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 10.0ms | ActiveRecord: 33.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (40.3ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (58.3ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 01:02:52 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (457.1ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35m (50.9ms)[0m  SELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'
+  [1m[36mSequence (15.7ms)[0m  [1mselect us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'[0m
+  [1m[35mPrimary Key (22.6ms)[0m  SELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name
+  [1m[36m (29.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (57.4ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (815.6ms)
+  Rendered layouts/_header.html.erb (74.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 970ms (Views: 317.7ms | ActiveRecord: 633.1ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 01:02:53 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[36mSchool Load (34.2ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (39.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 10.6ms | ActiveRecord: 34.2ms)
+Started GET "/index?utf8=%E2%9C%93&search=Harvard" for 127.0.0.1 at 2014-11-23 01:02:53 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Harvard"}
+  [1m[35mSchool Load (33.0ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%Harvard%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (38.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 8.9ms | ActiveRecord: 33.0ms)
+Started GET "/general/ranking" for 127.0.0.1 at 2014-11-23 01:02:53 +0000
+Processing by GeneralController#ranking as HTML
+  [1m[36m (26.1ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "DREAMDESIGN"."SCHOOLS"."ID") FROM "DREAMDESIGN"."SCHOOLS"[0m
+  [1m[35mSchool Load (41.2ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS"  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/ranking.html.erb within layouts/application (87.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 92ms (Views: 23.1ms | ActiveRecord: 67.3ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 01:02:54 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[36mSchool Load (33.2ms)[0m  [1m
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0[0m
+  Rendered general/index.erb within layouts/application (36.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 8.1ms | ActiveRecord: 33.2ms)
+Started GET "/index?utf8=%E2%9C%93&search=univsity" for 127.0.0.1 at 2014-11-23 01:02:54 +0000
+Processing by GeneralController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"univsity"}
+  [1m[35mSchool Load (34.1ms)[0m  
+              SELECT * FROM (
+                SELECT raw_sql_.*, rownum raw_rnum_
+                FROM (SELECT  DISTINCT "DREAMDESIGN"."SCHOOLS"."Institution_ID", "DREAMDESIGN"."SCHOOLS"."FOLLOW", "DREAMDESIGN"."SCHOOLS"."Institution_Name", "DREAMDESIGN"."SCHOOLS"."Institution_Address", "DREAMDESIGN"."SCHOOLS"."Institution_City", "DREAMDESIGN"."SCHOOLS"."Institution_State", "DREAMDESIGN"."SCHOOLS"."Institution_Zip", "DREAMDESIGN"."SCHOOLS"."Institution_Phone", "DREAMDESIGN"."SCHOOLS"."Institution_Web_Address", "DREAMDESIGN"."SCHOOLS"."Accreditation_Status" FROM "DREAMDESIGN"."SCHOOLS" WHERE ("Institution_Name" LIKE '%univsity%')  ORDER BY "DREAMDESIGN"."SCHOOLS"."Institution_Name" ASC ) raw_sql_
+                WHERE rownum <= 30
+              )
+              WHERE raw_rnum_ > 0
+  Rendered general/index.erb within layouts/application (38.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 9.4ms | ActiveRecord: 34.1ms)

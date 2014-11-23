@@ -1,6 +1,6 @@
 def create_visitor
   @visitor ||= { :name => "Test User", :email => "example@example.com",
-    :password => "changeme", :password_confirmation => "changeme", :keywords=>"Harvrd"}
+    :password => "changeme", :password_confirmation => "changeme", :keywords=>"Harvard"}
 end
 
 def find_user
@@ -260,27 +260,31 @@ end
 
 Given(/^I've filled the search\-box$/) do
 visit '/general/ranking'
-fill_in "search", :with => @visitor[:keywords] # express the regexp above with the code you wish you had
+create_visitor
+fill_in "search", :with =>'Harvard'
 end
 
-When(/^I click the searching icon$/) do
-  pending # express the regexp above with the code you wish you had
+When(/^I click the search icon$/) do
+  click_button "Search" 
 end
 
 Then(/^I should see the searching results$/) do
-  pending # express the regexp above with the code you wish you had
+  visit 'http://localhost:3000/index?utf8=%E2%9C%93&search=Harvard'
+  page.should have_content "Harvard University"
 end
 
-Given(/^I've clicked the searching icon$/) do
-  pending # express the regexp above with the code you wish you had
+Given(/^I've input the wrong university name$/) do
+visit '/general/ranking'
+create_visitor
+fill_in "search", :with =>'univsity'
+end
+When(/^I click the search button$/) do
+  click_button "Search" 
 end
 
-When(/^there is no matching items$/) do
-  pending # express the regexp above with the code you wish you had
-end
-
-Then(/^I should see "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then(/^I should not see Add button$/) do 
+  visit 'http://localhost:3000/index?utf8=%E2%9C%93&search=univsity'
+  page.should_not have_selector(:link_or_button, 'Add')
 end
 
 #schoollist.feature

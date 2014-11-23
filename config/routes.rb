@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   end
 
   get '/general/ranking'=>'general#ranking'
+  get '/general/index'=>'general#index'
   
   
   
