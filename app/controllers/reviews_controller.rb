@@ -7,6 +7,7 @@ class ReviewsController < ApplicationController
     redirect_to school_path(@school)
   end
   
+
   private
   def review_params
     params.require(:review).permit(:body)

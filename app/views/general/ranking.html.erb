@@ -16,7 +16,6 @@
 	<th>City</th>
 	<th>Institution_State</th>
 	<th>Institution_Zip</th>
-	<th>Institution_Phone</th>
 	<th>Institution_Web_Address</th>
 	<th>Accreditation_Status</th>
 	<th>  </th>
@@ -25,15 +24,14 @@
 	
  <% @schools.each do |school| %>     
    <tr>
-     <td><%= school.Institution_Name %></td>
+     <td><%= link_to school.Institution_Name, school_path(:id=>School.find_by(Institution_ID:school.Institution_ID).id) %></td>
 	 <td><%= school.follow %></td>
 	 <td><%= school.Institution_Address %></td> 
 	 <td><%= school.Institution_City %></td> 
 	 <td><%= school.Institution_State %></td>
 	 <td><%= school.Institution_Zip%></td>
-	 <td><%= school.Institution_Phone %></td>
 	 <td><%=link_to school.Institution_Web_Address, url_options="http://#{school.Institution_Web_Address}"%></td>
-	 <td><%=school.Accreditation_Status%>
+	 <td><%=school.Accreditation_Status%></td>
 	 <td>
 		 <% if current_user %>
 		 <%= link_to "Add", addSchool_path(:user_id=>current_user.id, :school_id=>School.find_by(Institution_ID:school.Institution_ID).id, :name=> school.Institution_Name), method:"post" %>
