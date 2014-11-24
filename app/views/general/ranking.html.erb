@@ -1,12 +1,22 @@
 <h1>Universities</h1>
-<h2></h2>
- <%= form_tag index_path, :method => 'get' do %> 
-   <p>
-     <%= text_field_tag :search, params[:search] %> <%= submit_tag "Search", :name => nil %>
-   </p>
- <% end %>
+<table>
+	<tr>
+ <%= form_tag index_path, {method: :get} do %> 
+ <th id="paginate">
+ <%= will_paginate @schools%>	
 
-<%= will_paginate @schools%>	
+</th>
+<th id="search_form">
+     
+     <%= text_field_tag :search, params[:search], placeholder: "search a school" %> 
+	
+ </th>
+ <th id="search_icon">
+	
+		  <%= image_submit_tag "search.png", :name => nil%>
+	
+	 </th>
+ <% end %>
 
 <table border="1">
   <tr>

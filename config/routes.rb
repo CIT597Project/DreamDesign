@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'general/ranking'
+  get 'general/hot_ranking'
 
   resources :schools
   

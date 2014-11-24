@@ -128,7 +128,7 @@ footer ul li {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
+  width:100%;
   margin-bottom: 15px;
   @include box_sizing;
 }
@@ -177,15 +177,10 @@ aside {
   }
 }
 
-span.picture {
-  margin-top: 10px;
-  input {
-    border: 0;
-  }
-}
 
 
-/* sidebar */
+
+/* aside */
 
 aside {
   section.user_info {
@@ -242,6 +237,35 @@ aside {
 	
 }
 
+/* sidebar */
+#sidebar {
+	background-color:#eeeeee;
+}
+
+/* search bar */
+
+#search_form {
+	width: 200px;
+	input, textarea {
+		font-size:1.2em;
+		font-weight:normal;
+	}
+	vertical-align:middle;
+	
+}
+
+#search_icon {
+	width:27px;
+	height:27px;
+}
+
+#paginate {
+	width:80%;
+}
+
+th {
+	vertical-align:middle;
+}
 
 
 

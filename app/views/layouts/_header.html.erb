@@ -8,6 +8,7 @@
 				
 					<% if user_signed_in? %>
 						<li><%= link_to "My list (" + current_user.my_schools.count.to_s + ")", mylist_path %></li>
+						<li><%= link_to "Friends", '#'%></li>
 						<li>
 						<% if current_user.name %>
 							<li><%= link_to current_user.name.to_s, edit_user_registration_path %></li>
