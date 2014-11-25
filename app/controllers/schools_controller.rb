@@ -12,7 +12,6 @@ class SchoolsController < ApplicationController
 
   def new
     @school = School.new
-    # respond_with(@school)
   end
 
   def edit
@@ -20,7 +19,7 @@ class SchoolsController < ApplicationController
 
   def create
     @school = School.new(school_params)
-    @school.save
+    # @school.save
     render :show
   end
 
