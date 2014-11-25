@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124215908) do
+ActiveRecord::Schema.define(version: 20141125022316) do
 
   create_table "hotuniversites", id: false, force: true do |t|
     t.string "institution_name",        limit: 200
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 20141124215908) do
     t.string "institution_phone",       limit: 20
     t.string "institution_web_address", limit: 20
     t.string "accreditation_status",    limit: 20
+  end
+
+  create_table "majorrankings", id: false, force: true do |t|
+    t.string "institution_name",        limit: 50
+    t.string "institution_address",     limit: 50
+    t.string "institution_city",        limit: 50
+    t.string "institution_state",       limit: 20
+    t.string "institution_zip",         limit: 20
+    t.string "institution_web_address", limit: 50
   end
 
   create_table "my_schools", force: true do |t|
@@ -36,6 +45,15 @@ ActiveRecord::Schema.define(version: 20141124215908) do
   add_index "my_schools", ["school_id"], name: "index_my_schools_on_school_id"
   add_index "my_schools", ["user_id", "created_at"], name: "i_my_sch_use_id_cre_at"
   add_index "my_schools", ["user_id"], name: "index_my_schools_on_user_id"
+
+  create_table "recommendeduniversities", id: false, force: true do |t|
+    t.string "institution_name",        limit: 50
+    t.string "institution_address",     limit: 50
+    t.string "institution_city",        limit: 50
+    t.string "institution_state",       limit: 50
+    t.string "institution_zip",         limit: 20
+    t.string "institution_web_address", limit: 50
+  end
 
   create_table "relationships", force: true do |t|
     t.integer  "follower_id", limit: nil

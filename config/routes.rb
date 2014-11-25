@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+ 
+
+
+  resources :recommendeduniversities
 
   root 'static_pages#home'
   get 'general/ranking'
@@ -6,7 +10,7 @@ Rails.application.routes.draw do
   get 'general/add_following'
 
   resources :schools
-  
+  resources :majorrankings
   resources :my_schools, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
   

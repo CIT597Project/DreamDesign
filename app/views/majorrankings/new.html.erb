@@ -1,0 +1,35 @@
+<h1>Major Ranking (computer science)</h1>
+
+<table>
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+		<th>Followed</th>
+    <th>Address</th>
+	<th>City</th>
+	<th>Institution_State</th>
+	<th>Institution_Zip</th>
+	<th>Institution_Web_Address</th>
+	<th>  </th>
+	
+  </tr>
+	
+ <% @majorrankings.each do |majorranking| %>     
+   <tr>
+     <td><%= link_to majorranking.institution_name %></td>
+	 <td></td>
+	 <td><%= majorranking.institution_address %></td> 
+	 <td><%= majorranking.institution_city %></td> 
+	 <td><%= majorranking.institution_state %></td>
+	 <td><%= majorranking.institution_zip%></td>
+	 <td><%=link_to majorranking.institution_web_address, url_options="http://#{majorranking.institution_web_address}"%></td>
+	 <td>
+		
+	 </td>
+	
+	 
+   </tr>
+ <% end %>
+</table>
+
