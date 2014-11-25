@@ -4,19 +4,17 @@ Feature: Edit School list
 	so that I can mark the school I'm interested in
 	I want to have a school list
 	
-	Scenario: Add a non-duplicated school to school list
-		Given I've logged in
-		When I click "Add to my list" icon besides a school name
-		Then this school will exist in my school list
-		And I should see success message
+	Background:
+		Given I logged in
+
+
+	Scenario: Add a school to school list
+		When I am on the university list page
+		And I choose to add to my school list
+		Then I should see successful message or an already exist message
 		
-	Scenario: Add a duplicated school to the school list
-	  Given I've logged in
-		When I click "Add to my list" icon besides a school name
-		Then I should see "This school already exist in my school list"
 		
 	Scenario: Delete a school in the school list
-		 Given I've logged in
-		 And I'm in the page of school list
-		 When I click "delete" icon besides a school
+		 When I'm on my school list page
+		 And I delete the school
 		 Then this school will be out of my school list

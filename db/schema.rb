@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20141124215908) do
   add_index "my_schools", ["user_id", "created_at"], name: "i_my_sch_use_id_cre_at"
   add_index "my_schools", ["user_id"], name: "index_my_schools_on_user_id"
 
+<<<<<<< HEAD
   create_table "products", id: false, force: true do |t|
     t.string  "pid",         limit: 20
     t.string  "name",        limit: 20
@@ -44,6 +45,8 @@ ActiveRecord::Schema.define(version: 20141124215908) do
     t.string  "description", limit: 20
   end
 
+=======
+>>>>>>> FETCH_HEAD
   create_table "relationships", force: true do |t|
     t.integer  "follower_id", limit: nil
     t.integer  "followed_id", limit: nil

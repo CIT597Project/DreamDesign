@@ -1,6 +1,6 @@
 def create_visitor
   @visitor ||= { :name => "Test User", :email => "example@example.com",
-    :password => "changeme", :password_confirmation => "changeme", :keywords=>"Harvard"}
+    :password => "changeme", :password_confirmation => "changeme"}
 end
 
 def find_user
@@ -200,6 +200,8 @@ Then(/^I should be on the home page and see a mismatched password message$/) do
 end
 
 
+# sign in with facebook
+
 Given(/^I sign in my facebook account$/) do
   visit root_path
 end
@@ -288,32 +290,32 @@ Then(/^I should not see Add button$/) do
 end
 
 #schoollist.feature
-Given(/^I've logged in$/) do
-  pending 
+
+When(/^I am on the university list page$/) do
+  visit'/general/ranking'
+  save_and_open_page
+  page.should have_selector(:link_or_button, 'Add')
 end
 
-When(/^I click "(.*?)" icon besides a school name$/) do |arg1|
-  pending 
+When(/^I choose to add to my school list$/) do
+  click_button "Add"
 end
 
-Then(/^this school will exist in my school list$/) do
-  pending 
+Then(/^I should see successful message or an already exist message$/) do
+  pending # express the regexp above with the code you wish you had
 end
 
-Then(/^I should see success message$/) do
-  pending
+When(/^I'm on my school list page$/) do
+  visit '/mylist'
+  page.should have_content"My School List"
 end
 
-Given(/^I'm in the page of school list$/) do
-  pending 
-end
-
-When(/^I click "(.*?)" icon besides a school$/) do |arg1|
-  pending 
+When(/^I delete the school$/) do
+  pending # express the regexp above with the code you wish you had
 end
 
 Then(/^this school will be out of my school list$/) do
-  pending 
+  pending # express the regexp above with the code you wish you had
 end
 
 #review.feature

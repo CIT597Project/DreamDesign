@@ -19,6 +19,7 @@ development:
   # database: "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=xe)))"
   username: dreamdesign
   password: 12345678
+  
 
 
 # Warning: The database defined as "test" will be erased and
@@ -27,13 +28,13 @@ development:
 test:
   # <<: *default
  #  database: db/test.sqlite3
-  
   adapter: oracle_enhanced
   # database: "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=cit597project.c7rpydtnpvgy.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SID=dream)))"
   database: "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=tcp)(HOST=cit597project.c7rpydtnpvgy.us-east-1.rds.amazonaws.com)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=dream)))"
   # database: "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=xe)))"
   username: dreamdesign
   password: 12345678
+  
 
 production:
   <<: *default
