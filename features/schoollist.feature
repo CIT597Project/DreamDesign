@@ -16,5 +16,5 @@ Feature: Edit School list
 		
 	Scenario: Delete a school in the school list
 		 When I'm on my school list page
-		 And I delete the school
-		 Then this school will be out of my school list
+		 Then I can delete the school
+		

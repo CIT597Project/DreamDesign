@@ -293,16 +293,15 @@ end
 
 When(/^I am on the university list page$/) do
   visit'/general/ranking'
-  save_and_open_page
   page.should have_selector(:link_or_button, 'Add')
 end
 
-When(/^I choose to add to my school list$/) do
-  click_button "Add"
+When(/^I choose to add to my school list$/) do 
+  page.first(:link, "Add").click
 end
 
 Then(/^I should see successful message or an already exist message$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content"list"
 end
 
 When(/^I'm on my school list page$/) do
@@ -310,12 +309,8 @@ When(/^I'm on my school list page$/) do
   page.should have_content"My School List"
 end
 
-When(/^I delete the school$/) do
-  pending # express the regexp above with the code you wish you had
-end
-
-Then(/^this school will be out of my school list$/) do
-  pending # express the regexp above with the code you wish you had
+Then(/^I can delete the school$/) do
+  page.should have_selector(:link_or_button, 'delete') 
 end
 
 #review.feature
