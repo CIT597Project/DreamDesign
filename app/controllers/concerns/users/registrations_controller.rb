@@ -1,6 +1,6 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   before_filter :configure_permitted_parameters
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy, :following, :followers]
+  
   
   
   def upload
