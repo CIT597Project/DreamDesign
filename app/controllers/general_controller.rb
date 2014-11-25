@@ -24,6 +24,8 @@ require 'csv'
   def add_following
     @users=User.all
   end
+  
+ 
     
 
   

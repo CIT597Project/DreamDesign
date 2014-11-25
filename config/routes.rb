@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get 'general/ranking'
   get 'general/hot_ranking'
+  get 'general/add_following'
 
   resources :schools
   
@@ -42,7 +43,5 @@ Rails.application.routes.draw do
   end
   
   get 'index'=>'general#index'
-  
-  get 'general/add_following'
   
 end
