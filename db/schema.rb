@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141113232401) do
+ActiveRecord::Schema.define(version: 20141124215908) do
 
   create_table "hotuniversites", id: false, force: true do |t|
     t.string "institution_name",        limit: 200
@@ -36,6 +36,17 @@ ActiveRecord::Schema.define(version: 20141113232401) do
   add_index "my_schools", ["school_id"], name: "index_my_schools_on_school_id"
   add_index "my_schools", ["user_id", "created_at"], name: "i_my_sch_use_id_cre_at"
   add_index "my_schools", ["user_id"], name: "index_my_schools_on_user_id"
+
+  create_table "relationships", force: true do |t|
+    t.integer  "follower_id", limit: nil
+    t.integer  "followed_id", limit: nil
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  add_index "relationships", ["followed_id"], name: "i_relationships_followed_id"
+  add_index "relationships", ["follower_id", "followed_id"], name: "i_rel_fol_id_fol_id", unique: true
+  add_index "relationships", ["follower_id"], name: "i_relationships_follower_id"
 
   create_table "reviews", force: true do |t|
     t.text     "body"
