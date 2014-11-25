@@ -1,0 +1,23 @@
+<% provide(:title, @user.username) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.username %>
+      </h1>
+    </section>
+    <section class="stats">
+      <%= render 'devise/shared/stats' %>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <%= render 'follow_form' if logged_in? %>
+    <% if @user.my_schools.any? %>
+      <h3>School List (<%= @user.my_schools.count %>)</h3>
+      <ol class="mylist">
+        <%= render @mylist %>
+      </ol>
+    <% end %>
+  </div>
+</div>

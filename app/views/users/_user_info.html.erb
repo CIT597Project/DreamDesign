@@ -1,15 +1,18 @@
 <%= image_tag current_user.picture.url if current_user.picture? %>
 
 <div class="row">
-  <aside class="col-md-4">
+  <aside class="col-md-6">
     <section class="user_info">
       <h1>
 				<%= image_tag current_user.picture.url if current_user.picture? %>
         <%= gravatar_for current_user if not current_user.picture? %>
         <%= current_user.username %></h2>
       </h1>
-			<span><%= link_to "view my profile", edit_user_registration_path %></span>
+			<%= link_to "view my profile", edit_user_registration_path %>
     </section>
+		<section class="stats">
+			<%= render 'devise/shared/stats'%>
+		</section>
   </aside>
 </div>
 
