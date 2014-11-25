@@ -46,8 +46,4 @@ class User < ActiveRecord::Base
   mount_uploader :picture, PictureUploader
 
 
-  # Setup accessible (or protected) attributes for your model
-  # def user_params
-#(:user).permit(:name, :email, :password)
-#       end
 end

@@ -239,6 +239,7 @@ aside {
 
 /* sidebar */
 #sidebar {
+	border-right: 1px solid #E0E0E0;
 	background-color:#eeeeee;
 }
 
@@ -306,4 +307,18 @@ th {
 
 .users.follow {
   padding: 0;
+}
+
+/* follow */
+#follow_icon {
+	width: 10px;
+}
+
+.users {
+	margin-left: 20%;
+	width:80%;
+}
+
+.col-md-8 {
+	border-left: 1px solid $gray-medium-light;
 }
