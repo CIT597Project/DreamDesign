@@ -10,11 +10,9 @@
     </section>
   </aside>
   <div class="col-md-8">
-    <% if current_user.my_schools.any? %>
       <h3>My School List (<%= current_user.my_schools.count %>)</h3>
       <ol class="my_schools">
         <%= render current_user.my_schools %>
       </ol>
-    <% end %>
   </div>
 </div>

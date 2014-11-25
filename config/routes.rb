@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'static_pages/home'
   get 'static_pages/help'
   get 'mylist' => 'users#mylist'
+  get 'list' => 'users#list'
   get 'allschools' => 'schools#index'
   post 'addSchool' => 'my_schools#addSchool'
   

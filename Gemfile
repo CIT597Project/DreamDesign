@@ -26,6 +26,8 @@ gem 'aws-sdk'
 gem 'rails-simple-search'
 gem 'activerecord-oracle_enhanced-adapter', github: 'rsim/oracle-enhanced', branch: 'rails42'
 gem 'ruby-oci8', '~> 2.1.0'
+
+
 group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
@@ -36,6 +38,8 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+  gem 'rspec-rails'
+  gem 'simplecov', :require => false
 end
 
 

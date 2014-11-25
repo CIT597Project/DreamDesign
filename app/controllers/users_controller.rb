@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
   
   def list
-    @user=User.find_by(id:params[:id])
+    @user=User.find(params[:id])
     render 'users/show'
   end
 

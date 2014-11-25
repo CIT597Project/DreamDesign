@@ -1,8 +1,12 @@
+<% if my_school.school_id.to_i != 0 %>
 <li id="my_school-<%= my_school.id %>">
  
-  <span class="name"><%= link_to my_school.name, '#' %></span>
+  <span class="name"><%= link_to my_school.name, school_path(:id=>my_school.school_id.to_i) %></span>
   <span class="comment"><%= my_school.comment %></span>
-	<span class="delete"><%= link_to "delete", my_school, method: :delete,
+	<% if my_school.user_id == current_user.id %>
+		<span class="delete"><%= link_to "delete", my_school, method: :delete,
 	                                       data: { confirm: "You sure?" },
 	                                       title: my_school.name %></span>
+  <% end %>	
 </li>
+<% end %>
