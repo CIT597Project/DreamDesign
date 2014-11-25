@@ -19,7 +19,7 @@ require 'csv'
   end
  
   def add_following
-    @users=User.all
+    @users=User.all.paginate(page: params[:page])
   end
   
  

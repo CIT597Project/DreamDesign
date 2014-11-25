@@ -1,0 +1,22 @@
+<table class='users'>
+
+<% @users.each do |user| %>
+<tr>
+    <section class="user_info">
+			<td class='user_avatars'>
+				<%= image_tag user.picture.url if user.picture? %>
+        <%= gravatar_for user if not user.picture? %>
+			</td>
+			<td>
+        <%= user.username if user.username %></h2>
+				<%= user.email if not user.username %>
+			</td>
+			<td id="follow_icon">
+				<% @user=user%>
+				<%= render 'users/follow_form'%>
+			</td>
+    </section>
+</tr>
+<% end %>
+
+</table>
