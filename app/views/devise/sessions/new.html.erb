@@ -14,13 +14,16 @@
 
   <% if devise_mapping.rememberable? -%>
     <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+			  <%= f.check_box :remember_me, :style => "float:left;",id:"check_box" %>
+			  <%= f.label :remember_me, "Remember me".html_safe, :style => "float:left;", id:"check_label" %>
+			 <br>
+			 <br>
+			
     </div>
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Sign in" %>
+    <%= f.submit "Sign in"%>
   </div>
 <% end %>
 

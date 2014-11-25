@@ -31,7 +31,7 @@ Rails.application.routes.draw do
   
  resource :users, :only => [:index, :show] do
    member do
-     get :following, :followers
+     get :following, :followers, :list
    end
  end
   

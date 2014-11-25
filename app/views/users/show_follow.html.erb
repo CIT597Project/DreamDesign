@@ -9,16 +9,19 @@
     </section>
     <section class="stats">
       <%= render 'devise/shared/stats' %>
+			<br>
+			<br>
+			<hr>
       <% if @users.any? %>
         <div class="user_avatars">
           <% @users.each do |user| %>
-            <%= link_to gravatar_for(user), '#' %>
+            	<%= link_to gravatar_for(user,size: 30), 'users/list', method: "get" %>
           <% end %>
         </div>
       <% end %>
     </section>
 		<div id="add_following">
-		<%= button_to "Follow More", "/general/add_following", :class => "button", :method => :get %>
+		<%= button_to "Follow More", "/general/add_following", class: "btn btn-primary", :method => :get %>
   </aside>
   <div class="col-md-8">
     <h3><%= @title %></h3>
