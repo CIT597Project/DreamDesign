@@ -1,15 +1,14 @@
 
 class GeneralController < ApplicationController
-require 'csv' 
   
 
   def ranking
-     @schools=School.all.paginate(page: params[:page])
+     @schools=School.all.paginate(page: params[:page]).limit(25)
   end
   
   def hot_ranking
-    @schools=School.all.order(:follow).reverse_order.paginate(page: params[:page])
-    render 'general/ranking'
+    @schools=School.order(:follow).reverse_order.limit(25)
+    render 'general/hotuniversities'
   end
     
   

@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20141125022316) do
     t.string "accreditation_status",    limit: 20
   end
 
-  create_table "majorrankings", id: false, force: true do |t|
+  create_table "majorrankings", primary_key: "name_abb", force: true do |t|
     t.string "institution_name",        limit: 50
     t.string "institution_address",     limit: 50
     t.string "institution_city",        limit: 50

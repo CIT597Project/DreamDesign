@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   get 'mylist' => 'users#mylist'
   get 'allschools' => 'schools#index'
   post 'addSchool' => 'my_schools#addSchool'
-  
+  get '/majoruniversities/new'=>'majoruniversities#new'
 
   devise_for :users, :controllers => {:registrations => "users/registrations", :omniauth_callbacks => "users/omniauth_callbacks"} do
     get 'sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
@@ -34,13 +34,12 @@ Rails.application.routes.draw do
      get :following, :followers
    end
  end
-  
+
 
   get '/general/ranking'=>'general#ranking'
   get '/general/index'=>'general#index'
   
-  
-  
+  get 'majorranking' => 'majorrankings#'
  
   resources :general do
     collection { post :import }

@@ -17,7 +17,7 @@
 	
  <% @majorrankings.each do |majorranking| %>     
    <tr>
-     <td><%= link_to majorranking.institution_name %></td>
+     <td><%= link_to majorranking.institution_name, "#{majorranking.name_abb}"%></td>
 	 <td></td>
 	 <td><%= majorranking.institution_address %></td> 
 	 <td><%= majorranking.institution_city %></td> 

@@ -1,6 +1,6 @@
 class MajorrankingsController < ApplicationController
   respond_to :html, :xml, :json
-  before_action :set_majorranking, only: [:show, :edit, :update, :destroy]
+  # before_action :set_majorranking, only: [:show, :edit, :update, :destroy]
 
   def index
     @majorrankings = Majorranking.all
@@ -8,14 +8,18 @@ class MajorrankingsController < ApplicationController
   end
 
   def show
-    respond_with(@majorrankings)
+    # respond_with(@majorrankings)
+    @name=Majorranking.find_by(:name_abb=>params[:id]).name_abb
+    render "majorrankings/#{@name}"
+     
   end
+
 
   def new
     @majorrankings=Majorranking.all
-    respond_with(@majorrankings)
+    # respond_with(@majorrankings)
   end
-
+  
   def edit
   end
 
@@ -34,10 +38,9 @@ class MajorrankingsController < ApplicationController
     @majorrankings.destroy
     respond_with(@majorrankings)
   end
-
   private
     def set_majorranking
-      @majorrankings = Majorrankings.find(params[:id])
+      @majorrankings = Majorranking.find(params[:id])
     end
 
     def majorranking_params
