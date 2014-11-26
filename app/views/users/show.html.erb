@@ -4,20 +4,19 @@
     <section>
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.username %>
+        <%= @user.username if @user.username %>
+				<%= @user.email if not @user.username %>
       </h1>
     </section>
     <section class="stats">
       <%= render 'devise/shared/stats' %>
     </section>
+		<%=render 'users/follow_form'%>
   </aside>
   <div class="col-md-8">
-    <%= render 'follow_form' if logged_in? %>
-    <% if @user.my_schools.any? %>
       <h3>School List (<%= @user.my_schools.count %>)</h3>
       <ol class="mylist">
-        <%= render @mylist %>
+        <%= render @user.my_schools %>
       </ol>
-    <% end %>
   </div>
 </div>

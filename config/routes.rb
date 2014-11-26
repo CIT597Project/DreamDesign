@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'static_pages/home'
   get 'static_pages/help'
   get 'mylist' => 'users#mylist'
+  get 'list' => 'users#list'
   get 'allschools' => 'schools#index'
   post 'addSchool' => 'my_schools#addSchool'
   get '/majoruniversities/new'=>'majoruniversities#new'
@@ -31,7 +32,7 @@ Rails.application.routes.draw do
   
  resource :users, :only => [:index, :show] do
    member do
-     get :following, :followers
+     get :following, :followers, :list
    end
  end
 

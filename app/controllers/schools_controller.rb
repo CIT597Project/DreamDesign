@@ -7,12 +7,11 @@ class SchoolsController < ApplicationController
   end
 
   def show
-    # @school = School.find(params[:id])
+    @school = School.find(params[:id])
   end
 
   def new
     @school = School.new
-    # respond_with(@school)
   end
 
   def edit
@@ -20,7 +19,7 @@ class SchoolsController < ApplicationController
 
   def create
     @school = School.new(school_params)
-    @school.save
+    # @school.save
     render :show
   end
 

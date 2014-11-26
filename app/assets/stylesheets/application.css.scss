@@ -315,10 +315,38 @@ th {
 }
 
 .users {
-	margin-left: 20%;
+	margin-left: 10%;
 	width:80%;
 }
 
 .col-md-8 {
 	border-left: 1px solid $gray-medium-light;
+}
+
+tr.user_info {
+	border-bottom:1px solid $gray-medium-light;
+}
+
+
+#check_box {
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    margin:0;
+    vertical-align: top;
+    position: relative;
+    top: 5px;
+    *overflow: hidden;
+}
+
+#check_label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+		margin-left: 5px;
+}
+.button {
+	position: relative;
+	margin-left: 25%;
+	width:50%;
 }

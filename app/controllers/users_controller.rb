@@ -17,7 +17,13 @@ class UsersController < ApplicationController
   def mylist
     @my_school = current_user.my_schools.build 
   end
+  
   def ranking
+  end
+  
+  def list
+    @user=User.find(params[:id])
+    render 'users/show'
   end
 
 end
