@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20141125022316) do
   add_index "my_schools", ["user_id", "created_at"], name: "i_my_sch_use_id_cre_at"
   add_index "my_schools", ["user_id"], name: "index_my_schools_on_user_id"
 
-  create_table "recommendeduniversities", id: false, force: true do |t|
+  create_table "recommendeduniversities", primary_key: "name_abb", force: true do |t|
     t.string "institution_name",        limit: 50
     t.string "institution_address",     limit: 50
     t.string "institution_city",        limit: 50

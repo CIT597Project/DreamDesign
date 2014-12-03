@@ -20233,3 +20233,356 @@ Started GET "/users/edit" for 127.0.0.1 at 2014-11-25 01:57:38 +0000
 Processing by Users::RegistrationsController#edit as HTML
   [1m[35mUser Load (7.0ms)[0m  SELECT * FROM (SELECT  "USERS".* FROM "USERS" WHERE "USERS"."ID" = :a1  ORDER BY "USERS"."ID" ASC ) WHERE ROWNUM <= 1  [["id", 110]]
 Completed 500 Internal Server Error in 20ms
+  [1m[36mActiveRecord::SchemaMigration Load (11.9ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (25.5ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+  [1m[36mActiveRecord::SchemaMigration Load (9.8ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (25.2ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+  [1m[36mActiveRecord::SchemaMigration Load (10.4ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (26.3ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+  [1m[36mActiveRecord::SchemaMigration Load (10.7ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (24.4ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+  [1m[36mActiveRecord::SchemaMigration Load (10.3ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (25.5ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Processing by GeneralController#ranking as HTML
+  Rendered general/ranking.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+Processing by MajorrankingsController#new as HTML
+  Rendered majorrankings/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (143.4ms)[0m  [1mSELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'[0m
+  [1m[35m (64.6ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'MAJORRANKINGS' AND hidden_column = 'NO' ORDER BY column_id
+  [1m[36m (14.1ms)[0m  [1mSELECT COUNT(*) FROM "DREAMDESIGN"."MAJORRANKINGS"[0m
+Processing by RecommendeduniversitiesController#new as HTML
+  Rendered recommendeduniversities/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[35mRecommendeduniversity Load (17.9ms)[0m  SELECT "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES".* FROM "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES"
+  [1m[36m (65.3ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'RECOMMENDEDUNIVERSITIES' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (7.4ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'RECOMMENDEDUNIVERSITIES_SEQ'
+  [1m[36mPrimary Key (9.4ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'RECOMMENDEDUNIVERSITIES' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  [1m[35m (10.5ms)[0m  SELECT COUNT(*) FROM "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES"
+Processing by SchoolsController#new as HTML
+  [1m[36m (108.4ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (7.6ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'
+  [1m[36mPrimary Key (7.7ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  Rendered schools/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 170ms (Views: 7.9ms | ActiveRecord: 123.8ms)
+  [1m[35m (38.1ms)[0m  SELECT COUNT(*) FROM "DREAMDESIGN"."SCHOOLS"
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (143.3ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'USERS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (8.1ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'USERS_SEQ'
+  [1m[36mPrimary Key (8.4ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'USERS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  [1m[35m (19.7ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (12.5ms)[0m  [1mSELECT  1 AS one FROM "USERS" WHERE "USERS"."EMAIL" = 'example@example.com' AND ROWNUM <= 1 [0m
+  [1m[35mPrimary Key Trigger (8.6ms)[0m            SELECT trigger_name
+          FROM all_triggers
+          WHERE owner = 'DREAMDESIGN'
+            AND trigger_name = 'USERS_PKT'
+            AND table_owner = 'DREAMDESIGN'
+            AND table_name = 'USERS'
+            AND status = 'ENABLED'
+
+  [1m[36mSQL (28.8ms)[0m  [1mINSERT INTO "USERS" ("CREATED_AT", "EMAIL", "ENCRYPTED_PASSWORD", "ID", "NAME", "UPDATED_AT") VALUES (:a1, :a2, :a3, :a4, :a5, :a6)[0m  [["created_at", 2014-12-03 00:14:16 UTC], ["email", "example@example.com"], ["encrypted_password", "$2a$04$noX8M2t3F53HBVC9WyinWORZsnqYQOBiYkNMmmsRBEItCY4fQ5JWi"], ["id", 132], ["name", "Test User"], ["updated_at", 2014-12-03 00:14:16 UTC]]
+  [1m[35m (7.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (8.4ms)[0m  [1mSELECT  1 AS one FROM "USERS" WHERE "USERS"."EMAIL" = 'example@example.com' AND ROWNUM <= 1 [0m
+  [1m[35mSQL (88.7ms)[0m  INSERT INTO "USERS" ("CREATED_AT", "EMAIL", "ENCRYPTED_PASSWORD", "ID", "NAME", "UPDATED_AT") VALUES (:a1, :a2, :a3, :a4, :a5, :a6)  [["created_at", 2014-12-03 00:14:16 UTC], ["email", "example@example.com"], ["encrypted_password", "$2a$04$8gtqv.nZoQXJ14R7eyBwP.qX8idu/omtnVqKm1SDPVIO/xOR1sfES"], ["id", 133], ["name", "Test User"], ["updated_at", 2014-12-03 00:14:16 UTC]]
+  [1m[36mActiveRecord::SchemaMigration Load (10.8ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (24.8ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Processing by GeneralController#ranking as HTML
+  Rendered general/ranking.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+Processing by MajorrankingsController#new as HTML
+  Rendered majorrankings/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (28.7ms)[0m  [1mSELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'[0m
+  [1m[35m (64.3ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'MAJORRANKINGS' AND hidden_column = 'NO' ORDER BY column_id
+  [1m[36m (8.0ms)[0m  [1mSELECT COUNT(*) FROM "DREAMDESIGN"."MAJORRANKINGS"[0m
+Processing by RecommendeduniversitiesController#new as HTML
+  Rendered recommendeduniversities/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  [1m[35mRecommendeduniversity Load (8.5ms)[0m  SELECT "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES".* FROM "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES"
+  [1m[36m (63.9ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'RECOMMENDEDUNIVERSITIES' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (7.5ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'RECOMMENDEDUNIVERSITIES_SEQ'
+  [1m[36mPrimary Key (8.9ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'RECOMMENDEDUNIVERSITIES' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  [1m[35m (7.7ms)[0m  SELECT COUNT(*) FROM "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES"
+Processing by SchoolsController#new as HTML
+  [1m[36m (104.0ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (7.3ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'
+  [1m[36mPrimary Key (8.0ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  Rendered schools/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 164ms (Views: 8.7ms | ActiveRecord: 119.2ms)
+  [1m[35m (9.1ms)[0m  SELECT COUNT(*) FROM "DREAMDESIGN"."SCHOOLS"
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (141.9ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'USERS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (7.4ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'USERS_SEQ'
+  [1m[36mPrimary Key (8.0ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'USERS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  [1m[35m (11.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (7.6ms)[0m  [1mSELECT  1 AS one FROM "USERS" WHERE "USERS"."EMAIL" = 'example@example.com' AND ROWNUM <= 1 [0m
+  [1m[35mPrimary Key Trigger (8.0ms)[0m            SELECT trigger_name
+          FROM all_triggers
+          WHERE owner = 'DREAMDESIGN'
+            AND trigger_name = 'USERS_PKT'
+            AND table_owner = 'DREAMDESIGN'
+            AND table_name = 'USERS'
+            AND status = 'ENABLED'
+
+  [1m[36mSQL (8.7ms)[0m  [1mINSERT INTO "USERS" ("CREATED_AT", "EMAIL", "ENCRYPTED_PASSWORD", "ID", "NAME", "UPDATED_AT") VALUES (:a1, :a2, :a3, :a4, :a5, :a6)[0m  [["created_at", 2014-12-03 00:14:36 UTC], ["email", "example@example.com"], ["encrypted_password", "$2a$04$qvLCicr.qYzACbS0jetp7uG5SeSPnVB5G4YZ5qDNbwdvZoddt4SZa"], ["id", 134], ["name", "Test User"], ["updated_at", 2014-12-03 00:14:36 UTC]]
+  [1m[35m (7.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (7.8ms)[0m  [1mSELECT  1 AS one FROM "USERS" WHERE "USERS"."EMAIL" = 'example@example.com' AND ROWNUM <= 1 [0m
+  [1m[35mSQL (8.0ms)[0m  INSERT INTO "USERS" ("CREATED_AT", "EMAIL", "ENCRYPTED_PASSWORD", "ID", "NAME", "UPDATED_AT") VALUES (:a1, :a2, :a3, :a4, :a5, :a6)  [["created_at", 2014-12-03 00:14:36 UTC], ["email", "example@example.com"], ["encrypted_password", "$2a$04$98e2Odbfbrt4k5c6XPBITOVPWzNDvSB4eXIhhEA7jMokJDrRyRBYe"], ["id", 135], ["name", "Test User"], ["updated_at", 2014-12-03 00:14:36 UTC]]
+Started GET "/majorrankings" for 127.0.0.1 at 2014-12-03 00:14:36 +0000
+Processing by MajorrankingsController#index as HTML
+  [1m[36mMajorranking Load (18.8ms)[0m  [1mSELECT "DREAMDESIGN"."MAJORRANKINGS".* FROM "DREAMDESIGN"."MAJORRANKINGS"[0m
+  [1m[35mSequence (7.6ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'MAJORRANKINGS_SEQ'
+  [1m[36mPrimary Key (7.8ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'MAJORRANKINGS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  Rendered majorrankings/index.html.erb within layouts/application (56.0ms)
+Warning. Error encountered while saving cache b03c0b46a992e9cc217112dad565c99b890b30d1/application.css.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 8c4c46f48af15d8ba5d6401f7ea4423a9b467cb9/_bootstrap-sprockets.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 8c4c46f48af15d8ba5d6401f7ea4423a9b467cb9/bootstrap.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_variables.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_mixins.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_hide-text.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_opacity.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_image.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_labels.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_resize.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_size.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_alerts.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_buttons.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_panels.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_pagination.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_list-group.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_forms.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_table-row.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_background-variant.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_border-radius.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_gradients.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_clearfix.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_center-block.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache 1199246d023c77bdfa3e63e7616db2e08b694e0f/_grid.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_normalize.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_print.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_type.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_code.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_grid.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_tables.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_forms.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_buttons.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_component-animations.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_button-groups.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_input-groups.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_navs.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_navbar.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_pagination.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_pager.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_labels.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_badges.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_alerts.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_media.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_list-group.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_panels.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_wells.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_close.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_modals.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_tooltip.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_popovers.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_carousel.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_utilities.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+Warning. Error encountered while saving cache cfdb8b23a022e7a97feb8322bd0c0c7a146e5ddf/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fab7b9420e0>
+
+  Rendered layouts/_header.html.erb (9.2ms)
+  Rendered layouts/_sidebar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 5070ms (Views: 5022.1ms | ActiveRecord: 34.1ms)
+Started GET "/recommendeduniversities" for 127.0.0.1 at 2014-12-03 00:14:41 +0000
+Processing by RecommendeduniversitiesController#index as HTML
+  [1m[35mRecommendeduniversity Load (11.2ms)[0m  SELECT "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES".* FROM "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES"
+  Rendered recommendeduniversities/index.html.erb within layouts/application (21.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 11.2ms)
+Started GET "/schools" for 127.0.0.1 at 2014-12-03 00:14:41 +0000
+Processing by SchoolsController#index as HTML
+  [1m[36mSchool Load (1512.2ms)[0m  [1mSELECT "DREAMDESIGN"."SCHOOLS".* FROM "DREAMDESIGN"."SCHOOLS"[0m
+  Rendered schools/index.html.erb within layouts/application (4000.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4008ms (Views: 2495.6ms | ActiveRecord: 1512.2ms)
+  [1m[35m (7.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPrimary Key Trigger (7.7ms)[0m  [1m          SELECT trigger_name
+          FROM all_triggers
+          WHERE owner = 'DREAMDESIGN'
+            AND trigger_name = 'DREAMDESIGN.MAJORRANKINGS_PKT'
+            AND table_owner = 'DREAMDESIGN'
+            AND table_name = 'MAJORRANKINGS'
+            AND status = 'ENABLED'
+[0m
+  [1m[35m (39.4ms)[0m  ROLLBACK TO active_record_1
+  [1m[36m (7.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (7.1ms)[0m  ROLLBACK TO active_record_1
+  Rendered majorrankings/new.html.erb (23.9ms)
+  [1m[36m (6.9ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (7.0ms)[0m  ROLLBACK TO active_record_1
+  [1m[36m (7.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPrimary Key Trigger (7.9ms)[0m            SELECT trigger_name
+          FROM all_triggers
+          WHERE owner = 'DREAMDESIGN'
+            AND trigger_name = 'DREAMDESIGN.RECOMMENDEDUNI_PKT'
+            AND table_owner = 'DREAMDESIGN'
+            AND table_name = 'RECOMMENDEDUNIVERSITIES'
+            AND status = 'ENABLED'
+
+  [1m[36m (6.8ms)[0m  [1mROLLBACK TO active_record_1[0m
+  [1m[35m (7.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (6.8ms)[0m  [1mROLLBACK TO active_record_1[0m
+  Rendered recommendeduniversities/new.html.erb (7.1ms)
+  [1m[35m (6.8ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (7.4ms)[0m  [1mROLLBACK TO active_record_1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (10.7ms)[0m  [1mSELECT "SCHEMA_MIGRATIONS".* FROM "SCHEMA_MIGRATIONS"[0m
+  [1m[35m (25.3ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHEMA_MIGRATIONS' AND hidden_column = 'NO' ORDER BY column_id
+Processing by GeneralController#ranking as HTML
+  Rendered general/ranking.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+Processing by MajorrankingsController#new as HTML
+  Rendered majorrankings/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (36.4ms)[0m  [1mSELECT DECODE(table_name, UPPER(table_name), LOWER(table_name), table_name) FROM all_tables WHERE owner = SYS_CONTEXT('userenv', 'session_user') AND secondary = 'N'[0m
+  [1m[35m (65.6ms)[0m  SELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'MAJORRANKINGS' AND hidden_column = 'NO' ORDER BY column_id
+  [1m[36m (8.0ms)[0m  [1mSELECT COUNT(*) FROM "DREAMDESIGN"."MAJORRANKINGS"[0m
+Processing by RecommendeduniversitiesController#new as HTML
+  Rendered recommendeduniversities/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[35mRecommendeduniversity Load (8.3ms)[0m  SELECT "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES".* FROM "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES"
+  [1m[36m (68.1ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'RECOMMENDEDUNIVERSITIES' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (8.0ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'RECOMMENDEDUNIVERSITIES_SEQ'
+  [1m[36mPrimary Key (8.4ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'RECOMMENDEDUNIVERSITIES' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  [1m[35m (7.7ms)[0m  SELECT COUNT(*) FROM "DREAMDESIGN"."RECOMMENDEDUNIVERSITIES"
+Processing by SchoolsController#new as HTML
+  [1m[36m (108.5ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'SCHOOLS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (7.8ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'SCHOOLS_SEQ'
+  [1m[36mPrimary Key (8.2ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'SCHOOLS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  Rendered schools/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 174ms (Views: 8.7ms | ActiveRecord: 124.6ms)
+  [1m[35m (9.4ms)[0m  SELECT COUNT(*) FROM "DREAMDESIGN"."SCHOOLS"
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (158.6ms)[0m  [1mSELECT column_name AS name, data_type AS sql_type, data_default, nullable, virtual_column, hidden_column, data_type_owner AS sql_type_owner, DECODE(data_type, 'NUMBER', data_precision, 'FLOAT', data_precision, 'VARCHAR2', DECODE(char_used, 'C', char_length, data_length), 'RAW', DECODE(char_used, 'C', char_length, data_length), 'CHAR', DECODE(char_used, 'C', char_length, data_length), NULL) AS limit, DECODE(data_type, 'NUMBER', data_scale, NULL) AS scale FROM all_tab_cols WHERE owner = 'DREAMDESIGN' AND table_name = 'USERS' AND hidden_column = 'NO' ORDER BY column_id[0m
+  [1m[35mSequence (7.5ms)[0m  select us.sequence_name from all_sequences us where us.sequence_owner = 'DREAMDESIGN' and us.sequence_name = 'USERS_SEQ'
+  [1m[36mPrimary Key (8.0ms)[0m  [1mSELECT cc.column_name FROM all_constraints c, all_cons_columns cc WHERE c.owner = 'DREAMDESIGN' AND c.table_name = 'USERS' AND c.constraint_type = 'P' AND cc.owner = c.owner AND cc.constraint_name = c.constraint_name[0m
+  [1m[35m (10.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (7.7ms)[0m  [1mSELECT  1 AS one FROM "USERS" WHERE "USERS"."EMAIL" = 'example@example.com' AND ROWNUM <= 1 [0m
+  [1m[35mPrimary Key Trigger (8.4ms)[0m            SELECT trigger_name
+          FROM all_triggers
+          WHERE owner = 'DREAMDESIGN'
+            AND trigger_name = 'USERS_PKT'
+            AND table_owner = 'DREAMDESIGN'
+            AND table_name = 'USERS'
+            AND status = 'ENABLED'
+
+  [1m[36mSQL (24.1ms)[0m  [1mINSERT INTO "USERS" ("CREATED_AT", "EMAIL", "ENCRYPTED_PASSWORD", "ID", "NAME", "UPDATED_AT") VALUES (:a1, :a2, :a3, :a4, :a5, :a6)[0m  [["created_at", 2014-12-03 00:18:35 UTC], ["email", "example@example.com"], ["encrypted_password", "$2a$04$.e8rUbxtbRqtTtvjnByGqukND9c1kzo.Io3N0agfJNUeklE2nbtMe"], ["id", 136], ["name", "Test User"], ["updated_at", 2014-12-03 00:18:35 UTC]]
+  [1m[35m (7.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (7.3ms)[0m  [1mSELECT  1 AS one FROM "USERS" WHERE "USERS"."EMAIL" = 'example@example.com' AND ROWNUM <= 1 [0m
+  [1m[35mSQL (8.4ms)[0m  INSERT INTO "USERS" ("CREATED_AT", "EMAIL", "ENCRYPTED_PASSWORD", "ID", "NAME", "UPDATED_AT") VALUES (:a1, :a2, :a3, :a4, :a5, :a6)  [["created_at", 2014-12-03 00:18:35 UTC], ["email", "example@example.com"], ["encrypted_password", "$2a$04$.BZOVWzdr02p6lCowVhyYedKUahmsBNtkynH9NBINi4b3iuU1.6V."], ["id", 137], ["name", "Test User"], ["updated_at", 2014-12-03 00:18:35 UTC]]

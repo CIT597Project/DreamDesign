@@ -1,5 +1,5 @@
-require 'rails_helper'
 require 'spec_helper'
+
 RSpec.describe UsersController, :type => :controller do
 
 
@@ -21,8 +21,9 @@ describe UsersController do
       get :show, :id => @user.id
       assigns(:user).should == @user
     end
-    
+  
   end
+end
 
 end
 
