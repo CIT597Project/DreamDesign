@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title><%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-</head>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="author" content="">
+	<%= stylesheet_link_tag "bootstrap.css" %>
+	<%= stylesheet_link_tag "styles.css" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 <body>
+<video autoplay="" loop="" poster="<%= asset_path('f1.jpg') %>" id="bgvid">
+    <source src="<%= asset_path('direct-to-99-bg.webm') %>" type="video/webm">
+</video>
+
+
+
 	<%= render 'layouts/header' %>
 	<div id="main-container" class="container-fluid">
 		<div class="row">
@@ -22,12 +28,6 @@
 	</div>
     
 	<%= render 'layouts/footer' %>
-
-  
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  
-
+	<script src="jquery.js"></script>
+	<script src="bootstrap.js"></script>
 </body></html>
