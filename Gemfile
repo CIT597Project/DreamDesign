@@ -28,6 +28,7 @@ gem 'ruby-oci8', '~> 2.1.0'
 
 
 group :development, :test do
+  gem 'minitest-rails'
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'

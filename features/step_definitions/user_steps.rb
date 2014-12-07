@@ -1,3 +1,8 @@
+require 'simplecov'
+SimpleCov.start do
+end
+
+
 def create_visitor
   @visitor ||= { :name => "Test User", :email => "example@example.com",
     :password => "changeme", :password_confirmation => "changeme"}
@@ -210,6 +215,7 @@ When(/^I  press (.*?)$/) do |arg1|
   visit root_path
   %{click button Log in with Facebook} 
 end
+
 Then(/^I need to provide credential$/) do
   OmniAuth.config.test_mode = true
   OmniAuth.config.mock_auth[:facebook] = {
@@ -296,21 +302,94 @@ When(/^I am on the university list page$/) do
   page.should have_selector(:link_or_button, 'Add')
 end
 
+Given(/^I am on the page MyList$/) do
+  visit 'mylist'
+end
+
+When(/^I choose a school in the dropdown list and add it$/) do
+  find_user
+  fill_in "my_school_school_id", :with => 1
+  fill_in "my_school_comment", :with => 'good'
+  click_button "Add"
+end
+
 When(/^I choose to add to my school list$/) do 
   page.first(:link, "Add").click
 end
 
 Then(/^I should see successful message or an already exist message$/) do
-  page.should have_content"list"
+  page.should have_content "list"
+end
+
+
+# following.feature
+
+Then(/^I should see the numbers of following and followers$/) do
+  page.should have_content "following"
+  page.should have_content "followers"
+end
+
+Then(/^I should see the users following me$/) do
+  page.should have_content"Followers"
+end
+
+
+Then(/^I should see the users I am following$/) do
+  page.should have_content"Following"
+end
+
+When(/^I click follow more button$/) do
+  click_button "Follow More"
+end
+
+Given(/^I see an follow button of a user$/) do
+  page.should have_selector(:link_or_button, 'Follow')
+end
+
+When(/^I click this follow button$/) do
+  page.first(:button, "follow").click
 end
 
 When(/^I'm on my school list page$/) do
-  visit '/mylist'
-  page.should have_content"My School List"
+  visit 'mylist'
+  page.should have_content "My School List"
+end
+
+Then(/^I should see the list of all users$/) do
+  page.should have_content "Follow A Friend"
+end
+
+Given(/^I am on the page Following$/) do
+  visit following_users_path
 end
 
 Then(/^I can delete the school$/) do
   page.should have_selector(:link_or_button, 'delete') 
+  click_link "delete"
+end
+
+When(/^I click following$/) do
+  click_link "following" 
+end
+
+When(/^I click followers$/) do
+  click_link "followers"
+end
+
+Then(/^this user will be added to followed list$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+Given(/^I see an unfollow button of a user$/) do
+  page.should have_selector(:link_or_button, 'Unfollow')
+end
+
+Given(/^I click this unfollow button$/) do
+  page.first(:button, "Unfollow").click
+end
+
+Then(/^this user will be get out of my followed list$/) do
+  pending # express the regexp above with the code you wish you had
 end
 
 #review.feature
