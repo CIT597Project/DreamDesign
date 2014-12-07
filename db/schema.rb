@@ -90,6 +90,7 @@ ActiveRecord::Schema.define(version: 20141125022316) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "follow",                  limit: nil, precision: 38, default: 0, null: false
+    t.string   "program_name"
   end
 
   create_table "users", force: true do |t|

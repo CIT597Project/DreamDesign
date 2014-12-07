@@ -13,6 +13,11 @@ Feature: Edit School list
 		And I choose to add to my school list
 		Then I should see successful message or an already exist message
 		
+	Scenario: Add a school in my list page
+		Given I am on the page MyList
+		When I choose a school in the dropdown list and add it
+		Then I should see successful message or an already exist message
+		
 		
 	Scenario: Delete a school in the school list
 		 When I'm on my school list page
