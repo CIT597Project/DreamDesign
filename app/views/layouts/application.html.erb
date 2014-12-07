@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<<<<<<< Updated upstream
     
 <head>
 		<title><%= full_title(yield(:title)) %></title>
@@ -9,13 +10,20 @@
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
 </head>
+=======
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="author" content="">
+	<%= stylesheet_link_tag "bootstrap.css" %>
+	<%= stylesheet_link_tag "styles.css" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+
+>>>>>>> Stashed changes
 <body>
 <video autoplay="" loop="" poster="<%= asset_path('f1.jpg') %>" id="bgvid">
-    <source src="<%= asset_path('direct-to-99-bg.webm') %>" type="video/webm">
 </video>
-
-
-
 	<%= render 'layouts/header' %>
 	<div id="main-container" class="container-fluid">
 		<div class="row">
