@@ -240,7 +240,7 @@ aside {
 /* sidebar */
 #sidebar {
 	border-right: 1px solid #E0E0E0;
-	background-color:#eeeeee;
+	background-color:rgba(192,192,192,0.5);
 }
 
 /* search bar */
@@ -349,4 +349,21 @@ tr.user_info {
 	position: relative;
 	margin-left: 25%;
 	width:50%;
+}
+
+/* vedio */
+video#bgvid{
+	position:fixed;
+	right:0;
+	bottom:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+}
+
+/* bootstrap */
+.jumbotron {
+	background-color:rgba(192,192,192,0.5);
 }
