@@ -303,7 +303,7 @@ When(/^I am on the university list page$/) do
 end
 
 Given(/^I am on the page MyList$/) do
-  visit 'mylist'
+  visit '/mylist'
 end
 
 When(/^I choose a school in the dropdown list and add it$/) do
@@ -317,8 +317,8 @@ When(/^I choose to add to my school list$/) do
   page.first(:link, "Add").click
 end
 
-Then(/^I should see successful message or an already exist message$/) do
-  page.should have_content "list"
+Then(/^I should see successful message$/) do
+  page.should have_content {"Add to list successfully"||"Already"}
 end
 
 
@@ -347,13 +347,9 @@ Given(/^I see an follow button of a user$/) do
 end
 
 When(/^I click this follow button$/) do
-  page.first(:button, "follow").click
+  page.first(:button, "Follow").click
 end
 
-When(/^I'm on my school list page$/) do
-  visit 'mylist'
-  page.should have_content "My School List"
-end
 
 Then(/^I should see the list of all users$/) do
   page.should have_content "Follow A Friend"
@@ -376,8 +372,8 @@ When(/^I click followers$/) do
   click_link "followers"
 end
 
-Then(/^this user will be added to followed list$/) do
-  pending # express the regexp above with the code you wish you had
+Then(/^this user will be added to following list$/) do
+  page.should have_content "1"
 end
 
 Given(/^I see an unfollow button of a user$/) do
@@ -389,7 +385,7 @@ Given(/^I click this unfollow button$/) do
 end
 
 Then(/^this user will be get out of my followed list$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should_not have_content "1"
 end
 
 #review.feature

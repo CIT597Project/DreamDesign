@@ -38,6 +38,8 @@ class MajorrankingsController < ApplicationController
     @majorrankings.destroy
     respond_with(@majorrankings)
   end
+  
+  
   private
     def set_majorranking
       @majorrankings = Majorranking.find(params[:id])

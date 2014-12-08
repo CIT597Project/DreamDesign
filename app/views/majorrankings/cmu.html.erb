@@ -28,4 +28,7 @@ The Gates-Hillman Complex, home to Carnegie Mellon University's School of Comput
 In the past 15 years, researchers from Carnegie Mellon' School of Computer Science have made developments in the fields of algorithms, computer networks, distributed systems, parallel processing, programming languages, robotics, language technologies, human–computer interaction and software engineering.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"Carnegie Mellon University")%>
+<%=render 'reviews'%>
 </body>

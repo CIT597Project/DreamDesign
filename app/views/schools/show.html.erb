@@ -1,28 +1,35 @@
-<p>
-  <strong>Name:</strong>
-  <%= @school.Institution_Name %>
-</p>
+<h1><%=@school.Institution_Name%></h1>
 
-<h2>Comments</h2>
-<% @school.reviews.each do |review| %>
-  <p>
-    <strong>User:</strong>
-    <%= User.find_by(id:review.user_id).username %>
-  </p>
- 
-  <p>
-    <strong>Review:</strong>
-    <%= review.body %>
-  </p>
-<% end %>
+ <h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4>
 
+<hr>
+<table id="description">
+<tr>
+ <th>State:</th>
+ <td><%=@school.Institution_State%></td>
+</tr>
+<tr>
+ <th>City:</th>
+ <td><%=@school.Institution_City%></td>
+</tr>
+<tr>
+ <th>Address:</th>
+ <td><%=@school.Institution_Address%></td>
+</tr>
+<tr>
+ <th>Zip:</th>
+ <td><%=@school.Institution_Zip%></td>
+</tr>
+<tr>
+ <th>Phone:</th>
+ <td><%=@school.Institution_Phone%></td>
+</tr>
+<tr>
+ <th>Website:</th>
+ <td><%=@school.Institution_Web_Address%></td>
+</tr>
+</table>
 
-<%= form_for([@school, @school.reviews.build]) do |f| %>
-  <p>
-    <%= f.label :"Add" %><br>
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+	
+<hr>
+<%=render '/majorrankings/reviews'%>

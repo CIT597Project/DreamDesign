@@ -29,4 +29,7 @@ Yale is organized into twelve constituent schools: the original undergraduate co
 Yale College undergraduates follow a liberal arts curriculum with departmental majors and are organized into a system of residential colleges. The Yale University Library, serving all twelve schools, holds more than 15 million volumes and is the third-largest academic library in the United States. Almost all faculty teach undergraduate courses, more than 2,000 of which are offered annually. Students compete intercollegiately as the Yale Bulldogs in the NCAA Division I Ivy League.
 Yale has graduated many notable alumni, including five U.S. Presidents, 19 U.S. Supreme Court Justices, 13 living billionaires, and many foreign heads of state. In addition, Yale has graduated thousands of members of Congress and many high-level U.S. diplomats, including former U.S. Secretary of State Hillary Clinton and current Secretary of State John Kerry. Fifty-two Nobel laureates have been affiliated with the University as students, faculty, or staff, and 230 Rhodes Scholars (the second most in the United States) graduated from the University.</p>
 
+<% @school=School.find_by(Institution_Name:"Yale University")%>
+<%=render '/majorrankings/reviews'%>
+
 </body>

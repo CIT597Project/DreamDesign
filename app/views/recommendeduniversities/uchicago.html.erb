@@ -27,4 +27,7 @@ The University of Chicago (U of C, UChicago, or simply Chicago) is a private res
 The university consists of the College of the University of Chicago, various graduate programs and interdisciplinary committees organized into four divisions, six professional schools, and a school of continuing education. Chicago is particularly well known for its professional schools, which include the Pritzker School of Medicine, the Booth School of Business, the Law School, and the Divinity School. The university enrolls approximately 5,000 students in the College and about 15,000 students overall.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"University of Chicago")%>
+<%=render '/majorrankings/reviews'%>
 </body>

@@ -29,4 +29,7 @@ The university was founded in 1754 as King's College by royal charter of George 
 Columbia annually administers the Pulitzer Prize. 101 Nobel Prize laureates have been affiliated with the university as students, faculty, or staff, the second most of any institution in the world. Columbia is one of the fourteen founding members of the Association of American Universities, and was the first school in the United States to grant the M.D. degree. Notable alumni and former students of the university and its predecessor, King's College, include five Founding Fathers of the United States; nine Justices of the United States Supreme Court; 43 Nobel Prize laureates; 20 living billionaires; 28 Academy Award winners; and 29 heads of state, including three United States Presidents.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"Columbia University in the City of New York")%>
+<%=render '/majorrankings/reviews'%>
 </body>

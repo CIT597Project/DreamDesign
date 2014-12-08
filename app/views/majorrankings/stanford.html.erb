@@ -25,4 +25,7 @@ color:#04B431;}
 Founded in 1965, the Stanford Computer Science (CS) Department continues to lead the world in computer science research and education. Throughout the past four decades, the Stanford CS Department has influenced society at levels that remain without parallel among academic institutions. Its spin-offs are among the most successful corporate ventures in the world, and many of the leaders in the academic and corporate research world are graduates of the Stanford CS Department.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"Stanford University")%>
+<%=render 'reviews'%>
 </body>

@@ -28,4 +28,7 @@ Princeton provides undergraduate and graduate instruction in the humanities, soc
 By endowment per student, Princeton is the wealthiest school in the United States.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"Princeton University")%>
+<%=render '/majorrankings/reviews'%>
 </body>

@@ -27,4 +27,7 @@ Home to 59 faculty members researching all aspects of computer science, from sys
 The Thomas M. Siebel Center for Computer Science serves as a living laboratory to explore and evaluate emerging computing technologies. This major education and research facility is one of the most advanced buildings on any campus.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"University of Illinois at Urbana-Champaign")%>
+<%=render 'reviews'%>
 </body>

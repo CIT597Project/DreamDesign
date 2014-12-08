@@ -1,0 +1,49 @@
+
+
+<div id="review_section">
+
+<h2>People say...</h2>
+<% @school.reviews.each do |review| %>
+
+	<li class="review">
+		<% user=User.find_by(id:review.user_id) %>
+	  <%= link_to gravatar_for(user, size: 50), '#' %>
+	  <span class="user"><%= link_to user.username, '#' %></span>
+	  <span class="content">
+	    <%= review.body %>
+	  </span>
+	  <span class="timestamp">
+	    Posted <%= time_ago_in_words(review.created_at) %> ago.
+	    <% if current_user.id == user.id %>
+	      <%= link_to "delete", review, method: :delete,
+	                                       data: { confirm: "You sure?" } %>
+	    <% end %>
+	  </span>
+	</li>
+	
+	<hr>
+<% end %>
+
+<div class="add_reviews">
+<%= form_for([@school, @school.reviews.build]) do |f| %>
+  <p>
+    <%= f.text_area :body, placeholder: "I want to say..." %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</div>
+
+</div>
+
+<br>
+<br>
+
+<div class="center">
+	<% if current_user %>
+	<%= link_to "Add to my list", addSchool_path(:user_id=>current_user.id, :school_id=>@school.id, :name=> @school.Institution_Name), method:"post", class: "btn btn-lg btn-primary" %>
+	<% else %>
+	<%= link_to "Add", new_user_session_path, class: "btn btn-lg btn-primary" %>
+	<% end %>
+</div>

@@ -29,4 +29,7 @@ Benjamin Franklin, (1705/06-1790), Penn's founder, advocated an educational prog
 Penn offers a broad range of academic departments, an extensive research enterprise and a number of community outreach and public service programs. It is particularly well known for its medical school, dental school, design school, school of business, law school, communications school, nursing school, veterinary school, its social sciences and humanities programs, as well as its biomedical teaching and research capabilities. Its undergraduate programs are also among the most selective in the country (approximately 10% acceptance rate). One of Penn's most well known academic qualities is its emphasis on interdisciplinary education, which it promotes through numerous joint degree programs, research centers and professorships, a unified campus, and the ability for students to take classes from any of Penn's schools (the "One University Policy").</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"University of Pennsylvania")%>
+<%=render '/majorrankings/reviews'%>
 </body>

@@ -28,4 +28,7 @@ MIT, with five schools and one college which contain a total of 32 departments, 
 MIT is often cited as among the world's top universities. As of 2014, 81 Nobel laureates, 52 National Medal of Science recipients, 45 Rhodes Scholars, 38 MacArthur Fellows, and 2 Fields Medalists have been affiliated with MIT. MIT has a strong entrepreneurial culture and the aggregated revenues of companies founded by MIT alumni would rank as the eleventh-largest economy in the world.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"Massachusetts Institute of Technology")%>
+<%=render '/majorrankings/reviews'%>
 </body>

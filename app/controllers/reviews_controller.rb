@@ -7,6 +7,9 @@ class ReviewsController < ApplicationController
     redirect_to school_path(@school)
   end
   
+  def destroy
+  end
+  
 
   private
   def review_params

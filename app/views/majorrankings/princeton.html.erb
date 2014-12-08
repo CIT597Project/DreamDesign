@@ -25,4 +25,7 @@ color:#04B431;}
 Princeton has been at the forefront of computing since Alan Turing, Alonzo Church and John von Neumann were among its residents. Our department is home to 30 tenure-track and 13 teaching faculty, with strong groups in theory, networks/systems, graphics/vision, programming languages, security/policy, machine learning, and computational biology.
 </p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"Princeton University")%>
+<%=render 'reviews'%>
 </body>

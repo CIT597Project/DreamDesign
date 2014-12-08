@@ -11,10 +11,11 @@ class MySchoolsController < ApplicationController
       num = @school.follow
       num += 1
       @school.update(follow:num)
-        redirect_to mylist_path
+      flash[:notice] = "Add to list successfully."
     else
-      redirect_to root_path
+      flash[:notice] = "Already in your list."
     end
+    redirect_to mylist_path
   end
   
   def addSchool
@@ -29,11 +30,10 @@ class MySchoolsController < ApplicationController
       num += 1
       @school.update(follow:num)
       flash[:notice] = "Add to list successfully."
-      redirect_to (:back)
     else
       flash[:notice] = "Already in your list."
-      redirect_to (:back)
     end
+    redirect_to (:back)
   end
 
   

@@ -31,4 +31,7 @@ Despite its small size, 33 Caltech alumni and faculty have won a total of 34 Nob
 First year students are required to live on campus, and 95% of undergraduates remain in the on-campus house system. Although Caltech has a strong tradition of practical jokes and pranks, student life is governed by an honor code which allows faculty to assign take-home examinations. The Caltech Beavers compete in 13 intercollegiate sports in the NCAA Division III's Southern California Intercollegiate Athletic Conference.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"California Institute of Technology")%>
+<%=render '/majorrankings/reviews'%>
 </body>

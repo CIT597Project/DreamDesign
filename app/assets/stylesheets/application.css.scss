@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
   letter-spacing: -1px;
   
   text-align: center;
@@ -62,6 +62,15 @@ h2 {
 }
 
 h3 {
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+	
+  text-align: center;
+  font-weight: normal;
+}
+
+h4 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -366,4 +375,86 @@ video#bgvid{
 /* bootstrap */
 .jumbotron {
 	background-color:rgba(192,192,192,0.5);
+}
+
+/* school page */
+.add_reviews{
+	margin-left:20px;
+	width:300px;
+}
+
+
+#review_section {
+	border:5px solid #E8E8E8 ;
+}
+
+.review {
+	margin-left:20px;
+  list-style: none;
+  padding: 0px;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+.followed_by {
+	text-align:right;
+	margin-right:30px;
+}
+
+#description {
+	margin-left:20px;
+	th, td {
+		padding:10px;
+	}
+}
+
+.inline {
+	
+	text-align: right;
+	width: 50em;
+	
+	div {
+		display:inline;
+	}
+	
+	.list_school_name {
+		text-align:left;
+		font-size: 1.5em;
+		font-style:bold;
+		margin-right:200px;
+		width: 50em;
+	}
+	.list_add {
+	
+	}
+	.list_website {
+		margin-right:200px;
+	}
+	.list_follow {
+		
+	}
 }

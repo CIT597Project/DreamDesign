@@ -1,0 +1,48 @@
+<hr>
+<table>
+	<tr>
+ <%= form_tag index_path, {method: :get} do %> 
+ <th id="paginate">
+ <%= will_paginate @schools%>	
+
+ </th>
+<th id="search_form">
+     
+     <%= text_field_tag :search, params[:search], placeholder: "search a school" %> 
+	
+ </th>
+ <th id="search_icon">
+	
+		  <%= image_submit_tag "search.png", :name => nil%>
+	
+	 </th>
+ <% end %>
+
+
+
+
+<ol type="1">	
+ <% @schools.each do |school| %>     
+   <li>
+		 <div class="inline">
+				 <div class="list_school_name"><%= link_to school.Institution_Name, school_path(:id=>School.find_by(Institution_ID:school.Institution_ID).id, class:"school_name") %></div>
+				 <div class="list_add">
+	 				<% if current_user %>
+	 			 		<%= link_to "Add", addSchool_path(:user_id=>current_user.id, :school_id=>School.find_by(Institution_ID:school.Institution_ID).id, :name=> school.Institution_Name), method:"post", class:"btn btn-primary" %>
+	 				<% else %>
+	 			 		<%= link_to "Add", new_user_session_path, class:"btn btn-primary"%>
+	 			 	<% end %>
+				 </div>
+ 		 </div>
+ 		 <div class="inline">
+	 			 <div class="list_website">Website: <%=link_to school.Institution_Web_Address, url_options="http://#{school.Institution_Web_Address}"%></div>
+				 <div class="list_follow">Followed by: <%= school.follow %></div>
+		 </div>
+	 </li>
+	 <br>
+	 <br>
+ <% end %>
+ 
+</ol>
+
+<%= will_paginate @schools%>	

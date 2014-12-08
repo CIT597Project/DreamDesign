@@ -25,4 +25,7 @@ color:#04B431;}
 The Department was organized in 1965 and is one of the oldest departments of its kind in the country. The history of the department, including major events and when faculty joined, appears in the CS Timeline. It has a full-time faculty of nearly 40, approximately 110 resident Ph.D. graduate students, 100 M.Eng students, and approximately 300 undergraduate CS majors, with around 100-130 students graduating each year.</p>
 <p>
 <a href="new">Back</a>
+
+<% @school=School.find_by(Institution_Name:"Cornell University")%>
+<%=render 'reviews'%>
 </body>
