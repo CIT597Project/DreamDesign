@@ -33,12 +33,11 @@
   </div>
 	
   <div class="field">
-		  <%= f.label "Add an avatar" %> <br />
-		<span class="picture">
-		  Upload: <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
-		</span>
+	    <%= f.label :avatar  %>
+	    <%= f.file_field :avatar %>
+	         
   </div>
-	
+
 
   <div class="actions">
     <%= f.submit "Update" %>
@@ -47,6 +46,7 @@
 	
 <% end %>
 
+  
 <br>
 <br>
 <h2>Cancel my account</h2>

@@ -25,5 +25,14 @@ class UsersController < ApplicationController
     @user=User.find(params[:id])
     render 'users/show'
   end
+  def create
+    @user = User.create( user_params )
+  end
 
+  private
+
+
+  def user_params
+    params.require(:user).permit(:avatar)
+  end
 end

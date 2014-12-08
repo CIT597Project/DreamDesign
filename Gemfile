@@ -25,7 +25,7 @@ gem 'aws-sdk'
 gem 'rails-simple-search'
 gem 'activerecord-oracle_enhanced-adapter', github: 'rsim/oracle-enhanced', branch: 'rails42'
 gem 'ruby-oci8', '~> 2.1.0'
-
+gem "paperclip", "~> 4.2"
 
 group :development, :test do
   gem 'minitest-rails'
