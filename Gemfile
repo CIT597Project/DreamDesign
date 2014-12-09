@@ -23,11 +23,13 @@ gem 'factory_girl_rails'
 gem 'spork-rails'
 gem 'aws-sdk'
 gem 'rails-simple-search'
-gem 'activerecord-oracle_enhanced-adapter', github: 'rsim/oracle-enhanced', branch: 'rails42'
-gem 'ruby-oci8', '~> 2.1.0'
+# gem 'activerecord-oracle_enhanced-adapter', github: 'rsim/oracle-enhanced', branch: 'rails42'
+# gem 'ruby-oci8', '~> 2.1.0'
 gem "paperclip", "~> 4.2"
 
 group :development, :test do
+  gem 'activerecord-oracle_enhanced-adapter', github: 'rsim/oracle-enhanced', branch: 'rails42'
+  gem 'ruby-oci8', '~> 2.1.0'
   gem 'minitest-rails'
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
