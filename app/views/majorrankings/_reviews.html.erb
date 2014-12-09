@@ -46,7 +46,7 @@
 	  <span class="timestamp">
 	    Posted <%= time_ago_in_words(review.created_at) %> ago.
 	    <% if current_user.id == user.id %>
-	      <%= link_to "delete", review, method: :delete,
+	      <%= link_to "Delete", review, method: :delete,class:"btn btn-primary",
 	                                       data: { confirm: "You sure?" } %>
 	    <% end %>
 	  </span>

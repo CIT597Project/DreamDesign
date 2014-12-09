@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :majorrankings
   resources :my_schools, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
+  resources :reviews, only: [:create, :destroy]
   
   resources :schools do
     resources :reviews

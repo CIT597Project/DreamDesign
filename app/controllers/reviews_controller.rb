@@ -8,6 +8,7 @@ class ReviewsController < ApplicationController
   end
   
   def destroy
+    redirect_to school_path(@school)
   end
   
 
