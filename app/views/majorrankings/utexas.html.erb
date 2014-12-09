@@ -1,20 +1,12 @@
-
+<% @school=School.find_by(Institution_Name:"University of Texas at Austin")%>
 <head>
 <Title align=center> University of Texas-Austin </title>
 </head>
-<style type="text/css">
- 
-a{text-decoration: none;}  
-a:link,
-a:visited{
-color:#0404B4;
-}
-a:hover,
-a:active{
-color:#04B431;}
-</style>
+
 <body bgcolor="#CEF6F5">
 <h1 align=center> University of Texas-Austin</h1>
+<h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4><hr>
+
 <div style=" margin-left:140px">
 
          <img src="http://hmg-associates.com/images/ut-bill-melinda-gates-large.jpg" height="400" width"800">
@@ -36,7 +28,8 @@ color:#04B431;}
 <p>
 The Department of Computer Science offers a unique opportunity for students to achieve excellence in the fundamentals of computer science and practical technical skills through rigorous classes, hands-on research and technology development. Its pioneering researchers create scientific knowledge and leading edge technologies that change the world.</p>
 </p>
-<a href="new">Back</a>
-<% @school=School.find_by(Institution_Name:"University of Texas at Austin")%>
+
 <%=render 'reviews'%>
+
+<a href="new">Back</a>
 </body>

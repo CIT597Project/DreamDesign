@@ -1,20 +1,15 @@
-
+<% @school=School.find_by(Institution_Name:"University of California - Berkeley")%>
 <head>
 <Title align=center> University of California, Berkeley </title>
 </head>
-<style type="text/css">
- 
-a{text-decoration: none;}  
-a:link,
-a:visited{
-color:#0404B4;
-}
-a:hover,
-a:active{
-color:#04B431;}
-</style>
+
+
 <body bgcolor="#CEF6F5">
 <h1 align=center> University of California, Berkeley </h1>
+
+ <h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4>
+
+<hr>
 <div style=" margin-left:155px">
 
          <img src="http://www.cs.berkeley.edu/~carazvan/soda_hall.jpg" height="400" width"800">
@@ -33,8 +28,7 @@ UC Berkeley led the development of computational complexity theory with the foun
 <p>
 Berkeley’s AI effort grew largely in the 80s and 90s, at a time when problems with this paradigm were becoming evident, and researchers at Berkeley played a major role in developing the new, more probabilistic and learning-oriented AI. This new synthesis brought traditional AI together with control theory, pattern recognition, neural networks, and statistical learning theory. Stuart Russell and Peter Norvig’s bestselling textbook has become the canonical exemplar of this synthesis, and research at Berkeley in fields such as vision, robotics and learning is bringing us ever closer to the dream of truly intelligent machines.</p>
 <p>
-<a href="new">Back</a>
 
-<% @school=School.find_by(Institution_Name:"University of California - Berkeley")%>
 <%=render 'reviews'%>
+<a href="new">Back</a>
 </body>

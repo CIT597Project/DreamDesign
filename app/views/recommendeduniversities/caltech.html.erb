@@ -1,20 +1,12 @@
-
+<% @school=School.find_by(Institution_Name:"California Institute of Technology")%>
 <head>
 <Title align=center> California Institute of Technology </title>
 </head>
-<style type="text/css">
- 
-a{text-decoration: none;}  
-a:link,
-a:visited{
-color:#0404B4;
-}
-a:hover,
-a:active{
-color:#04B431;}
-</style>
+
 <body bgcolor="#CEF6F5">
 <h1 align=center> California Institute of Technology </h1>
+<h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4><hr>
+
 <div style=" margin-left:150px">
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/9/9c/Robert_A._Millikan_Memorial_Library_at_Caltech.jpg" height="400" width"800">
@@ -30,8 +22,7 @@ Despite its small size, 33 Caltech alumni and faculty have won a total of 34 Nob
 <p>
 First year students are required to live on campus, and 95% of undergraduates remain in the on-campus house system. Although Caltech has a strong tradition of practical jokes and pranks, student life is governed by an honor code which allows faculty to assign take-home examinations. The Caltech Beavers compete in 13 intercollegiate sports in the NCAA Division III's Southern California Intercollegiate Athletic Conference.</p>
 <p>
-<a href="new">Back</a>
-
-<% @school=School.find_by(Institution_Name:"California Institute of Technology")%>
 <%=render '/majorrankings/reviews'%>
+
+<a href="new">Back</a>
 </body>

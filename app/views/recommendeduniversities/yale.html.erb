@@ -1,20 +1,12 @@
-
+<% @school=School.find_by(Institution_Name:"Yale University")%>
 <head>
 <Title align=center> Yale University </title>
 </head>
-<style type="text/css">
- 
-a{text-decoration: none;}  
-a:link,
-a:visited{
-color:#0404B4;
-}
-a:hover,
-a:active{
-color:#04B431;}
-</style>
+
 <body bgcolor="#CEF6F5">
 <h1 align=center> Yale University </h1>
+<h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4><hr>
+
 <div style=" margin-left:140px">
 
          <img src="http://static.squarespace.com/static/529d80abe4b08dddf15d8d91/t/53137d05e4b08cb688174fe4/1393786123130/Yale+4.jpg?format=1500w" height="400" width"800" >
@@ -29,7 +21,8 @@ Yale is organized into twelve constituent schools: the original undergraduate co
 Yale College undergraduates follow a liberal arts curriculum with departmental majors and are organized into a system of residential colleges. The Yale University Library, serving all twelve schools, holds more than 15 million volumes and is the third-largest academic library in the United States. Almost all faculty teach undergraduate courses, more than 2,000 of which are offered annually. Students compete intercollegiately as the Yale Bulldogs in the NCAA Division I Ivy League.
 Yale has graduated many notable alumni, including five U.S. Presidents, 19 U.S. Supreme Court Justices, 13 living billionaires, and many foreign heads of state. In addition, Yale has graduated thousands of members of Congress and many high-level U.S. diplomats, including former U.S. Secretary of State Hillary Clinton and current Secretary of State John Kerry. Fifty-two Nobel laureates have been affiliated with the University as students, faculty, or staff, and 230 Rhodes Scholars (the second most in the United States) graduated from the University.</p>
 
-<% @school=School.find_by(Institution_Name:"Yale University")%>
+
 <%=render '/majorrankings/reviews'%>
 
+<a href="new">Back</a>
 </body>

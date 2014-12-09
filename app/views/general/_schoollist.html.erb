@@ -17,16 +17,19 @@
 	
 	 </th>
  <% end %>
+</tr>
+</table>
 
 
 
 
-<ol type="1">	
+<ol>	
  <% @schools.each do |school| %>     
    <li>
+		 <br>
 		 <div class="inline">
-				 <div class="list_school_name"><%= link_to school.Institution_Name, school_path(:id=>School.find_by(Institution_ID:school.Institution_ID).id, class:"school_name") %></div>
-				 <div class="list_add">
+				 <div class="list_school_name col-md-9"><%= link_to school.Institution_Name, school_path(:id=>School.find_by(Institution_ID:school.Institution_ID).id, class:"school_name") %></div>
+				 <div class="list_add col-md-2">
 	 				<% if current_user %>
 	 			 		<%= link_to "Add", addSchool_path(:user_id=>current_user.id, :school_id=>School.find_by(Institution_ID:school.Institution_ID).id, :name=> school.Institution_Name), method:"post", class:"btn btn-primary" %>
 	 				<% else %>
@@ -35,10 +38,12 @@
 				 </div>
  		 </div>
  		 <div class="inline">
-	 			 <div class="list_website">Website: <%=link_to school.Institution_Web_Address, url_options="http://#{school.Institution_Web_Address}"%></div>
-				 <div class="list_follow">Followed by: <%= school.follow %></div>
+	 			 <div class="list_website col-md-9">Website: <%=link_to school.Institution_Web_Address, url_options="http://#{school.Institution_Web_Address}"%></div>
+				 <div class="list_follow col-md-2">Followed by: <%= school.follow %></div>
 		 </div>
 	 </li>
+	 <br>
+	 <br>
 	 <br>
 	 <br>
  <% end %>

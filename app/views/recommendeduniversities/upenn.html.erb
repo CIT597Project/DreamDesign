@@ -1,20 +1,12 @@
-
+<% @school=School.find_by(Institution_Name:"University of Pennsylvania")%>
 <head>
 <Title align=center> University of Pennsylvania </title>
 </head>
-<style type="text/css">
- 
-a{text-decoration: none;}  
-a:link,
-a:visited{
-color:#0404B4;
-}
-a:hover,
-a:active{
-color:#04B431;}
-</style>
+
 <body bgcolor="#CEF6F5">
-<h1 align=center> University of Pennsylvania </h1>
+<h1 align=center> University of Pennsylvania </h1><h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4><hr>
+
+
 <div style=" margin-left:70px">
 
          <img src="http://upload.wikimedia.org/wikipedia/commons/6/69/Penn_campus_2.jpg" height="400" width"800">
@@ -28,8 +20,9 @@ Benjamin Franklin, (1705/06-1790), Penn's founder, advocated an educational prog
 <p>
 Penn offers a broad range of academic departments, an extensive research enterprise and a number of community outreach and public service programs. It is particularly well known for its medical school, dental school, design school, school of business, law school, communications school, nursing school, veterinary school, its social sciences and humanities programs, as well as its biomedical teaching and research capabilities. Its undergraduate programs are also among the most selective in the country (approximately 10% acceptance rate). One of Penn's most well known academic qualities is its emphasis on interdisciplinary education, which it promotes through numerous joint degree programs, research centers and professorships, a unified campus, and the ability for students to take classes from any of Penn's schools (the "One University Policy").</p>
 <p>
-<a href="new">Back</a>
 
-<% @school=School.find_by(Institution_Name:"University of Pennsylvania")%>
+
 <%=render '/majorrankings/reviews'%>
+
+<a href="new">Back</a>
 </body>

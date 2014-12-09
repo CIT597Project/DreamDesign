@@ -1,20 +1,12 @@
-
+<% @school=School.find_by(Institution_Name:"Carnegie Mellon University")%>
 <head>
 <Title align=center> Carnegie Mellon University </title>
 </head>
-<style type="text/css">
- 
-a{text-decoration: none;}  
-a:link,
-a:visited{
-color:#0404B4;
-}
-a:hover,
-a:active{
-color:#04B431;}
-</style>
+
 <body bgcolor="#CEF6F5">
 <h1 align=center> Carnegie Mellon University </h1>
+
+<h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4><hr>
 <div style=" margin-left:180px">
 
          <img src="http://upload.wikimedia.org/wikipedia/commons/c/ca/CMU_Gates_Hillman_Complex_Night.jpg" height="400" width"800">
@@ -27,8 +19,10 @@ The School of Computer Science (SCS) at Carnegie Mellon University in Pittsburgh
 The Gates-Hillman Complex, home to Carnegie Mellon University's School of Computer Science.
 In the past 15 years, researchers from Carnegie Mellon' School of Computer Science have made developments in the fields of algorithms, computer networks, distributed systems, parallel processing, programming languages, robotics, language technologies, human–computer interaction and software engineering.</p>
 <p>
-<a href="new">Back</a>
 
-<% @school=School.find_by(Institution_Name:"Carnegie Mellon University")%>
+
+
 <%=render 'reviews'%>
+
+<a href="new">Back</a>
 </body>

@@ -1,20 +1,12 @@
-
+<% @school=School.find_by(Institution_Name:"Massachusetts Institute of Technology")%>
 <head>
 <Title align=center> Massachusetts Institute of Technology </title>
 </head>
-<style type="text/css">
- 
-a{text-decoration: none;}  
-a:link,
-a:visited{
-color:#0404B4;
-}
-a:hover,
-a:active{
-color:#04B431;}
-</style>
+
 <body bgcolor="#CEF6F5">
 <h1 align=center> Massachusetts Institute of Technology </h1>
+<h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4><hr>
+
 <div style=" margin-left:175px">
 
          <img src="http://upload.wikimedia.org/wikipedia/commons/1/17/Stata_Center1.jpg" height="400" width"800">
@@ -28,9 +20,9 @@ EECS' nearly 130 faculty find their research homes in four major affiliate labs:
 <p>
 From robots that perform with professional dance troupes to medical electronic devices that harvest energy from differences in body temperature, EECS makes an impact in the quality of life world-wide.   What do you use every day?  Chances are that EECS has had a hand in it: the World Wide Web (Sir Tim Berners-Lee, CSAIL), the conversion of analog to digital TV (Jae S. Lim, RLE), building more reliable grids through development of systems behavior algorithms (work of Munther A. Dahleh, LIDS), new MRI scanning technologies (Elfar Adalsteinsson, RLE), and many more.</p>
 <p>
+
+<%=render 'reviews'%>
 <a href="new">Back</a>
 
-<% @school=School.find_by(Institution_Name:"Massachusetts Institute of Technology")%>
-<%=render 'reviews'%>
 
 </body>
