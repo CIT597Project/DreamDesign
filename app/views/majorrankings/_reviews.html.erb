@@ -83,7 +83,7 @@
 
 <div class="col-md-6 review_section">
 	<h2>who love it</h2>
-	
+	<% if @users != nil %>
 	<ul class="nav nav-tabs" role="tablist" id="myTab">
 	  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All Users (<%=@users.count.to_s%>)</a></li>
 	  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">My Following</a></li>
@@ -92,7 +92,6 @@
 	<div class="tab-content">
 	  <div role="tabpanel" class="tab-pane active" id="home">
 			
-  <% if @users != nil %>
     <ul>
 			<br>
       <% @users.each do |user| %>
@@ -108,7 +107,29 @@
 			<br>
 			<br>
 		</ul>
+ 
+	
+	
+	<% else  @users != nil %>
+	<ul class="nav nav-tabs" role="tablist" id="myTab">
+	  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All Users (0)</a></li>
+	  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">My Following</a></li>
+	</ul>
+	
+	<div class="tab-content">
+	  <div role="tabpanel" class="tab-pane active" id="home">
+			
+    <ul>
+			<br>
+ 
+			<br>
+			<br>
+		</ul>
   <% end %>
+	
+	
+	
+	
 </div>
 
  <div role="tabpanel" class="tab-pane" id="profile">
