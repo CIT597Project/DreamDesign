@@ -8,6 +8,8 @@ class ReviewsController < ApplicationController
   end
   
   def destroy
+    @school=School.find(params[:school_id])
+    Review.find(params[:id]).destroy
     redirect_to school_path(@school)
   end
   

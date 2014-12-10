@@ -17,6 +17,8 @@ class MajorrankingsController < ApplicationController
 
   def new
     @majorrankings=Majorranking.all
+    
+  
     # respond_with(@majorrankings)
   end
   

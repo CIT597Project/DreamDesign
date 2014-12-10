@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :my_schools, dependent: :destroy
+  has_many :schools, through: :my_schools
   has_many :reviews
   has_many :active_relationships, class_name: "Relationship", 
                                   foreign_key: "follower_id", dependent: :destroy
@@ -13,7 +14,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
 
-  
+  self.table_name = "DREAMDESIGN.USERS"
   
   
   devise :database_authenticatable, :registerable,
@@ -22,7 +23,13 @@ class User < ActiveRecord::Base
 
 
          
-        
+   def self.search(search)
+    if search
+      where(['"USERNAME" LIKE ?', "%#{search}%"]) 
+    else
+     scoped
+    end
+   end      
 
 
   def self.from_omniauth(auth)

@@ -1,7 +1,7 @@
 <h1>Major Ranking (computer science)</h1>
 
 
-<ol>	
+<ol class="ol_format">	
  <% @majorrankings.each do |majorranking| %>  
  <% school=School.find_by(Institution_Name:majorranking.institution_name)%> 
    <li>

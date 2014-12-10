@@ -1,7 +1,7 @@
 <h1>Recommended Universities</h1>
 
 
-<ol>	
+<ol class="ol_format">	
  <% @recommendeduniversity.each do |university| %>  
  <% school=School.find_by(Institution_Name:university.institution_name)%> 
    <li>

@@ -16,6 +16,7 @@ class RecommendeduniversitiesController < ApplicationController
   def new
     @recommendeduniversity = Recommendeduniversity.all
     respond_with(@recommendeduniversity)
+   
   end
 
   def edit

@@ -1,7 +1,17 @@
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+
+  })
+	</script>
+
+
+
+
  <h4 class="followed_by">Followed by <%=pluralize(@school.follow, 'user')%></h4>
 
-<hr>
-<table id="description">
+<div class="row description">
+<table class="table table-striped">
 <tr>
  <th>State:</th>
  <td><%=@school.Institution_State%></td>
@@ -24,34 +34,36 @@
 </tr>
 <tr>
  <th>Website:</th>
- <td><%=@school.Institution_Web_Address%></td>
+ <td><%=link_to @school.Institution_Web_Address, "http://#{@school.Institution_Web_Address}"%></td>
 </tr>
 </table>
+</div>
 
-	
-<hr>
+	<br>
 
-<div id="review_section">
+<div class="row">
+<div class="col-md-5 review_section">
 
-<h2>People say...</h2>
+<h2>people say...</h2>
+
 <% @school.reviews.each do |review| %>
-
 	<li class="review">
 		<% user=User.find_by(id:review.user_id) %>
 	  <%= link_to gravatar_for(user, size: 50), '#' %>
+
 	  <span class="user"><%= link_to user.username, '#' %></span>
+		<br>
 	  <span class="content">
 	    <%= review.body %>
 	  </span>
+    <% if current_user.id == user.id %>
+      <%= link_to "Delete", review_path(:id=>review.id, :school_id=>@school.id), method: :delete,class:"btn btn-danger delete", data: { confirm: "You sure?" } %>
+    <% end %>
+		<br>
 	  <span class="timestamp">
 	    Posted <%= time_ago_in_words(review.created_at) %> ago.
-	    <% if current_user.id == user.id %>
-	      <%= link_to "Delete", review, method: :delete,class:"btn btn-primary",
-	                                       data: { confirm: "You sure?" } %>
-	    <% end %>
-	  </span>
+		</span>	  
 	</li>
-	
 	<hr>
 <% end %>
 
@@ -61,15 +73,56 @@
     <%= f.text_area :body, placeholder: "I want to say..." %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit class:"btn btn-warning" %>
   </p>
+	<br>
 <% end %>
 </div>
 
 </div>
 
+<div class="col-md-6 review_section">
+	<h2>who love it</h2>
+	
+	<ul class="nav nav-tabs" role="tablist" id="myTab">
+	  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All Users (<%=@users.count.to_s%>)</a></li>
+	  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">My Following</a></li>
+	</ul>
+	
+	<div class="tab-content">
+	  <div role="tabpanel" class="tab-pane active" id="home">
+			
+  <% if @users != nil %>
+    <ul>
+			<br>
+      <% @users.each do |user| %>
+		
+				<li>
+        	<%= link_to gravatar_for(user,size: 50), list_path(:id=>user.id), method: "get" %>
+					<span><%=user.email%></span>
+				
+				</li>
+				<br>
+				<br>
+      <% end %>
+			<br>
+			<br>
+		</ul>
+  <% end %>
+</div>
+
+ <div role="tabpanel" class="tab-pane" id="profile">
+	 <br>
+	 <br>
+	 <br>
+ </div>
+</div>
+</div>
+</div>
 <br>
 <br>
+
+
 
 <div class="center">
 	<% if current_user %>

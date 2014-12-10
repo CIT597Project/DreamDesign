@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141207210252) do
+ActiveRecord::Schema.define(version: 20141210075901) do
 
   create_table "hotuniversites", id: false, force: true do |t|
     t.string "institution_name",        limit: 200
@@ -115,6 +115,11 @@ ActiveRecord::Schema.define(version: 20141207210252) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size",       limit: nil, precision: 38
     t.datetime "avatar_updated_at"
+    t.string   "high_school"
+    t.string   "college"
+    t.string   "grad_university"
+    t.string   "major"
+    t.string   "app_degree"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

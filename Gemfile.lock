@@ -341,7 +341,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-oracle_enhanced-adapter!
   aws-sdk
-  bootstrap-sass (= 3.2.0.0)
+  bootstrap-sass
   bootstrap-will_paginate (= 0.0.10)
   byebug (= 3.4.0)
   capybara

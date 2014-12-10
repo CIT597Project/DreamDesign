@@ -22,6 +22,12 @@ class GeneralController < ApplicationController
     @users=User.all.paginate(page: params[:page])
   end
   
+  def search_friend
+    @users = User.search(params[:search]).paginate(:page=>params[:page])
+    render 'add_following'
+  end
+  
+  
  
     
 

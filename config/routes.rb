@@ -40,6 +40,7 @@ Rails.application.routes.draw do
 
   get '/general/ranking'=>'general#ranking'
   get '/general/index'=>'general#index'
+  get '/general/search_friend' => 'general#search_friend'
   
   get 'majorranking' => 'majorrankings#'
  

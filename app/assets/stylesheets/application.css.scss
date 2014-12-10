@@ -3,6 +3,16 @@
 
 
 $gray-medium-light: #eaeaea;
+$brand-primary: #428bca;
+$brand-success: #5cb85c;
+$brand-info:    #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger:  #d9534f;
+$gray-darker:  lighten(#000, 13.5%); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         lighten(#000, 33.5%); // #555
+$gray-light:   lighten(#000, 46.7%); // #777
+$gray-lighter: lighten(#000, 93.5%); // #eee
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -75,6 +85,13 @@ h4 {
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: left;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
   font-weight: normal;
 }
 
@@ -247,22 +264,29 @@ aside {
 .cancel {
 	margin-left: auto;
 	margin-right: auto;
-	width: 10%;
+	width: 15%;
 	
 }
 
 /* sidebar */
-#sidebar {
-	border-right: 1px solid #E0E0E0;
-	background-color:rgba(192,192,192,0.5);
+
+
+.sidebar {
+	border-radius: 5px;
+	border:1px solid $gray-lighter;
+	li {
+		border-bottom:1px solid $gray-lighter;
+	}
+	
 }
 
 /* search bar */
 
 #search_form {
 	width: 200px;
+
 	input, textarea {
-		font-size:1.2em;
+		font-size:1.0em;
 		font-weight:normal;
 	}
 	vertical-align:middle;
@@ -270,12 +294,13 @@ aside {
 }
 
 #search_icon {
-	width:27px;
-	height:27px;
+	width:30px;
+	height:30px;
 }
 
 #paginate {
 	width:80%;
+	font-weight:normal;
 }
 
 th {
@@ -389,52 +414,64 @@ video#bgvid{
 }
 
 
-#review_section {
-	border:5px solid #E8E8E8 ;
-}
-
-.review {
+.review_section {
+	margin-left:30px;
+	border-radius: 5px;
+	border-top:1px solid $brand-warning;
+	border-bottom:1px solid $brand-warning;
+	border-right:1px solid $brand-warning;
+	border-left:5px solid $brand-warning;
+	
+	
+	.review {
+	
 	margin-left:20px;
   list-style: none;
   padding: 0px;
+	
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
   }
+	span {
+		width:50%;
+		display:inline;
+	}
+
   .user {
     margin-top: 5em;
     padding-top: 0;
   }
-  .content {
-    display: block;
-    margin-left: 60px;
-    img {
-      display: block;
-      padding: 5px 0;
-    }
-  }
+  
   .timestamp {
     color: $gray-light;
-    display: block;
-    margin-left: 60px;
   }
-  .gravatar {
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
+  
+	.delete {
+		margin-right:30px;
+		float:right;
+	}
 }
+
+
+}
+
 
 .followed_by {
 	text-align:right;
 	margin-right:30px;
 }
 
-#description {
-	margin-left:20px;
-	th, td {
-		padding:10px;
-	}
+.description {
+
+	border-radius: 5px;
+	border-top:1px solid $gray-lighter;
+	border-bottom:1px solid $gray-lighter;
+	border-right:1px solid $gray-lighter;
+	border-left:5px solid $brand-info;
+	margin-left:16px;
+	margin-right:13px;
+	
 }
 
 .inline {
@@ -457,12 +494,14 @@ video#bgvid{
 	}
 }
 
-ol {
+
+
+.ol_format {
     counter-reset:li; /* Initiate a counter */
     margin-left:0; /* Remove the default left margin */
     padding-left:0; /* Remove the default left padding */
-}
-ol > li {
+
+li {
     position:relative; /* Create a positioning context */
     margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
     padding:4px 8px; /* Add some spacing around the content */
@@ -470,7 +509,7 @@ ol > li {
     border-top:2px solid #666;
     background:#f6f6f6;
 }
-ol > li:before {
+li:before {
     content:counter(li); /* Use the counter as content */
     counter-increment:li; /* Increment the counter by 1 */
     /* Position and style the number */
@@ -492,6 +531,11 @@ ol > li:before {
     font-family:"Helvetica Neue", Arial, sans-serif;
     text-align:center;
 }
-li ol,
-li ul {margin-top:6px;}
-ol ol li:last-child {margin-bottom:0;}
+}
+
+
+.nav-stacked {
+	li {
+		padding:10px;
+	}
+}

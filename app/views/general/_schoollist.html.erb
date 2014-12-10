@@ -3,18 +3,17 @@
 	<tr>
  <%= form_tag index_path, {method: :get} do %> 
  <th id="paginate">
- <%= will_paginate @schools%>	
+ <%= will_paginate @schools, class:"pagination"%>	
 
  </th>
 <th id="search_form">
      
-     <%= text_field_tag :search, params[:search], placeholder: "search a school" %> 
-	
+     <%= text_field_tag :search, params[:search], placeholder: "search a school", class:"form-control" %> 
+
  </th>
  <th id="search_icon">
-	
+		
 		  <%= image_submit_tag "search.png", :name => nil%>
-	
 	 </th>
  <% end %>
 </tr>
@@ -23,7 +22,7 @@
 
 
 
-<ol>	
+<ol class="ol_format">	
  <% @schools.each do |school| %>     
    <li>
 		 <br>
@@ -50,4 +49,4 @@
  
 </ol>
 
-<%= will_paginate @schools%>	
+<%= will_paginate @schools, class:"pagination"%>	

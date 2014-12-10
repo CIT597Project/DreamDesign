@@ -2,11 +2,11 @@
 <div class="row">
   <aside class="col-md-4">
     <section>
-      <h1>
         <%= gravatar_for @user %>
+			<h5>
         <%= @user.username if @user.username %>
 				<%= @user.email if not @user.username %>
-      </h1>
+      </h5>
     </section>
     <section class="stats">
       <%= render 'devise/shared/stats' %>
@@ -14,8 +14,8 @@
 		<%=render 'users/follow_form'%>
   </aside>
   <div class="col-md-8">
-      <h3>School List (<%= @user.my_schools.count %>)</h3>
-      <ol class="mylist">
+      <h3>School List ( <%= @user.my_schools.count %> )</h3>
+      <ol class="mylist ol_format">
         <%= render @user.my_schools %>
       </ol>
   </div>
