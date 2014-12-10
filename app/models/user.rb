@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
 
-  self.table_name = "DREAMDESIGN.USERS"
+  
   
   
   devise :database_authenticatable, :registerable,
