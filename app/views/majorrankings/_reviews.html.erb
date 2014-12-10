@@ -56,7 +56,7 @@
 	  <span class="content">
 	    <%= review.body %>
 	  </span>
-    <% if current_user.id == user.id %>
+    <% if current_user != nil && current_user.id == user.id %>
       <%= link_to "Delete", review_path(:id=>review.id, :school_id=>@school.id), method: :delete,class:"btn btn-danger delete", data: { confirm: "You sure?" } %>
     <% end %>
 		<br>
