@@ -2,7 +2,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   before_filter :configure_permitted_parameters
   
   
-  
   def upload
     uploaded_io = params[:user][:picture]
     File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
