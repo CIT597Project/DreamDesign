@@ -19,6 +19,21 @@
 
 <span class="comment"><%= my_school.comment %></span>
 
+
+   <div>
+		 
+		 <%current_user.following.each do |user|%>
+      <% if user.my_schools.find_by(name:my_school.name) != nil %>
+				
+						<div data-toggle="tooltip" data-placement="top" title='<%=user.username %>'>
+            	<%= link_to gravatar_for(user,size: 30), list_path(:id=>user.id), method: "get" %>
+						</div>
+   
+      <% end %>
+			<%end%>
+	
+	</div>
+
 <br>
 <br>	
 </li>
