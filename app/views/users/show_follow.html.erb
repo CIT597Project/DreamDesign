@@ -1,10 +1,10 @@
 <% provide(:title, @title) %>
 <div class="row">
-  <aside class="col-md-4">
+  <aside class="col-md-4 detail_info">
     <section class="user_info">
       <%= gravatar_for @user %>
       <h5><%= @user.username %></h5>
-      <span><%= link_to "view my profile", edit_user_registration_path %></span>
+      <span><%= link_to "Edit my profile", edit_user_registration_path %></span>
 			<br>
 			<%= link_to "My list ", mylist_path %><span class="badge"><%=current_user.my_schools.count.to_s%></span></li>
     </section>
@@ -27,6 +27,7 @@
 		<br>
 		<div id="add_following">
 		<%= button_to "Follow More", "/general/add_following", class: "btn btn-primary", :method => :get %>
+		<br>
   </aside>
   <div class="col-md-8">
     <h3><%= @title %></h3>

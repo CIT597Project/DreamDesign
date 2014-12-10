@@ -103,7 +103,7 @@
 				</li>
 				<br>
 				<br>
-      <% end %>
+    <% end %>
 			<br>
 			<br>
 		</ul>
@@ -133,9 +133,23 @@
 </div>
 
  <div role="tabpanel" class="tab-pane" id="profile">
-	 <br>
-	 <br>
-	 <br>
+   <ul>
+		<br>
+		<%if @friends != nil %>
+     <% @friends.each do |user| %>
+	
+			<li>
+       	<%= link_to gravatar_for(user,size: 50), list_path(:id=>user.id), method: "get" %>
+				<span><%=user.email%></span>
+			
+			</li>
+			<br>
+			<br>
+   <% end %>
+	 <%end%>
+		<br>
+		<br>
+	</ul>
  </div>
 </div>
 </div>
