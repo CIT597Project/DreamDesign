@@ -67,6 +67,7 @@
 	<hr>
 <% end %>
 
+<%if current_user%>
 <div class="add_reviews">
 <%= form_for([@school, @school.reviews.build]) do |f| %>
   <p>
@@ -78,6 +79,12 @@
 	<br>
 <% end %>
 </div>
+
+<%else%>
+<br>
+<div class="form-control">Before write an review, please first <%=link_to "sign in", new_user_session_path%>.</div>
+<br>
+<%end%>
 
 </div>
 
