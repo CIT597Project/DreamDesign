@@ -15,11 +15,13 @@ class SchoolsController < ApplicationController
       @users << User.find_by(id:my_school.user_id)
     end
     
-    @friends=[]
-    current_user.following.each do |user|
-      user.my_schools.each do |my_school|
-        if my_school.school_id == @school.id
-          @friends << user
+    if current_user
+      @friends=[]
+      current_user.following.each do |user|
+        user.my_schools.each do |my_school|
+          if my_school.school_id == @school.id
+            @friends << user
+          end
         end
       end
     end
