@@ -1,7 +1,7 @@
 class School< ActiveRecord::Base
   has_many :my_schools
   has_many :users, through: :my_schools
-  self.table_name = "DREAMDESIGN.SCHOOLS"
+  self.table_name = "public.SCHOOLS"
   has_many :reviews
  
   # def school_params
