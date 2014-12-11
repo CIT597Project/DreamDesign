@@ -23,7 +23,7 @@ class MySchoolsController < ApplicationController
     @my_school.user_id = current_user.id
     @my_school.name = params[:name]
     @my_school.school_id = params[:school_id]
-    @school = School.find_by ID:params[:school_id]
+    @school = School.find_by id:params[:school_id]
 
     if @my_school.save 
       num = @school.follow
