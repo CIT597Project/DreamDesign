@@ -30,7 +30,7 @@
 				 <div class="list_school_name col-md-9"><%= link_to school.Institution_Name, school_path(:id=>School.find_by(Institution_ID:school.Institution_ID).id, class:"school_name") %></div>
 				 <div class="list_add col-md-2">
 	 				<% if current_user %>
-	 			 		<%= link_to "Add", addSchool_path(:user_id=>current_user.id, :school_id=>School.find_by(Institution_ID:school.Institution_ID).id, :name=> school.Institution_Name), method:"post", class:"btn btn-primary" %>
+	 			 		<!-- <%= link_to "Add", addSchool_path(:user_id=>current_user.id, :school_id=>School.find_by(Institution_ID:school.Institution_ID).id, :name=> school.Institution_Name), method:"post", class:"btn btn-primary" %> -->
 	 				<% else %>
 	 			 		<%= link_to "Add", new_user_session_path, class:"btn btn-primary"%>
 	 			 	<% end %>
