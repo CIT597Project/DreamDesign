@@ -12,5 +12,5 @@ ActiveSupport.on_load(:active_record) do
     # start primary key sequences from 1 (and not 10000) and take just one next value in each session
     self.default_sequence_start_value = "1 NOCACHE INCREMENT BY 1"
     # other settings ...
-  end
+  # end
 end
