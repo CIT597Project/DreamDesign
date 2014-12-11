@@ -9,7 +9,7 @@ class RecommendeduniversitiesController < ApplicationController
 
   def show
     # respond_with(@recommendeduniversity)
-    @name=Recommendeduniversity.find_by(:name_abb=>params[:id]).name_abb
+    @name=Recommendeduniversity.find_by(:name_abb=>params[:id]).name_abb1   #change to name_abb1
     render "recommendeduniversities/#{@name}"
   end
 
