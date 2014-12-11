@@ -7,8 +7,7 @@ class SchoolsController < ApplicationController
   end
 
   def show
-    # @school = School.find(params[:id])
-    @school = School.all
+    @school = School.find(params[:id])
     
     @my_schools=@school.my_schools
     @users=[]
