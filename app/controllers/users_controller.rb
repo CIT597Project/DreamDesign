@@ -16,6 +16,12 @@ class UsersController < ApplicationController
   
   def mylist
     @my_school = current_user.my_schools.build 
+    @hot_schools=[]
+    current_user.following.each do |user|
+      user.my_schools.each do |school|
+        @hot_schools.push(school.name) unless @hot_schools.include?(school.name)
+      end
+    end
   end
   
   def ranking

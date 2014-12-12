@@ -1,0 +1,23 @@
+<div class="col-md-12">
+	<h3>Most popular among friends</h3>
+ <table class="table">
+		<%@hot_schools.each do |school|%>
+		<tr class="hot_friends">
+			<th><%=school%></th>
+			<td>
+			<%current_user.following.each do |user|%>
+			<%if user.my_schools.find_by(name:school)!= nil%>
+			<span>
+			<div data-toggle="tooltip" data-placement="top" title='<%=user.username %>'>
+	      	<%= link_to gravatar_for(user,size: 30), list_path(:id=>user.id), method: "get" %>
+				</div>
+			</span>
+			<%end%>
+			<%end%>
+		 </td>
+	</tr>
+		<%end%>
+	</table>	
+
+	
+</div>

@@ -1,13 +1,33 @@
 <% provide(:title, "MyList") %>
 
 <div class="row">
-  <aside class="col-md-4">
+  
+	
+	<aside class="col-md-4">
+		
+	<div class="margin_right">
+		<ul class="nav nav-tabs tabs-left sideways" role="tablist" id="myTab">
+		  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Account</a></li>
+		  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Friends Love</a></li>
+		</ul>
+	</div>
+	
+	<div class="tab-content margin_top">
+	  <div role="tabpanel" class="tab-pane active" id="home">
+	
 		<section class="user_info">
 		  <%= render 'user_info' %>
 		</section>
     <section class="mylist_form">
       <%= render 'mylist_form' %>
     </section>
+		</div>	
+		<div role="tabpanel" class="tab-pane" id="profile">
+	    <section class="hot_schools">
+	      <%= render 'hot_school_list' %>
+	    </section>
+		</div>
+	</div>
   </aside>
   <div class="col-md-8 list">
       <h3>My School List ( <%= current_user.my_schools.count %> )</h3>

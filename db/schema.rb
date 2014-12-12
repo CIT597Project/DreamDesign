@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20141210075901) do
     t.string "institution_state",       limit: 50
     t.string "institution_zip",         limit: 20
     t.string "institution_web_address", limit: 50
+    t.string "name_abb1",               limit: 20
   end
 
   create_table "relationships", force: true do |t|
