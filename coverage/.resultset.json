@@ -6,9 +6,6 @@
         1,
         40,
         null,
-        null,
-        1,
-        null,
         null
       ],
       "/Users/chanli/GitHub/DreamDesign/app/controllers/application_controller.rb": [
@@ -182,9 +179,6 @@
       "/Users/chanli/GitHub/DreamDesign/app/models/majorranking.rb": [
         1,
         1,
-        1,
-        0,
-        null,
         null,
         null,
         null,
@@ -220,9 +214,6 @@
       "/Users/chanli/GitHub/DreamDesign/app/models/recommendeduniversity.rb": [
         1,
         1,
-        1,
-        0,
-        null,
         null,
         null
       ],
@@ -489,6 +480,6 @@
         null
       ]
     },
-    "timestamp": 1418860320
+    "timestamp": 1418860717
   }
 }
