@@ -27,7 +27,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/helpers/application_helper.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/helpers/application_helper.rb": [
+>>>>>>> FETCH_HEAD
         1,
         null,
         null,
@@ -41,47 +45,51 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/helpers/general_helper.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/helpers/general_helper.rb": [
+>>>>>>> FETCH_HEAD
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/generalranking_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/generalranking_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/majorrankings_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/majorrankings_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/my_schools_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/my_schools_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/recommendeduniversities_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/recommendeduniversities_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/relationships_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/relationships_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/reviews_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/reviews_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/schoollists_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/schoollists_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/schools_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/schools_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/static_pages_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/static_pages_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/users_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/users_helper.rb": [
         1,
         null,
         1,
@@ -92,7 +100,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/controllers/majorrankings_controller.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/controllers/majorrankings_controller.rb": [
+>>>>>>> FETCH_HEAD
         1,
         null,
         null,
@@ -121,7 +133,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/models/majorranking.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/models/majorranking.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
@@ -134,7 +150,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/models/school.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/models/school.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
@@ -162,7 +182,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/controllers/recommendeduniversities_controller.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/controllers/recommendeduniversities_controller.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
@@ -213,7 +237,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/models/recommendeduniversity.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/models/recommendeduniversity.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
@@ -222,7 +250,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/models/my_school.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/models/my_school.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
@@ -236,7 +268,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/controllers/users_controller.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/controllers/users_controller.rb": [
+>>>>>>> FETCH_HEAD
         1,
         null,
         1,
@@ -247,12 +283,22 @@
         null,
         null,
         1,
+<<<<<<< HEAD
+        1,
+        1,
+        1,
+=======
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
         1,
         null,
         null,
+<<<<<<< HEAD
+        null,
+=======
+>>>>>>> FETCH_HEAD
         1,
         5,
         5,
@@ -282,7 +328,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/models/relationship.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/models/relationship.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
@@ -290,10 +340,19 @@
         1,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/controllers/general_controller.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/controllers/general_controller.rb": [
+        null,
+        1,
+>>>>>>> FETCH_HEAD
         null,
         1,
         null,
+        1,
+        4,
+        4,
         null,
         1,
         4,
@@ -303,6 +362,10 @@
         1,
         1,
         1,
+<<<<<<< HEAD
+=======
+        1,
+>>>>>>> FETCH_HEAD
         null,
         null,
         null,
@@ -327,7 +390,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/controllers/relationships_controller.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/controllers/relationships_controller.rb": [
+>>>>>>> FETCH_HEAD
         1,
         null,
         null,
@@ -345,13 +412,21 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/models/review.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/models/review.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/controllers/concerns/users/registrations_controller.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/controllers/concerns/users/registrations_controller.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         null,
@@ -383,7 +458,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/controllers/reviews_controller.rb": [
+=======
+      "/Users/qilejun/git/DreamDesign/app/controllers/reviews_controller.rb": [
+>>>>>>> FETCH_HEAD
         1,
         1,
         1,
@@ -406,7 +485,7 @@
         null,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/schools_controller.rb": [
+      "/Users/qilejun/git/DreamDesign/app/controllers/schools_controller.rb": [
         1,
         1,
         null,
@@ -454,7 +533,7 @@
         null,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/my_schools_controller.rb": [
+      "/Users/qilejun/git/DreamDesign/app/controllers/my_schools_controller.rb": [
         1,
         1,
         null,
@@ -528,6 +607,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1418858532
+=======
+    "timestamp": 1418858677
+>>>>>>> FETCH_HEAD
   }
 }
