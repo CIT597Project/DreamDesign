@@ -9,16 +9,37 @@
 #   pool: 5
 #   timeout: 5000
 #
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
+#   # For details on connection pooling, see rails configuration guide
+#   # http://guides.rubyonrails.org/configuring.html#database-pooling
+#   encoding: unicode
+#   pool: 5
+#   username: my_username
+#   password: my_password
+
 # development:
+#   <<: *default
+#   database: myapp_development
+
+# test:
+#   <<: *default
+#   database: myapp_test
+
+# production:
+#   <<: *default
+#   database: my_app_production
+development:
 #   # <<: *default
 #   # database: db/development.sqlite3
 #
-#   adapter: oracle_enhanced
+  adapter: oracle_enhanced
 #   # database: "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=cit597project.c7rpydtnpvgy.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SID=dream)))"
-#   database: "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=tcp)(HOST=cit597project.c7rpydtnpvgy.us-east-1.rds.amazonaws.com)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=dream)))"
+  database: "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=tcp)(HOST=cit597project.c7rpydtnpvgy.us-east-1.rds.amazonaws.com)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=dream)))"
 #   # database: "(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=xe)))"
-#   username: dreamdesign
-#   password: 12345678
+  username: dreamdesign
+  password: 12345678
 #
 #
 #
