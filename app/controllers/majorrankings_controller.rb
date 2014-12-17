@@ -16,10 +16,5 @@ class MajorrankingsController < ApplicationController
   
   
   
-  private
-    
 
-    def majorranking_params
-      params[:majorrankings]
-    end
 end

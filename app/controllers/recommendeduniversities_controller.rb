@@ -12,12 +12,6 @@ class RecommendeduniversitiesController < ApplicationController
     
   end
 
- 
 
-  private
-    
 
-    def recommendeduniversity_params
-      params.require(:recommendeduniversity).permit(:institution_name, :institution_address, :institution_city, :institution_state, :institution_zip, :institution_web_address)
-    end
 end

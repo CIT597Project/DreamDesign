@@ -460,8 +460,21 @@ Then(/^I should see recommended universities list$/) do
   page.should have_content("Princeton University")
 end
 
+When(/^I click a school in this list$/) do
+  click_link "Massachusetts Institute of Technology"
+end
 
+Then(/^I should see the page of this school$/) do
+  page.should have_content("Massachusetts Institute of Technology")
+end
 
+When(/^I click the link of universities in the left bar$/) do
+  click_link "Universities"
+end
+
+Then(/^I should see the list of all universities$/) do
+  page.should have_content("Universities")
+end
 
 
 
