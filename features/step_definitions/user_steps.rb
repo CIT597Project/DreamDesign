@@ -430,16 +430,14 @@ When(/^I click "(.*?)" in the left side bar of the page$/) do |arg1|
 end
 
 Then(/^the school list should be sorted by popularity$/) do
-<<<<<<< HEAD
+
   pending
-=======
   page.should have_content "Hot Universities"
->>>>>>> FETCH_HEAD
+
 end
 
 
 
-<<<<<<< HEAD
 #difflist
 Given(/^I am on the home page$/) do
   page.should have_content('Welcome')
@@ -461,8 +459,7 @@ Then(/^I should see recommended universities list$/) do
   pending # express the regexp above with the code you wish you had
 end
 
-=======
->>>>>>> FETCH_HEAD
+
 
 
 
