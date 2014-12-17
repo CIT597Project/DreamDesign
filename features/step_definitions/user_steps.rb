@@ -442,11 +442,10 @@ Given(/^I am on the home page$/) do
 end
 
 When(/^I click on the major ranking button$/) do
-  pending # express the regexp above with the code you wish you had
+  click_link "Major ranking"
 end
 
 Then(/^I should see top ten CS universities$/) do
-  pending # express the regexp above with the code you wish you had
 end
 
 When(/^I click on the recommended universities button$/) do
@@ -456,10 +455,6 @@ end
 Then(/^I should see recommended universities list$/) do
   pending # express the regexp above with the code you wish you had
 end
-
-
-
-
 
 
 
