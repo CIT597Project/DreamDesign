@@ -2,7 +2,6 @@ require 'simplecov'
 SimpleCov.start do
 end
 
-
 def create_visitor
   @visitor ||= { :name => "Test User", :email => "example@example.com",
     :password => "changeme", :password_confirmation => "changeme"}
@@ -368,6 +367,11 @@ Given(/^I am on the page Following$/) do
 end
 
 
+Then(/^I can delete the school$/) do
+  page.should have_selector(:link_or_button, 'Delete') 
+  click_link "Delete"
+end
+
 
 When(/^I click following$/) do
   click_link "following" 
@@ -394,97 +398,44 @@ Then(/^this user will be get out of my followed list$/) do
 end
 
 #review.feature
-Given(/^I have seen the comment$/) do
-  pending 
-end
-
-When(/^I click the edit icon$/) do
-  pending 
-end
-
-Then(/^I am able to edit comment$/) do
-  pending 
-end
-
 Given(/^I have added some text to the comment field$/) do
-  pending 
+  visit '/majorrankings/cmu'
+  page.should have_selector(:link_or_button, 'Create Review')
+  find("#review_body").set "good"
 end
 
 When(/^I click "(.*?)"$/) do |arg1|
-  pending 
+  click_button "Create Review"
 end
 
 Then(/^I am able to update this comment$/) do
-  pending 
-end
-
-Given(/^I'm on a specific school page$/) do
-  pending 
-end
-
-Then(/^I should see other users' comments$/) do
-  pending 
-end
-
-Given(/^I have seen the reviews about a specific university$/) do
-  pending 
-end
-
-Then(/^I should be able to add my feedback$/) do
-  pending 
+  page.should have_content "good"
 end
 
 
+When(/^I click the delete icon$/) do
+  click_link "Delete"
+end
+
+Then(/^I am able to delete this review$/) do
+  page.should_not have_content "good"
+end
 
 #popularity.feature
 Given(/^I'm looking through the information about a school$/) do
-  pending 
+  visit '/majorrankings/cmu'
 end
 
 Then(/^I should see the amount of users who have added this school to their school list$/) do
-  pending 
+  page.should have_content "Followed by"
 end
 
 When(/^I click "(.*?)" in the left side bar of the page$/) do |arg1|
-  pending 
+  click_link "Hot universities"
 end
 
 Then(/^the school list should be sorted by popularity$/) do
-  pending
-end
-
-
-#feedback.feature
-Given(/^I've seen others' review$/) do
-  pending 
-end
-
-When(/^I click "(.*?)" besides the review$/) do |arg1|
-  pending 
-end
-
-Then(/^I can add my own feedback$/) do
-  pending 
-end
-
-Then(/^everyone can see my feedback follow the review$/) do
-  pending 
-end
-
-Given(/^I've seen my own feedback$/) do
-  pending 
-end
-
-When(/^I click "(.*?)" besides my feedback$/) do |arg1|
-  pending 
-end
-
-Then(/^my feedback will be deleted$/) do
-  pending 
-end
-
-Then(/^I should see hint message$/) do
-  pending 
+  page.should have_content "Hot Universities"
 end
 
 

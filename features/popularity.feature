@@ -10,6 +10,6 @@ Feature: Popularity
 		
   	Scenario: Sort by popularity
 		Given I'm looking through the information about a school
-		When I click "sort by popularity" in the left side bar of the page
+		When I click "Hot universities" in the left side bar of the page
 		Then the school list should be sorted by popularity
 		
