@@ -1,64 +1,46 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/qilejun/git/DreamDesign/app/controllers/static_pages_controller.rb": [
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/static_pages_controller.rb": [
         1,
         1,
-        2,
+        39,
         null,
         null,
         1,
         null,
         null
       ],
-      "/Users/qilejun/git/DreamDesign/app/controllers/application_controller.rb": [
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/application_controller.rb": [
         1,
         null,
         1,
         1,
         null,
         1,
-<<<<<<< HEAD
+        null,
+        1,
         29,
         29,
-=======
-        null,
-        1,
-        0,
-        0,
->>>>>>> FETCH_HEAD
         null,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/helpers/application_helper.rb": [
-=======
-      "/Users/qilejun/git/DreamDesign/app/helpers/application_helper.rb": [
->>>>>>> FETCH_HEAD
         1,
         null,
         null,
         1,
-<<<<<<< HEAD
-        94,
-        94,
-        84,
+        98,
+        98,
+        88,
         null,
         10,
-=======
-        4,
-        4,
-        4,
-        null,
-        0,
->>>>>>> FETCH_HEAD
         null,
         null,
         null
       ],
-<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/helpers/general_helper.rb": [
         1,
         null
@@ -110,13 +92,133 @@
         null,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/static_pages_controller.rb": [
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/majorrankings_controller.rb": [
         1,
-        1,
-        37,
         null,
         null,
         1,
+        null,
+        3,
+        3,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/chanli/GitHub/DreamDesign/app/models/majorranking.rb": [
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/chanli/GitHub/DreamDesign/app/models/school.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        4,
+        4,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/recommendeduniversities_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/chanli/GitHub/DreamDesign/app/models/recommendeduniversity.rb": [
+        1,
+        1,
+        1,
+        0,
+        null,
         null,
         null
       ],
@@ -176,94 +278,16 @@
         null,
         null,
         1,
-=======
-      "/Users/qilejun/git/DreamDesign/app/helpers/general_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/generalranking_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/majorrankings_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/my_schools_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/recommendeduniversities_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/relationships_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/reviews_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/schoollists_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/schools_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/static_pages_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/helpers/users_helper.rb": [
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
->>>>>>> FETCH_HEAD
         0,
         null,
         null
       ],
-<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/models/relationship.rb": [
         1,
         1,
         1,
         1,
         1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/models/school.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        4,
-        4,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/chanli/GitHub/DreamDesign/app/controllers/general_controller.rb": [
@@ -287,9 +311,6 @@
         4,
         null,
         null,
-=======
-      "/Users/qilejun/git/DreamDesign/app/controllers/majorrankings_controller.rb": [
->>>>>>> FETCH_HEAD
         1,
         1,
         null,
@@ -299,7 +320,6 @@
         0,
         null,
         null,
-<<<<<<< HEAD
         null,
         null,
         null,
@@ -325,90 +345,6 @@
         null,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/majorrankings_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-=======
-        1,
-        null,
->>>>>>> FETCH_HEAD
-        0,
-        0,
-        null,
-        null,
-<<<<<<< HEAD
-        1,
-        null,
-        3,
-        3,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-=======
-        null,
-        null,
-        1,
-        1,
->>>>>>> FETCH_HEAD
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/Users/chanli/GitHub/DreamDesign/app/models/majorranking.rb": [
-=======
-      "/Users/qilejun/git/DreamDesign/app/models/majorranking.rb": [
->>>>>>> FETCH_HEAD
-        1,
-        1,
-        1,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/models/review.rb": [
         1,
         1,
@@ -416,17 +352,10 @@
         null
       ],
       "/Users/chanli/GitHub/DreamDesign/app/controllers/concerns/users/registrations_controller.rb": [
-=======
-      "/Users/qilejun/git/DreamDesign/app/models/school.rb": [
-        1,
-        1,
-        1,
->>>>>>> FETCH_HEAD
         1,
         1,
         null,
         null,
-<<<<<<< HEAD
         1,
         0,
         0,
@@ -445,19 +374,6 @@
         4,
         null,
         null,
-=======
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
->>>>>>> FETCH_HEAD
         null,
         null,
         null,
@@ -467,7 +383,6 @@
         null,
         null
       ],
-<<<<<<< HEAD
       "/Users/chanli/GitHub/DreamDesign/app/controllers/reviews_controller.rb": [
         1,
         1,
@@ -513,25 +428,10 @@
         2,
         2,
         0,
-=======
-      "/Users/qilejun/git/DreamDesign/app/controllers/recommendeduniversities_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
         0,
         0,
         null,
         null,
-        1,
-        null,
->>>>>>> FETCH_HEAD
-        0,
-        0,
-        null,
-        null,
-<<<<<<< HEAD
         null,
         null,
         null,
@@ -623,57 +523,11 @@
         1,
         1,
         null,
-=======
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/qilejun/git/DreamDesign/app/models/recommendeduniversity.rb": [
-        1,
-        1,
-        1,
-        0,
->>>>>>> FETCH_HEAD
         null,
         null,
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1418858053
-=======
-    "timestamp": 1418858341
->>>>>>> FETCH_HEAD
+    "timestamp": 1418858532
   }
 }

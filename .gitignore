@@ -30,3 +30,5 @@ tmp/cache/assets/test/sprockets/c13fc73ceafa45876a901b3e775b83ae
 tmp/cache/assets/test/sprockets/f7cbd26ba1d28d48de824f0e94586655
 
 log/development.log
+
+log/test.log
