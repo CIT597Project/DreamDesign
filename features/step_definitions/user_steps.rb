@@ -307,8 +307,7 @@ Given(/^I am on the page MyList$/) do
 end
 
 When(/^I choose a school in the dropdown list and add it$/) do
-  find_user
-  fill_in "my_school_school_id", :with => 1
+  select('1 MDSS/SGSLM/Langley AFB Advanced Education in General Dentistry 12 Months', :from => 'my_school_school_id')
   fill_in "my_school_comment", :with => 'good'
   click_button "Add"
 end
@@ -318,6 +317,15 @@ When(/^I choose to add to my school list$/) do
 end
 
 Then(/^I should see successful message$/) do
+  page.should have_content {"Add to list successfully"||"Already"}
+end
+
+Then(/^I can delete the school$/) do
+  page.should have_selector(:link_or_button, 'Delete') 
+  click_link "Delete"
+end
+
+Then(/^I should see successful message or an already exist message$/) do
   page.should have_content {"Add to list successfully"||"Already"}
 end
 
@@ -359,10 +367,7 @@ Given(/^I am on the page Following$/) do
   visit following_users_path
 end
 
-Then(/^I can delete the school$/) do
-  page.should have_selector(:link_or_button, 'delete') 
-  click_link "delete"
-end
+
 
 When(/^I click following$/) do
   click_link "following" 
