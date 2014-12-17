@@ -18,5 +18,5 @@ Feature: Edit School list
 	Scenario: Add a school in my list page
 		Given I am on the page MyList
 		When I choose a school in the dropdown list and add it
-		Then I should see successful message or an already exist message
+		Then I should see successful message
 		
