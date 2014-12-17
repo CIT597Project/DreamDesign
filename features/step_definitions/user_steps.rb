@@ -367,11 +367,6 @@ Given(/^I am on the page Following$/) do
 end
 
 
-Then(/^I can delete the school$/) do
-  page.should have_selector(:link_or_button, 'Delete') 
-  click_link "Delete"
-end
-
 
 When(/^I click following$/) do
   click_link "following" 

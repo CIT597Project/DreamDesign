@@ -1,5 +1,6 @@
 {
   "result": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     "covered_percent": 100.0
 =======
@@ -9,5 +10,8 @@
     "covered_percent": 85.46
 >>>>>>> Stashed changes
 >>>>>>> FETCH_HEAD
+=======
+    "covered_percent": 81.02
+>>>>>>> Stashed changes
   }
 }
