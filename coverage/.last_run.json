@@ -1,5 +1,9 @@
 {
   "result": {
+<<<<<<< HEAD
     "covered_percent": 87.67
+=======
+    "covered_percent": 84.84
+>>>>>>> FETCH_HEAD
   }
 }
