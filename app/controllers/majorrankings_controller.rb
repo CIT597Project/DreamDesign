@@ -17,9 +17,7 @@ class MajorrankingsController < ApplicationController
   
   
   private
-    def set_majorranking
-      @majorrankings = Majorranking.find(params[:id])
-    end
+    
 
     def majorranking_params
       params[:majorrankings]

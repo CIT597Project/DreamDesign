@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/qilejun/git/DreamDesign/app/controllers/static_pages_controller.rb": [
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/static_pages_controller.rb": [
         1,
         1,
         39,
@@ -11,7 +11,7 @@
         null,
         null
       ],
-      "/Users/qilejun/git/DreamDesign/app/controllers/application_controller.rb": [
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/application_controller.rb": [
         1,
         null,
         1,
@@ -27,7 +27,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/helpers/application_helper.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/helpers/application_helper.rb": [
+>>>>>>> Stashed changes
         1,
         null,
         null,
@@ -41,7 +45,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/helpers/general_helper.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/helpers/general_helper.rb": [
+>>>>>>> Stashed changes
         1,
         null
       ],
@@ -92,7 +100,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/controllers/majorrankings_controller.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/majorrankings_controller.rb": [
+>>>>>>> Stashed changes
         1,
         null,
         null,
@@ -112,8 +124,6 @@
         null,
         null,
         1,
-        1,
-        0,
         null,
         null,
         1,
@@ -121,7 +131,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/models/majorranking.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/models/majorranking.rb": [
+>>>>>>> Stashed changes
         1,
         1,
         1,
@@ -134,7 +148,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/models/school.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/models/school.rb": [
+>>>>>>> Stashed changes
         1,
         1,
         1,
@@ -162,7 +180,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/controllers/recommendeduniversities_controller.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/recommendeduniversities_controller.rb": [
+>>>>>>> Stashed changes
         1,
         null,
         null,
@@ -180,8 +202,6 @@
         null,
         null,
         1,
-        1,
-        0,
         null,
         null,
         1,
@@ -189,7 +209,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/models/recommendeduniversity.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/models/recommendeduniversity.rb": [
+>>>>>>> Stashed changes
         1,
         1,
         1,
@@ -198,7 +222,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/models/my_school.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/models/my_school.rb": [
+>>>>>>> Stashed changes
         1,
         1,
         1,
@@ -212,7 +240,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/controllers/users_controller.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/users_controller.rb": [
+>>>>>>> Stashed changes
         1,
         null,
         1,
@@ -258,7 +290,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/models/relationship.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/models/relationship.rb": [
+>>>>>>> Stashed changes
         1,
         1,
         1,
@@ -266,7 +302,11 @@
         1,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/controllers/general_controller.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/general_controller.rb": [
+>>>>>>> Stashed changes
         null,
         1,
         null,
@@ -303,7 +343,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/controllers/relationships_controller.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/relationships_controller.rb": [
+>>>>>>> Stashed changes
         1,
         null,
         null,
@@ -321,13 +365,21 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/models/review.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/models/review.rb": [
+>>>>>>> Stashed changes
         1,
         1,
         1,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/controllers/concerns/users/registrations_controller.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/concerns/users/registrations_controller.rb": [
+>>>>>>> Stashed changes
         1,
         1,
         null,
@@ -359,7 +411,11 @@
         null,
         null
       ],
+<<<<<<< Updated upstream
       "/Users/qilejun/git/DreamDesign/app/controllers/reviews_controller.rb": [
+=======
+      "/Users/chanli/GitHub/DreamDesign/app/controllers/reviews_controller.rb": [
+>>>>>>> Stashed changes
         1,
         1,
         1,
@@ -504,6 +560,10 @@
         null
       ]
     },
+<<<<<<< Updated upstream
     "timestamp": 1418859246
+=======
+    "timestamp": 1418859297
+>>>>>>> Stashed changes
   }
 }

@@ -15,9 +15,7 @@ class RecommendeduniversitiesController < ApplicationController
  
 
   private
-    def set_recommendeduniversity
-      @recommendeduniversity = Recommendeduniversity.find(params[:id])
-    end
+    
 
     def recommendeduniversity_params
       params.require(:recommendeduniversity).permit(:institution_name, :institution_address, :institution_city, :institution_state, :institution_zip, :institution_web_address)
