@@ -447,10 +447,9 @@ When(/^I click on the major ranking button$/) do
 end
 
 Then(/^I should see top ten CS universities$/) do
-<<<<<<< HEAD
-=======
+
   page.should have_content("Major Ranking (computer science)")
->>>>>>> FETCH_HEAD
+
 end
 
 When(/^I click on the recommended universities button$/) do
