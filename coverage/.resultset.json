@@ -2486,214 +2486,114 @@
   },
   "Cucumber Features": {
     "coverage": {
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/application_helper.rb": [
+      "/Users/qilejun/git/DreamDesign/app/controllers/application_controller.rb": [
         1,
         null,
+        1,
+        1,
         null,
         1,
-        83,
-        83,
-        75,
         null,
+        1,
+        8,
         8,
         null,
         null,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/general_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/generalranking_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/majorrankings_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/my_schools_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/recommendeduniversities_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/relationships_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/reviews_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/schoollists_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/schools_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/static_pages_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/helpers/users_helper.rb": [
-        1,
-        null,
-        1,
-        18,
-        18,
-        18,
-        18,
         null,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/static_pages_controller.rb": [
-        1,
-        1,
-        35,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/models/my_school.rb": [
-        1,
-        1,
-        1,
-        114,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/users_controller.rb": [
-        1,
-        null,
-        1,
-        4,
-        4,
-        4,
-        4,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
+      "/Users/qilejun/git/DreamDesign/app/helpers/application_helper.rb": [
         1,
         null,
         null,
         1,
-        3,
+        20,
+        20,
+        20,
         null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
         0,
         null,
         null,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/models/relationship.rb": [
-        1,
-        1,
-        1,
-        1,
+      "/Users/qilejun/git/DreamDesign/app/helpers/general_helper.rb": [
         1,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/models/school.rb": [
+      "/Users/qilejun/git/DreamDesign/app/helpers/generalranking_helper.rb": [
         1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/majorrankings_helper.rb": [
         1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/my_schools_helper.rb": [
         1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/recommendeduniversities_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/relationships_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/reviews_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/schoollists_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/schools_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/static_pages_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/helpers/users_helper.rb": [
         1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
-        4,
-        4,
-        null,
+        0,
+        0,
+        0,
         0,
         null,
+        null
+      ],
+      "/Users/qilejun/git/DreamDesign/app/controllers/static_pages_controller.rb": [
+        1,
+        1,
+        9,
         null,
         null,
-        null,
-        null,
-        null,
+        1,
         null,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/general_controller.rb": [
-        null,
+      "/Users/qilejun/git/DreamDesign/app/models/my_school.rb": [
         1,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        4,
-        4,
-        null,
-        null,
         1,
         1,
         null,
         null,
         null,
-        null,
-        null,
+        33,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/relationships_controller.rb": [
-        1,
-        null,
-        null,
+      "/Users/qilejun/git/DreamDesign/app/controllers/concerns/users/registrations_controller.rb": [
         1,
         1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/concerns/users/registrations_controller.rb": [
-        1,
-        1,
-        null,
         null,
         null,
         1,
@@ -2707,90 +2607,23 @@
         null,
         null,
         1,
-        18,
-        5,
+        8,
+        0,
         null,
-        18,
+        8,
         4,
         null,
         null,
         null,
-        null
-      ],
-      "/Users/chanli/GitHub/DreamDesign/app/controllers/my_schools_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        1,
-        null,
-        1,
         null,
         null,
         null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
         null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1418007668
+    "timestamp": 1418848117
   }
 }
