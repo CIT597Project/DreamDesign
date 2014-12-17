@@ -12,8 +12,8 @@ Feature: Edit School list
 		When I am on the university list page
 		And I choose to add to my school list
 		Then I should see successful message
-	  Given I am on the page MyList
-	  Then I can delete the school
+	    Given I am on the page MyList
+	    Then I can delete the school
 		
 	Scenario: Add a school in my list page
 		Given I am on the page MyList

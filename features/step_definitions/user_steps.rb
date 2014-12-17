@@ -454,40 +454,27 @@ Then(/^the school list should be sorted by popularity$/) do
 end
 
 
-#feedback.feature
-Given(/^I've seen others' review$/) do
-  pending 
+
+#difflist
+Given(/^I am on the home page$/) do
+  page.should have_content('Welcome')
 end
 
-When(/^I click "(.*?)" besides the review$/) do |arg1|
-  pending 
+When(/^I click on the major ranking button$/) do
+  pending # express the regexp above with the code you wish you had
 end
 
-Then(/^I can add my own feedback$/) do
-  pending 
+Then(/^I should see top ten CS universities$/) do
+  pending # express the regexp above with the code you wish you had
 end
 
-Then(/^everyone can see my feedback follow the review$/) do
-  pending 
+When(/^I click on the recommended universities button$/) do
+  pending # express the regexp above with the code you wish you had
 end
 
-Given(/^I've seen my own feedback$/) do
-  pending 
+Then(/^I should see recommended universities list$/) do
+  pending # express the regexp above with the code you wish you had
 end
-
-When(/^I click "(.*?)" besides my feedback$/) do |arg1|
-  pending 
-end
-
-Then(/^my feedback will be deleted$/) do
-  pending 
-end
-
-Then(/^I should see hint message$/) do
-  pending 
-end
-
-
 
 
 
