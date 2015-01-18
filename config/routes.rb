@@ -10,10 +10,15 @@ Rails.application.routes.draw do
   get 'general/add_following'
 
   resources :schools
+  resources :videos, only: [:create, :destroy]
   resources :majorrankings
   resources :my_schools, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
   resources :reviews, only: [:create, :destroy]
+  
+  resources :schools do
+    resources :videos
+  end
   
   resources :schools do
     resources :reviews

@@ -7,13 +7,19 @@
 		<%= csrf_meta_tags %>
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
+		<link rel="stylesheet" href="//assets.ziggeo.com/css/ziggeo-betajs-player.min.css" />
+		<script src="//assets.ziggeo.com/js/ziggeo-jquery-json2-betajs-player.min.js"></script>
+		<script>ZiggeoApi.token = "d3f4cf25b77d85f17b6bf3234834ce86";</script>
 </head>
 
 <body>
 
+	
 <video autoplay="" loop="" poster="" id="bgvid">
     <source src="<%= asset_path('direct-to-99-bg.webm') %>" type="video/webm">
 </video>
+
+
 
 	<%= render 'layouts/header' %>
 	<div id="main-container" class="container-fluid">
@@ -28,8 +34,24 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	<br>
+	<br>
+	<br>
+	
+	<div class="row">
+		<%if @videos != nil %>
+			<% @videos.each do |video|%>
+			  <div class="col-md-3">
+				<ziggeo ziggeo-video=<%=video.videotoken%> ziggeo-width=280 ziggeo-height=210></ziggeo>
+			</div>
+			<% end %>
+		<% end %>
+	</div>
     
 	<%= render 'layouts/footer' %>
 	<script src="jquery.js"></script>
 	<script src="bootstrap.js"></script>
+	
 </body></html>

@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   
   def mylist
     @my_school = current_user.my_schools.build 
+    @videos=current_user.videos
     @hot_schools=[]
     current_user.following.each do |user|
       user.my_schools.each do |school|

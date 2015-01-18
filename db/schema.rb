@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141210075901) do
+ActiveRecord::Schema.define(version: 20150117212800) do
 
   create_table "hotuniversites", id: false, force: true do |t|
     t.string  "institution_name",        limit: 200
@@ -110,7 +110,7 @@ ActiveRecord::Schema.define(version: 20141210075901) do
     t.datetime "updated_at",             limit: 6
     t.string   "picture"
     t.string   "username"
-    t.string   "provider"
+    t.string   "provider"                                                                                                                                               
     t.string   "uid"
     t.string   "name"
     t.string   "avatar_file_name"
@@ -126,5 +126,16 @@ ActiveRecord::Schema.define(version: 20141210075901) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "i_users_reset_password_token", unique: true
+
+  create_table "videos", force: true do |t|
+    t.integer  "user_id",    limit: nil, precision: 38
+    t.integer  "school_id",  limit: nil, precision: 38
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
+    t.string   "videotoken"
+  end
+
+  add_index "videos", ["school_id"], name: "index_videos_on_school_id"
+  add_index "videos", ["user_id"], name: "index_videos_on_user_id"
 
 end

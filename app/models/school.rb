@@ -1,6 +1,7 @@
 class School< ActiveRecord::Base
   has_many :my_schools
   has_many :users, through: :my_schools
+  has_many :videos
   self.table_name = "DREAMDESIGN.SCHOOLS"
   has_many :reviews
  

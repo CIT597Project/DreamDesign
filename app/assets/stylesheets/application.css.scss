@@ -564,7 +564,7 @@ li:before {
 
 .list {
 	border-radius: 5px;
-	border-top:1px solid $gray-lighter;
+	
 	border-left:5px solid $brand-warning;
 }
 
@@ -663,4 +663,20 @@ li:before {
 
 .margin_top {
 	margin-top:-312px;
+}
+
+.video-recorder-message-view {background-color: blue}
+.video-uploader-upload-button-view {
+   background-image: linear-gradient(to bottom, blue, blue);
+   color: #fff;
+   box-shadow: 0 2px 3px blue,inset 0 2px 3px #fff;}
+.video-uploader-upload-button-view:hover {
+   background-image: linear-gradient(to bottom, blue, blue); 
+ }
+ 
+.video_name{
+	margin-top:10px;
+	margin-bottom:20px;
+	margin-left:50px;
+	
 }

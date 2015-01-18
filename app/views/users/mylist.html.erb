@@ -29,11 +29,42 @@
 		</div>
 	</div>
   </aside>
+	
+	
   <div class="col-md-8 list">
+		
+		<ul class="nav nav-tabs" role="tablist" id="myTab2">
+		  <li role="presentation" class="active"><a href="#home2" aria-controls="home2" role="tab" data-toggle="tab">My School List</a></li>
+		  <li role="presentation"><a href="#profile2" aria-controls="profile2" role="tab" data-toggle="tab">My Video</a></li>
+		</ul>
+		
+		
+		<div class="tab-content">
+		  <div role="tabpanel" class="tab-pane active" id="home2">
+				
       <h3>My School List ( <%= current_user.my_schools.count %> )</h3>
       <ol class="my_schools ol_format">
         <%= render current_user.my_schools %>
       </ol>
+		
+			</div>
+		
+		  <div role="tabpanel" class="tab-pane" id="profile2">
+				<%if @videos != nil %>
+					<% @videos.each do |video|%>
+					
+						<ziggeo ziggeo-video=<%=video.videotoken%> ziggeo-width=280 ziggeo-height=210></ziggeo>
+						<div class="video_name">
+							<span><%=School.find_by(id:video.school_id).Institution_Name%></span>
+						</div>
+				
+					
+					<% end %>
+				<% end %>
+		  </div>
+	  </div>
+
+			
   </div>
   
 </div>

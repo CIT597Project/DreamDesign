@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_many :my_schools, dependent: :destroy
   has_many :schools, through: :my_schools
   has_many :reviews
+  has_many :videos
   has_many :active_relationships, class_name: "Relationship", 
                                   foreign_key: "follower_id", dependent: :destroy
   has_many :passive_relationships, class_name: "Relationship", 

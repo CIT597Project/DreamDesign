@@ -1,9 +1,12 @@
+			
 <script>
+		
   $(function () {
     $('#myTab a:first').tab('show')
 
   })
-	</script>
+
+</script>
 
 
 
@@ -163,9 +166,43 @@
 </div>
 <br>
 <br>
+<br>
 
+<h2>Learn more from videos</h2>
+<hr>
 
+<div class="row">
+	<%if @videos != nil %>
+		<% @videos.each do |video|%>
+		<% user = User.find_by(id:video.user_id)%>
+		<div class="col-md-3">
+			<ziggeo ziggeo-video=<%=video.videotoken%> ziggeo-width=280 ziggeo-height=210></ziggeo>
+			<li class="video_name">
+       	<%= link_to gravatar_for(user,size: 30), list_path(:id=>user.id), method: "get" %>
+				<span><%=user.username%></span>
+			
+			</li>
+		</div>
+		<div class="col-md-1"></div>
+		<% end %>
+	<% end %>
 
+	<% if current_user %>
+		<%= form_for([@school, @school.videos.build]) do |f| %>
+		<%= hidden_field_tag :user_id, current_user.id %>
+		<%= hidden_field_tag :school_id, @school.id %>
+		<div class="col-md-3"><ziggeo ziggeo-input_bind='videotoken' ziggeo-width=280 ziggeo-height=210></ziggeo>
+			<div class="video_name"><%= f.submit "Submit", class: "btn btn-warning" %></div>
+		</div>
+		<% end %>
+			
+	<% else %>
+	Please log in before add your video.
+	<% end %>
+</div>
+
+<br>
+<hr>
 <div class="center">
 	<% if current_user %>
 	<%= link_to "Add to my list", addSchool_path(:user_id=>current_user.id, :school_id=>@school.id, :name=> @school.Institution_Name), method:"post", class: "btn btn-lg btn-primary" %>
@@ -173,3 +210,4 @@
 	<%= link_to "Add", new_user_session_path, class: "btn btn-lg btn-primary" %>
 	<% end %>
 </div>
+

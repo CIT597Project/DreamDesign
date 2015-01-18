@@ -15,6 +15,8 @@ class SchoolsController < ApplicationController
       @users << User.find_by(id:my_school.user_id)
     end
     
+    @videos = @school.videos
+    
     if current_user
       @friends=[]
       current_user.following.each do |user|
@@ -24,7 +26,11 @@ class SchoolsController < ApplicationController
           end
         end
       end
+      
+      @video = Video.new
     end
+    
+    
     
   end
   
